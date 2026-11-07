@@ -1,0 +1,13 @@
+# Ambiente virtual
+.venv/
+
+# Arquivos gerados pelo MkDocs
+A11yPocket/site/
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
