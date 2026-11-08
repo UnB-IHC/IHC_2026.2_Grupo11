@@ -1,0 +1,248 @@
+/* ==========================================================================
+   A11yPocket — tema global
+   Única fonte de verdade das cores: os tokens --ap-* abaixo.
+   (guia.css usa apenas aliases desses tokens.)
+   ========================================================================== */
+
+/* ---------- tokens: modo claro ---------- */
+:root {
+  --ap-ink: #17203a;          /* texto principal            */
+  --ap-muted: #4a5568;        /* texto secundário  (6,9:1)  */
+  --ap-brand: #0b6fa8;        /* azul da marca / botões     */
+  --ap-link: #0d4fa3;         /* links no texto             */
+  --ap-green: #006633;        /* verde UnB: itens marcados  */
+  --ap-surface: #f3f6fb;
+  --ap-card: #ffffff;
+  --ap-border: #cfd8ea;
+  --ap-track: #d5dded;
+  --ap-focus: #0a3d91;        /* anel de foco (≥ 3:1 em todos os fundos) */
+  --ap-btn-bg: #0b6fa8;
+  --ap-btn-fg: #ffffff;
+  --ap-hero-top: #e9f7ff;
+  --ap-hero-bottom: #c3e6fa;
+  --ap-hero-title: #0b6fa8;
+  --ap-hero-node: #4fc3f7;
+  --ap-shadow: 0 6px 16px rgb(10 30 60 / 14%);
+}
+
+/* ---------- tokens: modo escuro ---------- */
+[data-md-color-scheme="slate"] {
+  --ap-ink: #eef1fa;
+  --ap-muted: #b9c2d6;
+  --ap-brand: #7cc8f5;
+  --ap-link: #8cbcf7;
+  --ap-green: #5fd39a;
+  --ap-surface: #1c2231;
+  --ap-card: #232a3d;
+  --ap-border: #39425c;
+  --ap-track: #39425c;
+  --ap-focus: #ffd54f;
+  --ap-btn-bg: #8cbcf7;
+  --ap-btn-fg: #0b1a33;
+  --ap-hero-top: #12263d;
+  --ap-hero-bottom: #0d1a2b;
+  --ap-hero-title: #7cc8f5;
+  --ap-shadow: 0 6px 16px rgb(0 0 0 / 40%);
+}
+
+/* ---------- ligação com as variáveis do Material ---------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;           /* fundo do header e das abas */
+  --md-primary-bg-color: var(--ap-ink);     /* texto/ícones do header     */
+  --md-primary-bg-color--light: var(--ap-muted);
+  --md-accent-fg-color: var(--ap-link);
+  --md-typeset-a-color: var(--ap-link);
+  --md-typeset-color: var(--ap-ink);
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0b2a52;
+  --md-accent-fg-color: var(--ap-link);
+  --md-typeset-a-color: var(--ap-link);
+}
+/* rodapé azul-marinho nos dois modos */
+:root {
+  --md-footer-bg-color: #0b2a52;
+  --md-footer-bg-color--dark: #071d3a;
+  --md-footer-fg-color: #ffffff;
+  --md-footer-fg-color--light: #d6e2f5;
+  --md-footer-fg-color--lighter: #b6c6e0;
+}
+
+/* ---------- foco visível (anel duplo: vale em qualquer fundo) ---------- */
+*:focus-visible {
+  outline: 0.19rem solid var(--ap-focus);
+  outline-offset: 0.15rem;
+  box-shadow: 0 0 0 0.19rem var(--ap-card);
+  border-radius: 0.2rem;
+}
+
+/* ---------- cabeçalho e tipografia ---------- */
+.md-header { background: var(--md-primary-fg-color); box-shadow: none; }
+.md-tabs { background: var(--md-primary-fg-color); }
+.md-tabs__link { font-weight: 600; opacity: 0.92; }
+.md-tabs__link--active, .md-tabs__link:hover { opacity: 1; }
+.md-header__button.md-logo img, .md-header__button.md-logo svg { height: 1.7rem; width: auto; }
+.md-header__title { font-weight: 800; }
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs { border-bottom: 1px solid var(--ap-border); }
+[data-md-color-scheme="default"] .md-header__title,
+[data-md-color-scheme="default"] .md-tabs__link--active { color: var(--ap-hero-title); }
+[data-md-color-scheme="default"] .md-search__form { background-color: #eef3fa; }
+[data-md-color-scheme="default"] .md-search__form:hover { background-color: #e1eaf6; }
+
+.md-grid { max-width: 62rem; }
+/* o h1 padrão do Material é cinza claro: escurecido para destacar o título da página */
+.md-typeset h1 { color: var(--ap-ink); font-weight: 800; letter-spacing: -0.02em; }
+.md-typeset h2 { margin-top: 2.4rem; color: var(--ap-ink); font-weight: 700; }
+.md-typeset h3 { color: var(--ap-ink); }
+
+/* link no texto nunca depende só da cor (WCAG 1.4.1) */
+.md-typeset p a, .md-typeset li a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+.md-typeset p a:hover, .md-typeset li a:hover { text-decoration-thickness: 0.14em; }
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+/* sem as margens do tema: o degradê vai de ponta a ponta */
+.md-main__inner:has(.home-hero) { max-width: none; margin: 0; }
+.md-content:has(.home-hero) { max-width: none; }
+.md-content__inner:has(.home-hero) { margin: 0; padding: 0; max-width: none; }
+.md-content__inner:has(.home-hero)::before { display: none; }
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 2rem;
+  min-height: calc(100vh - 6rem);
+  padding: 3rem clamp(1.5rem, 10vw, 12rem);
+  background:
+    radial-gradient(circle at 82% 22%, rgb(79 195 247 / 28%), transparent 42%),
+    linear-gradient(180deg, var(--ap-hero-top), var(--ap-hero-bottom));
+}
+.hero-eyebrow {
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--ap-border);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 55%);
+  color: var(--ap-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .hero-eyebrow { background: rgb(255 255 255 / 6%); }
+.md-typeset .home-hero h1 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.8rem, 6vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ap-hero-title);
+}
+.hero-lead { max-width: 36rem; font-size: 1.1rem; line-height: 1.8; color: var(--ap-ink); }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem; margin-top: 1.8rem; }
+
+.md-typeset .home-button {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--ap-btn-bg);
+  background: var(--ap-btn-bg);
+  color: var(--ap-btn-fg);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.md-typeset .home-button:hover { transform: translateY(-2px); box-shadow: var(--ap-shadow); color: var(--ap-btn-fg); }
+.md-typeset .hero-link { font-weight: 700; color: var(--ap-ink); text-decoration: none; }
+.md-typeset .hero-link:hover { text-decoration: underline; color: var(--ap-ink); }
+
+/* resumo em "pílulas" abaixo dos botões */
+.md-typeset ul.hero-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+.md-typeset ul.hero-chips li {
+  margin: 0;
+  list-style: none;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--ap-border);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 60%);
+  color: var(--ap-ink);
+  font-size: 0.85rem;
+}
+[data-md-color-scheme="slate"] .md-typeset ul.hero-chips li { background: rgb(255 255 255 / 6%); }
+.hero-chips strong { color: var(--ap-hero-title); font-weight: 800; }
+
+.hero-illustration { justify-self: center; width: min(100%, 22rem); color: var(--ap-ink); }
+.hero-illustration svg { display: block; width: 100%; height: auto; animation: ap-float 7s ease-in-out infinite; }
+.hero-illustration .node { fill: var(--ap-hero-node); }
+@keyframes ap-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.6rem); }
+}
+
+/* seções abaixo do hero ficam centralizadas */
+.home-body { max-width: 62rem; margin: 0 auto; padding: 1rem 1.2rem 3rem; }
+.home-body > h2 { margin-top: 3rem; }
+
+/* ---------- cartões "Explore o guia" ---------- */
+.guia-kicker { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ap-muted); }
+
+/* home: 4 eixos lado a lado; o complemento ocupa a linha inteira (sem card órfão) */
+.guia-cards.guia-cards--4 { grid-template-columns: repeat(4, 1fr); }
+.guia-card.is-wide { grid-column: 1 / -1; }
+@media (max-width: 960px) { .guia-cards.guia-cards--4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .guia-cards.guia-cards--4 { grid-template-columns: 1fr; } }
+
+/* ---------- informações acadêmicas ---------- */
+.home-academic { background: var(--ap-surface); border: 1px solid var(--ap-border); border-radius: 0.7rem; padding: 1rem 1.3rem; }
+.academic-grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem 2rem; }
+.academic-grid-2col span { color: var(--ap-muted); }
+
+/* ---------- equipe ---------- */
+.home-team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr)); gap: 1rem; margin-top: 1.2rem; }
+.team-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.25rem;
+  padding: 1.1rem 0.8rem;
+  background: var(--ap-card); border: 1px solid var(--ap-border); border-radius: 0.8rem;
+  color: var(--ap-ink); text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.team-card:hover { transform: translateY(-3px); box-shadow: var(--ap-shadow); }
+.md-typeset .team-card img {
+  width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
+  border: 3px solid var(--ap-green); background: var(--ap-surface);
+  font-size: 0;                 /* se a foto não carregar, não vaza o texto alternativo no círculo */
+}
+.md-typeset .team-card h3 { margin: 0.5rem 0 0; font-size: 0.95rem; color: var(--ap-ink); }
+.team-role { font-size: 0.75rem; font-weight: 700; padding: 0.1rem 0.6rem; border-radius: 999px; background: var(--ap-surface); border: 1px solid var(--ap-border); color: var(--ap-ink); }
+.team-card.is-lead .team-role { background: var(--ap-green); border-color: var(--ap-green); color: #fff; }
+[data-md-color-scheme="slate"] .team-card.is-lead .team-role { color: #07281a; }
+.team-user { font-size: 0.8rem; color: var(--ap-muted); overflow-wrap: anywhere; }
+
+/* ---------- referências ---------- */
+.references-list { display: grid; gap: 0.9rem; margin: 1rem 0; }
+.references-list article { padding: 1rem 1.2rem; background: var(--ap-card); border: 1px solid var(--ap-border); border-left: 5px solid var(--ap-brand); border-radius: 0.6rem; }
+.md-typeset .references-list h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+.references-list p { margin: 0; color: var(--ap-muted); }
+
+/* ==========================================================================
+   Responsivo / movimento
+   ========================================================================== */
+@media (max-width: 760px) {
+  .home-hero { grid-template-columns: 1fr; min-height: 0; padding: 2.2rem 1.2rem 2.6rem; }
+  .hero-illustration { display: none; }
+  .academic-grid-2col { grid-template-columns: 1fr; }
+  .home-team-grid { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
+  .team-card { padding: 0.9rem 0.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+  .hero-illustration svg { animation: none; }
+  .md-typeset .home-button:hover, .guia-card:hover, .team-card:hover { transform: none; }
+}
