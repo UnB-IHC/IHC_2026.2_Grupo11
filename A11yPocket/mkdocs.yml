@@ -12,6 +12,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.footer
@@ -64,13 +65,30 @@ nav:
           - Norma ABNT NBR 17225: documentacao/nbr-17225.md
           - Alinhamento NBR × Guia: documentacao/alinhamento.md
           - WCAG 2.2: documentacao/wcag.md
+      - Ferramentas de teste:
+        - Visão geral: documentacao/ferramentas/index.md
+        - Ferramentas de análise de acessibilidade:
+          - WAVE: documentacao/ferramentas/wave.md
+          - Lighthouse (Google): documentacao/ferramentas/lighthouse.md
+          - Axe DevTools (Deque Systems): documentacao/ferramentas/axe.md
+          - ASES Web (Gov.br): documentacao/ferramentas/ases.md
+        - Leitores de tela:
+          - NVDA: documentacao/ferramentas/nvda.md
+          - VoiceOver (iOS): documentacao/ferramentas/voiceover.md
+          - TalkBack (Android): documentacao/ferramentas/talkback.md
       - Métodos de IHC:
-          - Técnicas de UX/DCU: documentacao/ux-dcu.md
+        - Técnicas de UX/DCU:
+          - Visão geral: documentacao/ux-dcu/index.md
+          - Personas: documentacao/ux-dcu/personas.md
+          - Jornadas do usuário (User Journeys): documentacao/ux-dcu/jornadas.md
+          - Blueprint de serviços (Service Blueprint): documentacao/ux-dcu/blueprint.md
+          - Canvas (UX Canvas / Lean UX Canvas): documentacao/ux-dcu/canvas.md
+          - Design empático: documentacao/ux-dcu/design-empatico.md
       - Avaliações:
           - Avaliação do site: documentacao/avaliacao-site.md
           - Avaliação com usuário: documentacao/avaliacao-usuario.md
       - Referências: referencias.md
-  - Checklist e ferramentas:
+  - Checklist:
       - Introdução: checklist/index.md
       - Visão geral do progresso: checklist/progresso.md
       - Eixos do guia:
@@ -79,5 +97,4 @@ nav:
           - Design: checklist/design.md
           - Conteúdo: checklist/conteudo.md
           - Heurísticas: checklist/heuristicas.md
-          - Ferramentas de teste: ferramentas.md
   - GitHub ↗: https://github.com/UnB-IHC/IHC_2026.2_Grupo11
