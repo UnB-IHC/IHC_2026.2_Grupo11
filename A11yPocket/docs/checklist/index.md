@@ -1,11 +1,11 @@
-# Guia de Acessibilidade
+# Checklist de Acessibilidade
 
-O **Guia de Acessibilidade** do A11yPocket organiza as boas práticas do *Guia de Boas Práticas para Acessibilidade Digital* (Programa de Cooperação Reino Unido-Brasil) em quatro eixos, cada um com um checklist interativo. Os critérios técnicos têm apoio da norma **ABNT NBR 17225:2025**, baseada nas WCAG 2.2.
+O **checklist** do A11yPocket transforma as boas práticas do *Guia de Boas Práticas para Acessibilidade Digital* (Programa de Cooperação Reino Unido-Brasil) em itens que você pode marcar durante o projeto. Os critérios técnicos têm apoio da norma **ABNT NBR 17225:2025**, baseada nas WCAG 2.2.
 
-A premissa do guia é que a acessibilidade deve ser pensada **desde o início**, e não corrigida depois, e que ela é um **processo contínuo** de eliminação de barreiras.
+A premissa é que a acessibilidade deve ser pensada **desde o início**, e não corrigida depois. Quer entender a teoria por trás de cada eixo? Veja a [síntese do guia](../documentacao/guia-uk-brasil.md) na aba Documentação.
 
 !!! info "Como usar"
-    Escolha um eixo abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador.
+    Escolha uma categoria abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador. Para **testar** a interface, use as [ferramentas](../ferramentas.md).
 
 ## Os quatro eixos
 
@@ -30,31 +30,17 @@ A premissa do guia é que a acessibilidade deve ser pensada **desde o início**,
     <span class="guia-meta">11 itens</span>
     <span>Terminologia correta, textos objetivos, descrição de imagens, legendas, audiodescrição, Libras, transcrições, links e hashtags.</span>
   </a>
-</div>
-
-## Complemento: heurísticas de usabilidade
-
-Além dos quatro eixos, o guia traz um checklist de **heurísticas de usabilidade** (as 10 heurísticas de Nielsen), para avaliar se a interface é clara, consistente e tolerante a erros.
-
-<div class="guia-cards">
-  <a class="guia-card" href="heuristicas/">
+    <a class="guia-card" href="heuristicas/">
     <strong>Heurísticas de Usabilidade</strong>
     <span class="guia-meta">30 itens</span>
-    <span>Status do sistema, linguagem, controle do usuário, consistência, prevenção e recuperação de erros, ajuda e documentação.</span>
+    <span>As 10 heurísticas de Nielsen: status do sistema, linguagem, controle do usuário, consistência, prevenção e recuperação de erros, ajuda e documentação.</span>
+  </a>
+  <a class="guia-card" href="../ferramentas/">
+    <span class="guia-kicker">Ferramentas <span class="badge badge-new">Novo</span></span>
+    <strong>Ferramentas de teste</strong>
+    <span>WAVE, Lighthouse, Axe DevTools, ASES Web e leitores de tela (NVDA, VoiceOver, TalkBack), com comparativo e passo a passo.</span>
   </a>
 </div>
 
-## Por que adotar a acessibilidade digital
-
-1. **Exigência legal**.
-2. **Ampliação de mercado e público**.
-3. **Viabilidade técnica**, dada a farta documentação disponível.
-4. **Benefício universal**: o que ajuda pessoas com deficiência costuma ajudar todas as pessoas.
-5. **Valorização profissional** e de propósito no trabalho.
-
-!!! quote "Nada para nós sem nós."
-    Lema que sintetiza a proposta do guia: pessoas com deficiência devem participar das decisões que as afetam.
-
-## Considerações finais
-
-Acessibilidade não é um estado absoluto, mas um processo contínuo de eliminação de barreiras. Por isso, não é possível afirmar categoricamente que um site é “100% acessível”, mesmo com boa avaliação em ferramentas automáticas: o checklist orienta e organiza o trabalho, mas não substitui testes com pessoas usuárias.
+!!! warning "O checklist não substitui testes com pessoas"
+    Acessibilidade é um processo contínuo de eliminação de barreiras. Por isso, não é possível afirmar categoricamente que um site é “100% acessível”, mesmo com boa avaliação em ferramentas automáticas: o checklist orienta e organiza o trabalho, mas não substitui testes com pessoas usuárias.

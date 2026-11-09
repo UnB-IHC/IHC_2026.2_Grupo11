@@ -1,4 +1,4 @@
-site_name: A11yPocket
+site_name: A11yPocket G11
 site_description: Guia prático com checklists interativos e boas práticas de acessibilidade em interfaces web.
 site_url: https://unb-ihc.github.io/IHC_2026.2_Grupo11/
 copyright: © 2026 Grupo 11 — Interação Humano-Computador, UnB
@@ -58,13 +58,26 @@ extra_javascript:
 nav:
   - Início: index.md
   - Documentação:
-      - Guia de Acessibilidade:
-          - Introdução: checklist/index.md
-          - Visão geral do progresso: checklist/progresso.md
+      - Visão geral: documentacao/index.md
+      - Fundamentos de acessibilidade:
+          - Guia UK-Brasil: documentacao/guia-uk-brasil.md
+          - Norma ABNT NBR 17225: documentacao/nbr-17225.md
+          - Alinhamento NBR × Guia: documentacao/alinhamento.md
+          - WCAG 2.2: documentacao/wcag.md
+      - Métodos de IHC:
+          - Técnicas de UX/DCU: documentacao/ux-dcu.md
+      - Avaliações:
+          - Avaliação do site: documentacao/avaliacao-site.md
+          - Avaliação com usuário: documentacao/avaliacao-usuario.md
+      - Referências: referencias.md
+  - Checklist e ferramentas:
+      - Introdução: checklist/index.md
+      - Visão geral do progresso: checklist/progresso.md
+      - Eixos do guia:
           - Gestão de Projetos: checklist/gestao-projetos.md
           - Desenvolvimento e testes: checklist/desenvolvimento.md
           - Design: checklist/design.md
           - Conteúdo: checklist/conteudo.md
           - Heurísticas: checklist/heuristicas.md
-      - Referências: referencias.md
+          - Ferramentas de teste: ferramentas.md
   - GitHub ↗: https://github.com/UnB-IHC/IHC_2026.2_Grupo11
