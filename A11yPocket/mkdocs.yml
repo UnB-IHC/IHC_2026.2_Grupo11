@@ -53,6 +53,7 @@ extra_css:
   - css/extra.css
   - css/guia.css
   - css/avaliacao.css
+  - css/navegacao.css
 
 extra_javascript:
   - js/guia-checklist.js
@@ -78,8 +79,8 @@ nav:
           - VoiceOver (iOS): documentacao/ferramentas/voiceover.md
           - TalkBack (Android): documentacao/ferramentas/talkback.md
       - Métodos de IHC:
+        - Visão geral: documentacao/ux-dcu/index.md
         - Técnicas de UX/DCU:
-          - Visão geral: documentacao/ux-dcu/index.md
           - Personas: documentacao/ux-dcu/personas.md
           - Jornadas do usuário (User Journeys): documentacao/ux-dcu/jornadas.md
           - Blueprint de serviços (Service Blueprint): documentacao/ux-dcu/blueprint.md
@@ -109,5 +110,6 @@ nav:
           - Desenvolvimento e testes: checklist/desenvolvimento.md
           - Design: checklist/design.md
           - Conteúdo: checklist/conteudo.md
+      - Complemento:
           - Heurísticas: checklist/heuristicas.md
   - GitHub ↗: https://github.com/UnB-IHC/IHC_2026.2_Grupo11
