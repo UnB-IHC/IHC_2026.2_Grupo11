@@ -1,6 +1,6 @@
 # Métricas e Score SUS
 
-## 5 Métricas observadas { #metricas }
+## Métricas observadas { #metricas }
 
 <div class="rel-table-wrap" role="region" aria-label="Métricas observadas por cenário (tabela com rolagem horizontal)" tabindex="0">
 <table class="rel-table">
@@ -57,7 +57,7 @@
   </div>
 </dl>
 
-## 6 Score SUS { #sus }
+## Score SUS { #sus }
 
 O questionário *System Usability Scale* (SUS) foi aplicado após as tarefas.
 
@@ -91,7 +91,7 @@ O questionário *System Usability Scale* (SUS) foi aplicado após as tarefas.
 </table>
 </div>
 
-### 6.1 Cálculo final { #calculo }
+### Cálculo final { #calculo }
 
 <div class="rel-formula">
   <p>Score = Soma dos pontos × 2,5</p>
@@ -110,6 +110,6 @@ O questionário *System Usability Scale* (SUS) foi aplicado após as tarefas.
   </div>
 </div>
 
-### 6.2 Análise do resultado { #analise-sus }
+### Análise do resultado { #analise-sus }
 
 Um score de 52,5 classifica a usabilidade deste sistema como Marginal/Abaixo da Média (a média de mercado é 68). A participante marcou notas que demonstram que, embora não precise de ajuda técnica (Q4 = 1), o portal apresenta muita inconsistência (Q6 = 4) e é “pesado/atrapalhado” de usar (Q8 = 4).

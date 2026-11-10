@@ -15,8 +15,6 @@ Foram registrados **11 problemas**. Cada um traz a página ou local, a evidênci
   <li class="lvl-1" style="flex: 1">1 leve</li>
 </ul>
 
-Crítico: **4** · Grave: **1** · Moderado: **5** · Leve: **1**
-
 ## Visão geral
 
 | ID | Problema | Página / local | Severidade | Evidência |

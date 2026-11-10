@@ -18,5 +18,3 @@ Esta é uma síntese do teste. O relatório completo está na página [Avaliaç�
 
 A falha na tarefa de renovação da CNH (T02) está ligada ao problema [P08](problemas.md#p08), também registrado na inspeção: a opção de renovar a CNH não foi encontrada no menu de serviços do Detran Digital.
 
-!!! warning "Limite do teste"
-    O teste contou com um único usuário, o que impede generalizar os resultados.

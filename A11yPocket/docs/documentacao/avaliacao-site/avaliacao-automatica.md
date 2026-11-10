@@ -4,7 +4,7 @@ title: Avaliação automática
 
 # Resultados da avaliação automática
 
-As páginas foram analisadas com o **WAVE** e o **axe DevTools**. Os números abaixo vêm das capturas do [Apêndice B](evidencias-ferramentas.md).
+As páginas foram analisadas com o **WAVE** e o **axe DevTools**. Os números abaixo vêm das capturas do [Anexo B](evidencias-ferramentas.md).
 
 <ul class="rel-stats" aria-label="Destaques da avaliação automática">
   <li class="rel-stat lvl-4"><strong>276</strong><span>erros no WAVE na Página Inicial 2 (E22), pontuação 1,3</span></li>

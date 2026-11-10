@@ -3,24 +3,24 @@
 !!! info "Fonte do anexo"
     Fonte: Roteiro_Teste_Usabilidade_Detran_DF_Tg_IHC_03_ABNT_v3.1. Os cenários e os tempos de referência foram transcritos do roteiro. Ele ainda se identifica como “para validação” e mantém campos de caminhos, respostas e limites finais em aberto. Os caminhos descritos abaixo foram reconstituídos da sessão para documentar o percurso de referência, sem atribuir validação prévia não registrada.
 
-## A.1 Ordem da sessão e orientação { #a1 }
+## Ordem da sessão e orientação { #a1 }
 
 A sessão seguiu esta ordem:
 
 1. Acolhida;
-2. leitura e assinatura do termo;
-3. entrevista inicial;
-4. orientação para pensar em voz alta e aquecimento;
-5. tarefas T01 a T04;
+2. Leitura e assinatura do termo;
+3. Entrevista inicial;
+4. Orientação para pensar em voz alta e aquecimento;
+5. Tarefas T01 a T04;
 6. SUS;
-7. entrevista final;
-8. encerramento.
+7. Entrevista final;
+8. Encerramento.
 
 Duração planejada: 40 a 45 minutos. O cronômetro deve iniciar após a leitura do cenário e parar no critério de sucesso, na desistência ou no limite aplicável.
 
 Ler somente o cenário. Incentivos neutros: “continue falando” e “o que está pensando agora?”. Registrar toda dica de navegação. Uma dica permite “Sucesso com ajuda”; mais de uma, desistência, conclusão incorreta ou limite excedido configuram “Falha”. Nenhuma tarefa deve exigir dados pessoais reais; encerrar antes de sua inserção ou envio.
 
-## A.2 Tempos de referência e limites { #a2 }
+## Tempos de referência e limites { #a2 }
 
 <div class="rel-table-wrap" role="region" aria-label="Tempos de referência e limites por tarefa (tabela com rolagem horizontal)" tabindex="0">
 <table class="rel-table">
@@ -46,7 +46,7 @@ Justificativa prevista: adotar o maior valor entre 2 × a referência e referên
 
 Os 20, 300, 85 e 90 segundos são registros da execução de P1 e não tempos do ensaio. T02 supera inclusive o teto de 160 s. Não há registro do valor final escolhido para cada limite nem da realização e data do ensaio; esses dados não foram completados por suposição.
 
-## A.3 Cenários e critérios por tarefa { #a3 }
+## Cenários e critérios por tarefa { #a3 }
 
 ### T01 — Postos de atendimento { #t01 }
 
@@ -148,7 +148,7 @@ Os 20, 300, 85 e 90 segundos são registros da execução de P1 e não tempos do
   </div>
 </dl>
 
-## A.4 Entrevistas e registro { #a4 }
+## Entrevistas e registro { #a4 }
 
 <dl class="rel-spec">
   <div>

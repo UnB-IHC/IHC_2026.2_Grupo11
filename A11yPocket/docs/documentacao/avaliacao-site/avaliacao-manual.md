@@ -12,7 +12,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
   <li class="rel-stat lvl-4"><strong>12</strong><span>verificações que falham</span></li>
 </ul>
 
-## 6.1 Teclado
+## Teclado
 
 | Verificação | Referência | Resultado | Página | Evidência |
 |-------------|------------|:---------:|--------|-----------|
@@ -22,7 +22,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Foco visível | WCAG 2.4.7 / 2.4.11, Guia DEV-07 | <span class="res res-part">Parcial</span> | Todas | — |
 | Link para pular ao conteúdo | WCAG 2.4.1, Guia DEV-05 | <span class="res res-pass">Passa</span> | Todas | — |
 
-## 6.2 Leitor de tela
+## Leitor de tela
 
 | Verificação | Referência | Resultado | Página | Evidência |
 |-------------|------------|:---------:|--------|-----------|
@@ -32,7 +32,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Landmarks e regiões da página | WCAG 1.3.1, Guia DEV-01 | <span class="res res-fail">Falha</span> | E1, E14, E18, E19, E20, E21 | [Fig. C6](evidencias-manuais.md#fig-c6) |
 | Mensagens dinâmicas anunciadas | WCAG 4.1.3, Guia DEV-10 | <span class="res res-fail">Falha</span> | E1, E18, E21 | [Fig. C7](evidencias-manuais.md#fig-c7) |
 
-## 6.3 Zoom e reflow
+## Zoom e reflow
 
 | Verificação | Referência | Resultado | Página | Evidência |
 |-------------|------------|:---------:|--------|-----------|
@@ -40,7 +40,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Zoom de 400% sem rolagem horizontal | WCAG 1.4.10, Guia DES-01 | <span class="res res-fail">Falha</span> | Todas | [Fig. C9](evidencias-manuais.md#fig-c9) |
 | Espaçamento de texto ajustável | WCAG 1.4.12, Guia DES-05 | <span class="res res-pass">Passa</span> | Todas | — |
 
-## 6.4 Contraste e cor
+## Contraste e cor
 
 | Elemento | Cores (texto / fundo) | Razão medida | Mínimo | Referência | Resultado |
 |----------|-----------------------|:------------:|:------:|------------|:---------:|
@@ -48,13 +48,13 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Texto de cabeçalho | #F44336 / #FFFFFF | 3,61:1 | 3:1 | WCAG 1.4.11, Guia DES-02 | <span class="res res-pass">Passa</span> |
 | Informação só por cor? | Não (acompanhada de texto e ícones) | — | — | WCAG 1.4.1, Guia DES-03 | <span class="res res-pass">Passa</span> |
 
-## 6.5 Áreas de clique
+## Áreas de clique
 
 | Verificação | Referência | Resultado | Página | Evidência |
 |-------------|------------|:---------:|--------|-----------|
 | Alvos com tamanho mínimo e espaçamento (principalmente no celular) | WCAG 2.5.8, Guia DEV-12 | <span class="res res-pass">Passa</span> | Todas | [Fig. C10](evidencias-manuais.md#fig-c10) |
 
-## 6.6 Formulários
+## Formulários
 
 | Verificação | Referência | Resultado | Página | Evidência |
 |-------------|------------|:---------:|--------|-----------|
@@ -64,7 +64,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Autocomplete em dados pessoais | WCAG 1.3.5 | <span class="res res-pass">Passa</span> | E21 | — |
 | Prevenção de erros em ações importantes | WCAG 3.3.4, Guia HU-e1 | <span class="res res-pass">Passa</span> | Todas | — |
 
-## 6.7 Itens do Guia (Tg-01) complementares
+## Itens do Guia (Tg-01) complementares
 
 | Item do Guia | Referência WCAG | Resultado |
 |--------------|-----------------|:---------:|
@@ -78,4 +78,4 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | CON-04 e CON-05: descrição de imagens e ausência de texto embutido em imagens | 1.1.1 e 1.4.5 | <span class="res res-part">Parcial</span> |
 
 !!! info "Como ler os resultados"
-    **Passa**, **Parcial** e **Falha** aparecem sempre com texto e símbolo (✓, ≈, ✕), nunca só com cor. As evidências ficam no [Apêndice C](evidencias-manuais.md).
+    **Passa**, **Parcial** e **Falha** aparecem sempre com texto e símbolo (✓, ≈, ✕), nunca só com cor. As evidências ficam no [Anexo C](evidencias-manuais.md).

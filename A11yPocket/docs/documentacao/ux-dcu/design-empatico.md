@@ -7,4 +7,4 @@ O design empático não é apenas uma ferramenta, mas uma **mentalidade de pesqu
 - **Objetivo:** sentir o contexto real de uso, entender o estresse, o barulho do ambiente e as limitações cognitivas, para criar produtos que resolvam necessidades latentes que nem mesmo o cliente sabia como explicar.
 
 !!! note "Fontes"
-    As referências desta página (BOTES, EDANA, FRESK DIGITAL, GOTHELF e SEIDEN, NORMAN, OUTWITLY, STICKDORN et al., XENONSTACK) estão em [Referências](../referencias.md).
+    As referências desta página (BOTES, EDANA, FRESK DIGITAL, GOTHELF e SEIDEN, NORMAN, OUTWITLY, STICKDORN et al., XENONSTACK) estão em [Referências](../../referencias.md).

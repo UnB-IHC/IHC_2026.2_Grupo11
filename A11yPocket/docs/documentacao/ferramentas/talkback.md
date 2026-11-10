@@ -12,4 +12,4 @@
     5. Anote campos sem nome, botões sem descrição e qualquer ordem de foco confusa.
 
 !!! note "Fontes"
-    As referências de cada ferramenta (APPLE, DEQUE SYSTEMS, GOOGLE, NV ACCESS, WebAIM, entre outras) estão em [Referências](referencias.md).
+    As referências de cada ferramenta (APPLE, DEQUE SYSTEMS, GOOGLE, NV ACCESS, WebAIM, entre outras) estão em [Referências](../../referencias.md).

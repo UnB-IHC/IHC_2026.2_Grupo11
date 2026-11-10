@@ -2,7 +2,7 @@
 
 Para avaliar a qualidade de uso da interface, foi realizado um Teste de Usabilidade baseado no método de Avaliação Empírica com Utilizadores no dia **8 de novembro de 2026**.
 
-## 4.1 Abordagem de teste e coleta de dados { #abordagem }
+## Abordagem de teste e coleta de dados { #abordagem }
 
 A metodologia adotada estruturou-se em duas frentes complementares:
 
@@ -19,14 +19,14 @@ A metodologia adotada estruturou-se em duas frentes complementares:
   </div>
 </div>
 
-## 4.2 Participante { #participante }
+## Participante { #participante }
 
 O teste foi conduzido remotamente via videochamada (com compartilhamento de tela) com uma utilizadora real do sistema, que se encaixa perfeitamente no perfil do público-alvo por acessar ativamente os portais do governo local.
 
 !!! note "Síntese da entrevista inicial (00:25–02:29)"
     P1 usa a internet diariamente e já utiliza o Detran-DF e outros serviços públicos. Acessa por notebook e smartphone, não costuma pedir ajuda e não relata uso de zoom, leitor de tela ou outra configuração de acessibilidade. O perfil detalhado consta na [seção 3](index.md#perfil).
 
-## 4.3 Procedimento e cenários de avaliação { #procedimento }
+## Procedimento e cenários de avaliação { #procedimento }
 
 O teste foi guiado por um roteiro estruturado (v3) com 4 cenários representativos:
 

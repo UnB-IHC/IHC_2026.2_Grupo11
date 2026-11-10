@@ -70,19 +70,19 @@ Detalhes em [Métricas e Score SUS](resultados.md). O SUS é um escore de 0 a 10
   </a>
 </div>
 
-## 1 Introdução { #introducao }
+## Introdução { #introducao }
 
 Este relatório técnico apresenta a avaliação de usabilidade e acessibilidade realizada no Portal do Detran-DF, desenvolvida no âmbito da disciplina de Interação Humano-Computador (IHC) da Universidade de Brasília (UnB), no semestre 2026.2, sob a orientação da Professora Rejane M. C. Figueiredo. O objetivo primordial deste estudo consiste em mapear a experiência de um utilizador real através de testes empíricos baseados em cenários cotidianos de serviços veiculares e de habilitação. Pretende-se, deste modo, articular os conceitos teóricos de IHC identificando barreiras de interface e propondo melhorias estruturais.
 
-## 2 Caracterização do site { #caracterizacao }
+## Caracterização do site { #caracterizacao }
 
 O site oficial do Departamento de Trânsito do Distrito Federal (Detran-DF) é um portal institucional e de prestação de serviços públicos voltado aos cidadãos condutores e proprietários de veículos da região.
 
 A plataforma serve como o principal canal digital para emissão de taxas (como IPVA), consultas de infrações, agendamento de atendimentos presenciais e processos de habilitação (CNH). O portal divide-se entre uma área pública informativa e o “Detran Digital”, uma área restrita para realização de serviços mediante autenticação.
 
-## 3 Perfil de usuário { #perfil }
+## Perfil de usuário { #perfil }
 
-A seleção e a caracterização do perfil do utilizador seguiram os critérios do roteiro de testes [Roteiro_Teste_Usabilidade_Detran_DF_Tg_IHC_03_ABNT_v3](https://docs.google.com/document/u/0/d/1_-41jDTGt5vW_feVFJfzYhxXMuct4U0z7vemd_ixY_k/edit), focando-se em uma cidadã real que utiliza serviços públicos do Distrito Federal:
+A seleção e a caracterização do perfil do utilizador seguiram os critérios do roteiro de testes [Roteiro de Teste Usabilidade DetranDF v3](https://docs.google.com/document/u/0/d/1_-41jDTGt5vW_feVFJfzYhxXMuct4U0z7vemd_ixY_k/edit), focando-se em uma cidadã real que utiliza serviços públicos do Distrito Federal:
 
 <dl class="rel-spec">
   <div>

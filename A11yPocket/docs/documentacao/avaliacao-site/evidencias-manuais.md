@@ -1,8 +1,8 @@
 ---
-title: Apêndice C – Evidências dos problemas
+title: Anexo C – Evidências dos problemas
 ---
 
-# Apêndice C: evidências dos problemas
+# Anexo C: evidências dos problemas
 
 Capturas de tela da avaliação manual (C1 a C13) e dos problemas da [tabela de problemas](problemas.md) (C14 a C23). Clique em uma imagem para abri-la ampliada em outra aba.
 

@@ -5,7 +5,7 @@ O **checklist** do A11yPocket transforma as boas práticas do *Guia de Boas Prá
 A premissa é que a acessibilidade deve ser pensada **desde o início**, e não corrigida depois. Quer entender a teoria por trás de cada eixo? Veja a [síntese do guia](../documentacao/guia-uk-brasil.md) na aba Documentação.
 
 !!! info "Como usar"
-    Escolha uma categoria abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador. Para **testar** a interface, use as [ferramentas](../ferramentas.md).
+    Escolha uma categoria abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador. Para **testar** a interface, use as [ferramentas](../documentacao/ferramentas/).
 
 ## Os quatro eixos
 
@@ -30,15 +30,10 @@ A premissa é que a acessibilidade deve ser pensada **desde o início**, e não 
     <span class="guia-meta">11 itens</span>
     <span>Terminologia correta, textos objetivos, descrição de imagens, legendas, audiodescrição, Libras, transcrições, links e hashtags.</span>
   </a>
-    <a class="guia-card" href="heuristicas/">
+    <a class="guia-card is-wide" href="heuristicas/">
     <strong>Heurísticas de Usabilidade</strong>
     <span class="guia-meta">30 itens</span>
     <span>As 10 heurísticas de Nielsen: status do sistema, linguagem, controle do usuário, consistência, prevenção e recuperação de erros, ajuda e documentação.</span>
-  </a>
-  <a class="guia-card" href="../ferramentas/">
-    <span class="guia-kicker">Ferramentas <span class="badge badge-new">Novo</span></span>
-    <strong>Ferramentas de teste</strong>
-    <span>WAVE, Lighthouse, Axe DevTools, ASES Web e leitores de tela (NVDA, VoiceOver, TalkBack), com comparativo e passo a passo.</span>
   </a>
 </div>
 

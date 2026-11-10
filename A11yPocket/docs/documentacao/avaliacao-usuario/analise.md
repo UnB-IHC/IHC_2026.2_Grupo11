@@ -1,8 +1,8 @@
 # Análise e achados
 
-## 7 Cruzamento de dados: métricas quantitativas vs qualitativas { #cruzamento }
+## Cruzamento de dados: métricas quantitativas vs qualitativas { #cruzamento }
 
-### 7.1 Barreiras encontradas { #barreiras }
+### Barreiras encontradas { #barreiras }
 
 <dl class="rel-spec">
   <div>
@@ -67,14 +67,14 @@
 </table>
 </div>
 
-### 7.2 Crítica ao sistema { #critica }
+### Crítica ao sistema { #critica }
 
 A utilizadora apontou que prefere usar a via online para evitar filas, mas a falta de uma “barra de pesquisa geral” e a navegação dispersa por múltiplos locais dificultam a jornada autônoma do cidadão.
 
 !!! note "Síntese da entrevista final (22:56–28:23)"
     P1 considera a renovação da CNH a tarefa mais difícil, pois esperava suas orientações na área CNH do Detran Digital. Relata clareza das informações quando encontradas, sugere pesquisa geral e maior destaque para serviços e prefere o atendimento online para evitar filas.
 
-## 8 Achados de acessibilidade e UX (baseado nas diretrizes) { #achados }
+## Achados de acessibilidade e UX (baseado nas diretrizes) { #achados }
 
 <dl class="rel-spec">
   <div>

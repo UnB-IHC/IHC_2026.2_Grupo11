@@ -42,21 +42,11 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 ## Avaliações
 
 <div class="guia-cards guia-cards--3">
-  <a class="guia-card" href="avaliacao-site/">
-<<<<<<< HEAD
-    <span class="guia-kicker">Tg-02</span>
-=======
-<<<<<<< HEAD
-    <span class="guia-kicker">Tg-02</span>
-=======
-    <span class="guia-kicker">Tg-02 </span>
->>>>>>> 58a50be2812bc8dfff496a704183352823b4942d
->>>>>>> dev
+  <a class="guia-card" href="../documentacao/avaliacao-site/">
     <strong>Avaliação do site</strong>
     <span>Relatório fundamentado de um site do governo federal ou de uma empresa.</span>
   </a>
-  <a class="guia-card" href="avaliacao-usuario/">
-    <span class="guia-kicker">Tg-03 </span>
+  <a class="guia-card" href="../documentacao/avaliacao-usuario/">
     <strong>Avaliação com usuário</strong>
     <span>Teste de usabilidade com usuário real e entrevista.</span>
   </a>
@@ -66,10 +56,10 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 | Entrega | Onde está no site |
 |---|---|
-| **Tg-01** — Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist e ferramentas](../checklist/index.md) |
-| **Tg-02** — Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](avaliacao-site.md) |
-| **Tg-03** — Teste de usabilidade com usuário real | [Avaliação com usuário](avaliacao-usuario.md) |
-| **Tg-04** — Seminário | Agenda definida em sala pela docente |
+| Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist e ferramentas](../checklist/index.md) |
+| Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](../documentacao/avaliacao-site) |
+| Teste de usabilidade com usuário real | [Avaliação com usuário](../documentacao/avaliacao-usuario) |
+| Seminário | Agenda definida em sala pela docente |
 
 ## O que é novo nesta versão
 

@@ -1,6 +1,6 @@
 # Recomendações e conclusão
 
-## 9 Recomendações e priorização { #recomendacoes }
+## Recomendações e priorização { #recomendacoes }
 
 De acordo com os problemas identificados, propõem-se as seguintes correções urgentes:
 
@@ -27,7 +27,7 @@ De acordo com os problemas identificados, propõem-se as seguintes correções u
   </li>
 </ol>
 
-## 10 Conclusão { #conclusao }
+## Conclusão { #conclusao }
 
 O teste de usabilidade evidenciou que o portal do Detran-DF atende ao propósito de disponibilizar serviços remotamente (evitando filas presenciais), mas impõe altas barreiras de navegação e estabilidade de acesso. O score SUS de 52,5 reflete a inconsistência sistêmica relatada por uma cidadã altamente habituada a serviços online. A constante perda de sessão de login e a arquitetura de informação fragmentada (obrigando o usuário a “caçar” informações básicas de CNH) transformam ações simples em jornadas demoradas. A implementação de uma barra de pesquisa unificada e a estabilização do login único são passos urgentes para adequar a plataforma aos padrões mínimos de acessibilidade e experiência do cidadão.
 
