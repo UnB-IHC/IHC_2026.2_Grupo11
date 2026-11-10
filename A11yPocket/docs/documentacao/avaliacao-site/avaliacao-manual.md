@@ -64,7 +64,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Autocomplete em dados pessoais | WCAG 1.3.5 | <span class="res res-pass">Passa</span> | E21 | — |
 | Prevenção de erros em ações importantes | WCAG 3.3.4, Guia HU-e1 | <span class="res res-pass">Passa</span> | Todas | — |
 
-## Itens do Guia (Tg-01) complementares
+## Itens do Guia complementares
 
 | Item do Guia | Referência WCAG | Resultado |
 |--------------|-----------------|:---------:|
