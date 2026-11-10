@@ -5,7 +5,7 @@ O **checklist** do A11yPocket transforma as boas práticas do *Guia de Boas Prá
 A premissa é que a acessibilidade deve ser pensada **desde o início**, e não corrigida depois. Quer entender a teoria por trás de cada eixo? Veja a [síntese do guia](../documentacao/guia-uk-brasil.md) na aba Documentação.
 
 !!! info "Como usar"
-    Escolha uma categoria abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador. Para **testar** a interface, use as [ferramentas](../documentacao/ferramentas/).
+    Escolha uma categoria abaixo, marque os itens que o seu projeto cumpre e acompanhe o avanço na [Visão geral do progresso](progresso.md). As marcações ficam salvas apenas neste navegador. Para **testar** a interface, use as [ferramentas](../documentacao/ferramentas/index.md).
 
 ## Os quatro eixos
 

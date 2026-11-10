@@ -57,8 +57,8 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 | Entrega | Onde está no site |
 |---|---|
 | Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist e ferramentas](../checklist/index.md) |
-| Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](../documentacao/avaliacao-site) |
-| Teste de usabilidade com usuário real | [Avaliação com usuário](../documentacao/avaliacao-usuario) |
+| Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](avaliacao-site/index.md) |
+| Teste de usabilidade com usuário real | [Avaliação com usuário](avaliacao-usuario/index.md) |
 | Seminário | Agenda definida em sala pela docente |
 
 ## O que é novo nesta versão

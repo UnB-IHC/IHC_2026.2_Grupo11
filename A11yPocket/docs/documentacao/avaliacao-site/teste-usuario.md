@@ -4,7 +4,7 @@ title: Teste com usuário real
 
 # Síntese do teste de usabilidade com usuário real (Tg-03)
 
-Esta é uma síntese do teste. O relatório completo está na página [Avaliação com usuário](../../avaliacao-usuario/).
+Esta é uma síntese do teste. O relatório completo está na página [Avaliação com usuário](../avaliacao-usuario/index.md).
 
 - **Participante:** adulto, 58 anos, uso diário do computador.
 - **Tarefas aplicadas:** Postos de atendimento (T1), Renovação CNH (T2), Agendamento de Atendimento (T3) e Consulta de multas e pontuação (T4).

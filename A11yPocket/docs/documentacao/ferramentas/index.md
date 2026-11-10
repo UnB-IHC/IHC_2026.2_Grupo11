@@ -1,6 +1,6 @@
 # Ferramentas de teste
 
-Ferramentas automáticas **ajudam a encontrar erros**, mas não substituem a avaliação humana: nenhuma delas diz, por exemplo, se a descrição de uma imagem faz sentido. Por isso, esta página reúne as ferramentas de **análise automática** e os **leitores de tela**, com um comparativo e um passo a passo de uso. Use-as junto com o [checklist](../../checklist/).
+Ferramentas automáticas **ajudam a encontrar erros**, mas não substituem a avaliação humana: nenhuma delas diz, por exemplo, se a descrição de uma imagem faz sentido. Por isso, esta página reúne as ferramentas de **análise automática** e os **leitores de tela**, com um comparativo e um passo a passo de uso. Use-as junto com o [checklist](../../checklist/index.md).
 
 ## Comparativo rápido
 

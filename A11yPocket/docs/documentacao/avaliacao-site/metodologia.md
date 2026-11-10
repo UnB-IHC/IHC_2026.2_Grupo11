@@ -20,7 +20,7 @@ title: Metodologia
 | axe DevTools | Violações de WCAG | 4.117.1 |
 | NVDA | Avaliação manual | 2026.3 |
 
-Mais sobre as ferramentas em [Ferramentas de teste](../../../ferramentas/).
+Mais sobre as ferramentas em [Ferramentas de teste](../ferramentas/index.md).
 
 ## Escala de severidade
 
