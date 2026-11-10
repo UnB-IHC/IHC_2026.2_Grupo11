@@ -1,0 +1,152 @@
+/* ==========================================================================
+   A11yPocket — Avaliação do site (Tg-02)
+   Componentes do relatório do Detran-DF. Usa os tokens --ap-* de extra.css
+   (claro/escuro); só as cores de severidade e de resultado são novas.
+   Carregar DEPOIS de extra.css e guia.css.
+   ========================================================================== */
+
+/* ---------- tokens de severidade e resultado (contraste texto/fundo ≥ 7:1) ---------- */
+:root {
+  --rel-crit-fg: #8c0f22;  --rel-crit-bg: #fdeaec;  --rel-crit-bar: #c2253d;
+  --rel-grave-fg: #8a3300; --rel-grave-bg: #ffeedd; --rel-grave-bar: #c4560a;
+  --rel-mod-fg: #5e4700;   --rel-mod-bg: #fff6d1;   --rel-mod-bar: #b88a00;
+  --rel-leve-fg: #0f4f73;  --rel-leve-bg: #e3f1fa;  --rel-leve-bar: #2b7fb0;
+  --rel-pass-fg: #00552b;  --rel-pass-bg: #e0f5ea;  --rel-pass-bar: #1f8a52;
+}
+[data-md-color-scheme="slate"] {
+  --rel-crit-fg: #ffb3bd;  --rel-crit-bg: #4a1a24;  --rel-crit-bar: #ff6b80;
+  --rel-grave-fg: #ffc799; --rel-grave-bg: #47270f; --rel-grave-bar: #ff9a4d;
+  --rel-mod-fg: #ffe38a;   --rel-mod-bg: #413514;   --rel-mod-bar: #ffd54f;
+  --rel-leve-fg: #9fd6f5;  --rel-leve-bg: #14354a;  --rel-leve-bar: #5bb4e8;
+  --rel-pass-fg: #8be8b8;  --rel-pass-bg: #12392a;  --rel-pass-bar: #5fd39a;
+}
+
+/* ---------- selos de severidade e de resultado ----------
+   Nunca só cor: cada selo traz texto e um símbolo de forma distinta. */
+.sev, .res {
+  display: inline-flex; align-items: center; gap: 0.3em;
+  padding: 0.05rem 0.6rem; border-radius: 999px;
+  font-size: 0.74rem; font-weight: 800; line-height: 1.6; white-space: nowrap;
+  border: 1.5px solid currentcolor;
+}
+.sev::before, .res::before { font-weight: 900; }
+.sev.sev-4, .res.res-fail { color: var(--rel-crit-fg);  background: var(--rel-crit-bg); }
+.sev.sev-3                  { color: var(--rel-grave-fg); background: var(--rel-grave-bg); }
+.sev.sev-2, .res.res-part   { color: var(--rel-mod-fg);   background: var(--rel-mod-bg); }
+.sev.sev-1                  { color: var(--rel-leve-fg);  background: var(--rel-leve-bg); }
+.res.res-pass               { color: var(--rel-pass-fg);  background: var(--rel-pass-bg); }
+.sev.sev-4::before { content: "▲"; content: "▲" / ""; }
+.sev.sev-3::before { content: "◆"; content: "◆" / ""; }
+.sev.sev-2::before { content: "●"; content: "●" / ""; }
+.sev.sev-1::before { content: "○"; content: "○" / ""; }
+.res.res-pass::before { content: "✓"; content: "✓" / ""; }
+.res.res-fail::before { content: "✕"; content: "✕" / ""; }
+.res.res-part::before { content: "≈"; content: "≈" / ""; }
+
+/* ---------- números em destaque (resumo) ---------- */
+.md-typeset ul.rel-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 0.8rem;
+  margin: 1.2rem 0 1.6rem; padding: 0; list-style: none;
+}
+.md-typeset .rel-stats li { margin: 0; list-style: none; }
+.rel-stat {
+  display: flex; flex-direction: column; gap: 0.1rem; height: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--ap-card); border: 1px solid var(--ap-border);
+  border-top: 4px solid var(--ap-brand); border-radius: 0.6rem;
+}
+.rel-stat strong { font-size: 2rem; font-weight: 900; line-height: 1.1; color: var(--ap-ink); }
+.rel-stat span { font-size: 0.82rem; color: var(--ap-muted); }
+.rel-stat.lvl-4 { border-top-color: var(--rel-crit-bar); }
+.rel-stat.lvl-3 { border-top-color: var(--rel-grave-bar); }
+.rel-stat.lvl-2 { border-top-color: var(--rel-mod-bar); }
+.rel-stat.lvl-1 { border-top-color: var(--rel-leve-bar); }
+
+/* ---------- barra de distribuição por severidade ---------- */
+.md-typeset ul.rel-sevbar { display: flex; gap: 3px; margin: 0.6rem 0 0.4rem; padding: 0; list-style: none; border-radius: 0.5rem; overflow: hidden; }
+.md-typeset .rel-sevbar li { margin: 0; list-style: none; padding: 0.45rem 0.6rem; min-width: 3.2rem; font-size: 0.8rem; font-weight: 800; }
+.rel-sevbar .lvl-4 { background: var(--rel-crit-bg);  color: var(--rel-crit-fg);  box-shadow: inset 0 -5px 0 var(--rel-crit-bar); }
+.rel-sevbar .lvl-3 { background: var(--rel-grave-bg); color: var(--rel-grave-fg); box-shadow: inset 0 -5px 0 var(--rel-grave-bar); }
+.rel-sevbar .lvl-2 { background: var(--rel-mod-bg);   color: var(--rel-mod-fg);   box-shadow: inset 0 -5px 0 var(--rel-mod-bar); }
+.rel-sevbar .lvl-1 { background: var(--rel-leve-bg);  color: var(--rel-leve-fg);  box-shadow: inset 0 -5px 0 var(--rel-leve-bar); }
+
+/* ---------- ficha do relatório ---------- */
+.rel-ficha { margin: 1rem 0 1.4rem; }
+.rel-ficha .academic-grid-2col .is-wide { grid-column: 1 / -1; }
+.md-typeset ul.rel-team { columns: 2; column-gap: 2rem; margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.md-typeset .rel-team li { margin: 0 0 0.25rem; break-inside: avoid; }
+
+/* ---------- tabelas do relatório ---------- */
+.md-typeset table:not([class]) { font-size: 0.78rem; }
+.md-typeset table:not([class]) th { white-space: nowrap; }
+.md-typeset .rel-num td, .md-typeset .rel-num th { text-align: right; }
+.md-typeset table:not([class]) td:first-child { font-weight: 600; }
+.md-typeset table:not([class]) tbody tr:has(.sev-4) td:first-child { box-shadow: inset 4px 0 0 var(--rel-crit-bar); }
+.md-typeset table:not([class]) tbody tr:has(.sev-3) td:first-child { box-shadow: inset 4px 0 0 var(--rel-grave-bar); }
+.md-typeset table:not([class]) tbody tr:has(.sev-2) td:first-child { box-shadow: inset 4px 0 0 var(--rel-mod-bar); }
+.md-typeset table:not([class]) tbody tr:has(.sev-1) td:first-child { box-shadow: inset 4px 0 0 var(--rel-leve-bar); }
+.rel-tag { display: inline-block; padding: 0 0.45rem; border: 1px solid var(--ap-border); border-radius: 0.3rem; background: var(--ap-surface); font-size: 0.78em; font-weight: 700; }
+.md-typeset a.rel-tag { text-decoration: none; }
+.md-typeset a.rel-tag:hover { border-color: var(--ap-link); }
+
+/* ---------- fichas dos problemas ---------- */
+.prob-card {
+  margin: 0.6rem 0 1.6rem; padding: 1rem 1.2rem 1.1rem;
+  background: var(--ap-card); border: 1px solid var(--ap-border);
+  border-left: 6px solid var(--ap-brand); border-radius: 0.6rem;
+}
+.prob-card.lvl-4 { border-left-color: var(--rel-crit-bar); }
+.prob-card.lvl-3 { border-left-color: var(--rel-grave-bar); }
+.prob-card.lvl-2 { border-left-color: var(--rel-mod-bar); }
+.prob-card.lvl-1 { border-left-color: var(--rel-leve-bar); }
+.prob-card > p:first-child { margin-top: 0; }
+.prob-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.7rem 1.4rem; margin: 0.8rem 0; }
+.prob-grid p { margin: 0; font-size: 0.85rem; }
+.prob-label { display: block; margin-bottom: 0.1rem; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ap-muted); }
+.prob-rec { margin: 0.8rem 0 0; padding: 0.7rem 0.9rem; background: var(--ap-surface); border-radius: 0.4rem; font-size: 0.88rem; }
+.prob-rec p { margin: 0; }
+
+/* ---------- heurísticas ---------- */
+.heur-list { display: grid; gap: 0.9rem; margin: 1rem 0; }
+.heur {
+  padding: 0.9rem 1.1rem; background: var(--ap-card);
+  border: 1px solid var(--ap-border); border-left: 5px solid var(--ap-brand); border-radius: 0.6rem;
+}
+.heur.r-pass { border-left-color: var(--rel-pass-bar); }
+.heur.r-part { border-left-color: var(--rel-mod-bar); }
+.heur.r-fail { border-left-color: var(--rel-crit-bar); }
+.heur-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; }
+.heur-head p { margin: 0; font-weight: 700; }
+.heur-head .res { flex: none; }
+.heur > p { margin: 0.5rem 0 0; font-size: 0.9rem; }
+.heur .heur-probs { color: var(--ap-muted); font-size: 0.82rem; }
+
+/* ---------- prioridades (recomendações) ---------- */
+.prio { display: grid; gap: 0.9rem; margin: 1rem 0; }
+.prio-lane { padding: 0.9rem 1.1rem; background: var(--ap-card); border: 1px solid var(--ap-border); border-left: 5px solid var(--ap-brand); border-radius: 0.6rem; }
+.prio-lane.lvl-4 { border-left-color: var(--rel-crit-bar); }
+.prio-lane.lvl-2 { border-left-color: var(--rel-mod-bar); }
+.prio-lane.lvl-1 { border-left-color: var(--rel-leve-bar); }
+.prio-lane > p { margin: 0.2rem 0 0; font-size: 0.9rem; }
+.prio-lane .prio-title { margin: 0; font-weight: 800; }
+.prio-lane .prio-ids { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
+
+/* ---------- evidências (figuras) ---------- */
+.rel-figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.rel-fig { margin: 0; padding: 0.6rem; background: var(--ap-card); border: 1px solid var(--ap-border); border-radius: 0.6rem; scroll-margin-top: 5rem; }
+.rel-fig a { display: block; }
+.rel-fig img { display: block; width: 100%; height: auto; border-radius: 0.3rem; border: 1px solid var(--ap-border); background: var(--ap-surface); }
+.rel-fig figcaption { margin: 0.5rem 0.1rem 0; font-size: 0.8rem; line-height: 1.45; color: var(--ap-muted); }
+.rel-fig figcaption strong { color: var(--ap-ink); }
+.rel-fig:target { outline: 0.19rem solid var(--ap-focus); outline-offset: 0.15rem; }
+/* figuras isoladas dentro das fichas (imagens pequenas não são ampliadas) */
+.prob-fig { margin: 0.9rem 0 0; }
+.prob-fig img { display: block; width: auto; max-width: 100%; height: auto; border: 1px solid var(--ap-border); border-radius: 0.3rem; }
+.prob-fig figcaption { margin-top: 0.4rem; font-size: 0.8rem; color: var(--ap-muted); }
+
+/* ---------- responsivo ---------- */
+@media (max-width: 760px) {
+  .md-typeset ul.rel-team { columns: 1; }
+  .prob-card { padding: 0.9rem 0.9rem 1rem; }
+  .md-typeset ul.rel-sevbar { flex-wrap: wrap; }
+}

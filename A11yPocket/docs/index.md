@@ -138,12 +138,12 @@ hide:
     <span>Personas, jornadas, blueprint, canvas e design empático.</span>
   </a>
   <a class="guia-card" href="documentacao/avaliacao-site/">
-    <span class="guia-kicker">Tg-02 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-02 </span>
     <strong>Avaliação do site</strong>
     <span>Relatório fundamentado de um site do governo ou de uma empresa.</span>
   </a>
   <a class="guia-card" href="documentacao/avaliacao-usuario/">
-    <span class="guia-kicker">Tg-03 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-03 </span>
     <strong>Avaliação com usuário</strong>
     <span>Teste de usabilidade com usuário real e entrevista.</span>
   </a>
