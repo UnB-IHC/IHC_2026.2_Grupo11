@@ -1,0 +1,3485 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guia prático com checklists interativos e boas práticas de acessibilidade em interfaces web.">
+      
+      
+      
+        <link rel="canonical" href="https://unb-ihc.github.io/IHC_2026.2_Grupo11/documentacao/avaliacao-site/problemas/">
+      
+      
+        <link rel="prev" href="../heuristicas/">
+      
+      
+        <link rel="next" href="../teste-usuario/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Tabela de problemas - A11yPocket G11</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/guia.css">
+    
+      <link rel="stylesheet" href="../../../css/relatorio.css">
+    
+      <link rel="stylesheet" href="../../../css/avaliacao.css">
+    
+      <link rel="stylesheet" href="../../../css/navegacao.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tabela-de-problemas" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="A11yPocket G11" class="md-header__button md-logo" aria-label="A11yPocket G11" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            A11yPocket G11
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tabela de problemas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Ativar modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ativar modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Ativar modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Ativar modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Documentação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../checklist/" class="md-tabs__link">
+          
+  
+  
+  Checklist
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/UnB-IHC/IHC_2026.2_Grupo11" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GitHub ↗
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="A11yPocket G11" class="md-nav__button md-logo" aria-label="A11yPocket G11" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    A11yPocket G11
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos de acessibilidade
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentos de acessibilidade
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-uk-brasil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia UK-Brasil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nbr-17225/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Norma ABNT NBR 17225
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alinhamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alinhamento NBR × Guia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wcag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WCAG 2.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramentas de teste
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ferramentas de teste
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramentas de análise de acessibilidade
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ferramentas de análise de acessibilidade
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/wave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WAVE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/lighthouse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lighthouse (Google)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/axe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Axe DevTools (Deque Systems)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/ases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASES Web (Gov.br)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leitores de tela
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Leitores de tela
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/nvda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NVDA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/voiceover/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VoiceOver (iOS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ferramentas/talkback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TalkBack (Android)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métodos de IHC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Métodos de IHC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Técnicas de UX/DCU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Técnicas de UX/DCU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/jornadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornadas do usuário (User Journeys)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blueprint de serviços (Service Blueprint)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas (UX Canvas / Lean UX Canvas)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ux-dcu/design-empatico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design empático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliações
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliações
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1" id="__nav_2_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação do site
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliação do site
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../escopo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escopo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avaliacao-automatica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação automática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avaliacao-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabela de problemas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabela de problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-por-severidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo por severidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P01 · Contraste insuficiente nos serviços mais acessados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P02 · Imagens de aplicativos sem texto alternativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P03 · Campo de formulário sem rótulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P04 · Botões sem nome acessível
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P05 · Possível loop de autenticação com o gov.br
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P06 · Inconsistência visual entre o portal e o Detran Digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P07 · Mensagens de erro genéricas em formulários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P08 · Renovação de CNH difícil de encontrar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P09 · Logoff sem confirmação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P10 · FAQ ausente ou pouco visível no portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P11 · Transferência de veículo sem opção de desfazer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teste-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste com usuário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recomendacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recomendações e conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evidencias-ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apêndice B – Prints das ferramentas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evidencias-manuais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apêndice C – Evidências dos problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências do relatório
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação com usuário
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avaliação com usuário
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas e Score SUS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Análise e achados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/recomendacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recomendações e conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/anexo-a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo A — Roteiro do teste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../avaliacao-usuario/anexo-b/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo B — Termo de consentimento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Checklist
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/progresso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral do progresso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eixos do guia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Eixos do guia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/gestao-projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/desenvolvimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento e testes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complemento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Complemento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklist/heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/UnB-IHC/IHC_2026.2_Grupo11" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub ↗
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-por-severidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo por severidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P01 · Contraste insuficiente nos serviços mais acessados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P02 · Imagens de aplicativos sem texto alternativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P03 · Campo de formulário sem rótulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P04 · Botões sem nome acessível
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P05 · Possível loop de autenticação com o gov.br
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P06 · Inconsistência visual entre o portal e o Detran Digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P07 · Mensagens de erro genéricas em formulários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P08 · Renovação de CNH difícil de encontrar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P09 · Logoff sem confirmação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P10 · FAQ ausente ou pouco visível no portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P11 · Transferência de veículo sem opção de desfazer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegação" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Início
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Documentação
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Avaliações
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Avaliação do site
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tabela-de-problemas">Tabela de problemas</h1>
+<p>Foram registrados <strong>11 problemas</strong>. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em <a href="../metodologia/#escala-de-severidade">Metodologia</a>.</p>
+<h2 id="resumo-por-severidade">Resumo por severidade</h2>
+<ul class="rel-sevbar" aria-label="Distribuição dos problemas por severidade">
+  <li class="lvl-4" style="flex: 4">4 críticos</li>
+  <li class="lvl-3" style="flex: 1">1 grave</li>
+  <li class="lvl-2" style="flex: 5">5 moderados</li>
+  <li class="lvl-1" style="flex: 1">1 leve</li>
+</ul>
+
+<p>Crítico: <strong>4</strong> · Grave: <strong>1</strong> · Moderado: <strong>5</strong> · Leve: <strong>1</strong></p>
+<h2 id="visao-geral">Visão geral</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Problema</th>
+<th>Página / local</th>
+<th style="text-align: center;">Severidade</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#p01">P01</a></td>
+<td>Contraste insuficiente nos serviços mais acessados</td>
+<td>E1 – Página Inicial</td>
+<td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
+<td><a href="../evidencias-manuais/#fig-c14">Fig. C14</a></td>
+</tr>
+<tr>
+<td><a href="#p02">P02</a></td>
+<td>Imagens de aplicativos sem texto alternativo</td>
+<td>E1 – Página Inicial</td>
+<td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
+<td><a href="../evidencias-manuais/#fig-c15">Fig. C15</a></td>
+</tr>
+<tr>
+<td><a href="#p03">P03</a></td>
+<td>Campo de formulário sem rótulo</td>
+<td>E1 – Página Inicial</td>
+<td style="text-align: center;"><span class="sev sev-3">Grave</span></td>
+<td><a href="../evidencias-manuais/#fig-c16">Fig. C16</a></td>
+</tr>
+<tr>
+<td><a href="#p04">P04</a></td>
+<td>Botões sem nome acessível</td>
+<td>E1 – Página Inicial</td>
+<td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
+<td><a href="../evidencias-manuais/#fig-c17">Fig. C17</a></td>
+</tr>
+<tr>
+<td><a href="#p05">P05</a></td>
+<td>Possível loop de autenticação com o gov.br</td>
+<td>E21 – Página de Login do Detran Digital</td>
+<td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
+<td><a href="../evidencias-manuais/#fig-c18">Fig. C18</a></td>
+</tr>
+<tr>
+<td><a href="#p06">P06</a></td>
+<td>Inconsistência visual entre o portal e o Detran Digital</td>
+<td>E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital)</td>
+<td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
+<td><a href="../evidencias-manuais/#fig-c19">Fig. C19</a>, <a href="../evidencias-manuais/#fig-c20">Fig. C20</a></td>
+</tr>
+<tr>
+<td><a href="#p07">P07</a></td>
+<td>Mensagens de erro genéricas em formulários</td>
+<td>E7 – Página de Transferência de Veículo no Detran Digital</td>
+<td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
+<td><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></td>
+</tr>
+<tr>
+<td><a href="#p08">P08</a></td>
+<td>Renovação de CNH difícil de encontrar</td>
+<td>E1 – Página Principal do Detran Digital</td>
+<td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
+<td>—</td>
+</tr>
+<tr>
+<td><a href="#p09">P09</a></td>
+<td>Logoff sem confirmação</td>
+<td>E1 – Página Inicial do Detran Digital</td>
+<td style="text-align: center;"><span class="sev sev-1">Leve</span></td>
+<td><a href="../evidencias-manuais/#fig-c22">Fig. C22</a></td>
+</tr>
+<tr>
+<td><a href="#p10">P10</a></td>
+<td>FAQ ausente ou pouco visível no portal</td>
+<td>E22 – Página Inicial do Detran-DF</td>
+<td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
+<td><a href="../evidencias-manuais/#fig-c23">Fig. C23</a></td>
+</tr>
+<tr>
+<td><a href="#p11">P11</a></td>
+<td>Transferência de veículo sem opção de desfazer</td>
+<td>E7 – Página de Transferência de Veículo</td>
+<td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
+<td><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detalhamento">Detalhamento</h2>
+<h3 id="p01">P01 · Contraste insuficiente nos serviços mais acessados</h3>
+<div class="prob-card lvl-2">
+<p><span class="sev sev-2">Moderado</span></p>
+<p>Os textos descritivos da seção “serviços mais acessados” apresentam contraste insuficiente em relação à cor de fundo.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Inicial</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.4.3, Guia DES-02 (contraste mínimo) e HU-h2</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c14">Fig. C14</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Alterar a cor do texto para um tom mais contrastante com o fundo, de preferência um tom mais escuro.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c14.webp" rel="noopener" target="_blank"><img alt="Cartões de serviços da Página Inicial com o texto descritivo em cinza claro sobre fundo branco, de baixo contraste." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c14.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C14</strong> · Evidência de P01. <a href="../evidencias-manuais/#fig-c14">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p02">P02 · Imagens de aplicativos sem texto alternativo</h3>
+<div class="prob-card lvl-4">
+<p><span class="sev sev-4">Crítico</span></p>
+<p>Imagens que levam à plataforma de aplicativos mobile não possuem opção de texto alternativo.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Inicial</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.1.1, WCAG 2.4.4, Guia DEV-02 e CON-12</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c15">Fig. C15</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Inserir texto alternativo (<code>alt</code>) na imagem que descreva claramente o destino ou a ação do link (ex.: <code>alt="Acessar serviços de Habilitação"</code>), e não apenas o que a imagem é.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c15.webp" rel="noopener" target="_blank"><img alt="Botões de download da App Store e do Google Play na Página Inicial, cada um acompanhado de um ícone de imagem sem texto alternativo." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c15.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C15</strong> · Evidência de P02. <a href="../evidencias-manuais/#fig-c15">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p03">P03 · Campo de formulário sem rótulo</h3>
+<div class="prob-card lvl-3">
+<p><span class="sev sev-3">Grave</span></p>
+<p>Campo de formulário (como o de busca ou login) não possui um rótulo associado.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Inicial</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.3.1 (Informações e Relações), WCAG 3.3.2 (Rótulos ou Instruções), Guia DEV-14</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c16">Fig. C16</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Associar um elemento <code>&lt;label&gt;</code> válido ao campo <code>&lt;input&gt;</code> através dos atributos <code>for</code> e <code>id</code>, ou utilizar <code>aria-label</code> caso o layout não permita um rótulo visual.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c16.webp" rel="noopener" target="_blank"><img alt="Campo de mensagem do assistente virtual (“Digite uma mensagem”) sem rótulo associado." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c16.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C16</strong> · Evidência de P03. <a href="../evidencias-manuais/#fig-c16">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p04">P04 · Botões sem nome acessível</h3>
+<div class="prob-card lvl-4">
+<p><span class="sev sev-4">Crítico</span></p>
+<p>Botões não possuem texto explicativo de suas funções.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Inicial</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 4.1.2 (link para as redes sociais), Guia DEV-11 e DEV-01</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c17">Fig. C17</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Adicionar texto descritivo no interior da tag <code>&lt;button&gt;</code>. Se o botão utilizar apenas um ícone visual, deve-se adicionar o atributo <code>aria-label="[Ação do botão]"</code>.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c17.webp" rel="noopener" target="_blank"><img alt="Ícones de redes sociais (Facebook, X, LinkedIn) acompanhados de ícones de imagem sem nome acessível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c17.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C17</strong> · Evidência de P04. <a href="../evidencias-manuais/#fig-c17">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p05">P05 · Possível loop de autenticação com o gov.br</h3>
+<div class="prob-card lvl-4">
+<p><span class="sev sev-4">Crítico</span></p>
+<p>Possibilidade de loop de autenticação em relação à integração gov.br no Detran Digital.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E21 – Página de Login do Detran Digital</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 4.1.3 (Mensagens de Status, AA), Guia DEV-10 e HU-a1</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c18">Fig. C18</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Resolver os problemas de integração da plataforma gov.br com o Detran Digital.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c18.webp" rel="noopener" target="_blank"><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c18.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C18</strong> · Evidência de P05. <a href="../evidencias-manuais/#fig-c18">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p06">P06 · Inconsistência visual entre o portal e o Detran Digital</h3>
+<div class="prob-card lvl-2">
+<p><span class="sev sev-2">Moderado</span></p>
+<p>Inconsistência visual entre o site principal do Detran-DF e o Detran Digital.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital)</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 3.2.3 (Navegação Consistente, AA), Guia DES-06, HU-d1 e HU-d3</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c19">Fig. C19</a>, <a href="../evidencias-manuais/#fig-c20">Fig. C20</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Integrar as características visuais das duas páginas a fim de encontrar uma solução visual consistente e lógica.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c19.webp" rel="noopener" target="_blank"><img alt="Página inicial do Detran Digital, com layout diferente do portal público." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c19.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C19</strong> · Evidência de P06. <a href="../evidencias-manuais/#fig-c19">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c20.webp" rel="noopener" target="_blank"><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c20.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C20</strong> · Evidência de P06. <a href="../evidencias-manuais/#fig-c20">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p07">P07 · Mensagens de erro genéricas em formulários</h3>
+<div class="prob-card lvl-2">
+<p><span class="sev sev-2">Moderado</span></p>
+<p>Alguns formulários não indicam causas de erro de preenchimento e retornam mensagens genéricas de erro.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E7 – Página de Transferência de Veículo no Detran Digital</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 3.3.1 (Identificação do Erro, A), Guia DEV-16, HU-i1 e HU-i3</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Adicionar textos auxiliares de explicações de erros de preenchimento nos campos de formulários com esse problema.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c21.webp" rel="noopener" target="_blank"><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C21</strong> · Evidência de P07. <a href="../evidencias-manuais/#fig-c21">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p08">P08 · Renovação de CNH difícil de encontrar</h3>
+<div class="prob-card lvl-4">
+<p><span class="sev sev-4">Crítico</span></p>
+<p>Ao pesquisar como renovar a CNH no Detran Digital, encontra-se uma ata informando que a renovação é efetuada diretamente pelo portal, porém a opção não foi encontrada.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Principal do Detran Digital</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 2.4.5 (Várias Formas, AA), Guia HU-d3</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span>O relatório não traz figura para este item. Veja o teste T02 na <a href="../teste-usuario/">seção 9</a>.</p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Deixar a opção bem explícita no menu de serviços do Detran Digital.</p>
+</div>
+</div>
+<h3 id="p09">P09 · Logoff sem confirmação</h3>
+<div class="prob-card lvl-1">
+<p><span class="sev sev-1">Leve</span></p>
+<p>A opção de Logoff na plataforma do Detran Digital não exige confirmação do usuário.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1 – Página Inicial do Detran Digital</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>Guia HU-e1</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c22">Fig. C22</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Inserir uma mensagem de confirmação na operação de logoff.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c22.webp" rel="noopener" target="_blank"><img alt="Menu do usuário do Detran Digital com a opção “Logoff” sem confirmação." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c22.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C22</strong> · Evidência de P09. <a href="../evidencias-manuais/#fig-c22">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p10">P10 · FAQ ausente ou pouco visível no portal</h3>
+<div class="prob-card lvl-2">
+<p><span class="sev sev-2">Moderado</span></p>
+<p>O Portal não possui uma aba de FAQ ou Perguntas Frequentes clara e de fácil acesso.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E22 – Página Inicial do Detran-DF</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>Guia HU-j1</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c23">Fig. C23</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Se houver uma seção correspondente, deixá-la visível e devidamente contrastada em todas as páginas associadas.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c23.webp" rel="noopener" target="_blank"><img alt="Página inicial do portal do Detran-DF, sem seção de perguntas frequentes visível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c23.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C23</strong> · Evidência de P10. <a href="../evidencias-manuais/#fig-c23">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p11">P11 · Transferência de veículo sem opção de desfazer</h3>
+<div class="prob-card lvl-2">
+<p><span class="sev sev-2">Moderado</span></p>
+<p>A Transferência de Veículo não tem um recurso claro de “Desfazer” ou de cancelar a operação.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E7 – Página de Transferência de Veículo</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>HU-c1</p>
+</div>
+<div>
+<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Oferecer opção de desfazer ou cancelar a solicitação, com confirmação do resultado.</p>
+</div>
+<figure class="prob-fig">
+<p><a href="../../../assets/images/avaliacao-detran/fig-c21.webp" rel="noopener" target="_blank"><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></a></p>
+<figcaption>
+<p><strong>Fig. C21</strong> · Evidência de P07. <a href="../evidencias-manuais/#fig-c21">Ver no Apêndice C</a>.</p>
+</figcaption>
+</figure>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../heuristicas/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Heurísticas de Nielsen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Heurísticas de Nielsen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../teste-usuario/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Teste com usuário">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Teste com usuário
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Grupo 11 — Interação Humano-Computador, UnB
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../../js/guia-checklist.js"></script>
+      
+    
+  </body>
+</html>
