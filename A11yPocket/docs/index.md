@@ -15,7 +15,7 @@ hide:
     </p>
     <div class="hero-actions">
       <a class="home-button primary" href="documentacao/">Documentação →</a>
-      <a class="home-button secondary" href="checklist/">Checklist e ferramentas</a>
+      <a class="home-button secondary" href="checklist/">Checklist</a>
       <a class="hero-link" href="https://github.com/UnB-IHC/IHC_2026.2_Grupo11" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
     <ul class="hero-chips" aria-label="Resumo do guia">
@@ -44,7 +44,20 @@ hide:
 
 <p>O <strong>A11yPocket</strong> reúne, em um só lugar, o <strong>conteúdo de IHC</strong> que embasa o projeto e um <strong>checklist de acessibilidade digital</strong> (75 itens em 5 categorias, com progresso salvo no seu navegador). A base é a norma <strong>ABNT NBR 17225:2025</strong>, as <strong>WCAG 2.2</strong> e o <strong>Guia de Boas Práticas para Acessibilidade Digital</strong> (Programa de Cooperação Reino Unido-Brasil).</p>
 
-<p>O site tem duas partes: a <a href="documentacao/">Documentação</a>, com a teoria e os relatórios de avaliação, e o <a href="checklist/">Checklist e ferramentas</a>, para aplicar e testar na prática.</p>
+<p>O site tem duas partes: a <a href="documentacao/">Documentação</a>, com a teoria e os relatórios de avaliação, e o <a href="checklist/">Checklist</a>, para aplicar e testar na prática.</p>
+
+<h2>Informações acadêmicas</h2>
+
+<div class="home-academic">
+  <div class="academic-grid-2col">
+    <div><span>Instituição: </span><strong>Universidade de Brasília (UnB)</strong></div>
+    <div><span>Curso: </span><strong>Engenharia de Software</strong></div>
+    <div><span>Disciplina: </span><strong>Interação Humano-Computador</strong></div>
+    <div><span>Docente: </span><strong>Prof.ª Rejane Figueiredo</strong></div>
+    <div><span>Semestre: </span><strong>2026.2</strong></div>
+    <div><span>Equipe: </span><strong>Grupo 11</strong></div>
+  </div>
+</div>
 
 <h2>Equipe</h2>
 
@@ -125,20 +138,29 @@ hide:
     <span>Personas, jornadas, blueprint, canvas e design empático.</span>
   </a>
   <a class="guia-card" href="documentacao/avaliacao-site/">
-    <span class="guia-kicker">Tg-02 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-02 </span>
     <strong>Avaliação do site</strong>
     <span>Relatório fundamentado de um site do governo ou de uma empresa.</span>
   </a>
   <a class="guia-card" href="documentacao/avaliacao-usuario/">
-    <span class="guia-kicker">Tg-03 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-03 </span>
     <strong>Avaliação com usuário</strong>
     <span>Teste de usabilidade com usuário real e entrevista.</span>
   </a>
 </div>
 
-<h2>Checklist e ferramentas</h2>
+<h2>Checklist</h2>
 
 <p>Escolha uma categoria, marque o que o seu projeto já cumpre e acompanhe o avanço. As marcações ficam salvas apenas neste navegador.</p>
+
+<div class="guia-panel">
+  <div class="guia-panel-head">
+    <strong>Seu progresso geral</strong>
+    <span id="global-progress-text" class="guia-stats">0 de 75 itens (0%)</span>
+  </div>
+  <progress id="global-progress" value="0" max="75" aria-label="Progresso geral do guia"></progress>
+  <p id="checklist-feedback" class="guia-feedback" aria-live="polite">Nenhum item marcado ainda. Escolha uma categoria para começar.</p>
+</div>
 
 <div class="guia-cards guia-cards--4">
   <a class="guia-card" href="checklist/gestao-projetos/">
@@ -178,15 +200,6 @@ hide:
   </a>
 </div>
 
-<div class="guia-panel">
-  <div class="guia-panel-head">
-    <strong>Seu progresso geral</strong>
-    <span id="global-progress-text" class="guia-stats">0 de 75 itens (0%)</span>
-  </div>
-  <progress id="global-progress" value="0" max="75" aria-label="Progresso geral do guia"></progress>
-  <p id="checklist-feedback" class="guia-feedback" aria-live="polite">Nenhum item marcado ainda. Escolha uma categoria para começar.</p>
-</div>
-
 <h2 id="ferramentas-e-tecnicas">Ferramentas e técnicas utilizadas</h2>
 
 <p>Este projeto usa <strong>ferramentas de software</strong> e <strong>técnicas de UX/DCU</strong>, que fazem parte do conteúdo da disciplina de IHC. Cada nome abaixo leva ao detalhamento correspondente.</p>
@@ -195,13 +208,13 @@ hide:
   <section aria-labelledby="tg-ferramentas">
     <h3 id="tg-ferramentas">Ferramentas de software</h3>
     <ul class="tool-links">
-      <li><a href="ferramentas/#wave">WAVE</a><span>análise visual sobre o próprio layout</span></li>
-      <li><a href="ferramentas/#lighthouse">Lighthouse</a><span>auditoria com nota de 0 a 100</span></li>
-      <li><a href="ferramentas/#axe-devtools">Axe DevTools</a><span>análise automática e testes guiados</span></li>
-      <li><a href="ferramentas/#ases-web">ASES Web</a><span>avaliador oficial do Governo Federal (eMAG)</span></li>
-      <li><a href="ferramentas/#nvda">NVDA</a><span>leitor de tela para Windows</span></li>
-      <li><a href="ferramentas/#voiceover">VoiceOver</a><span>leitor de tela da Apple</span></li>
-      <li><a href="ferramentas/#talkback">TalkBack</a><span>leitor de tela do Android</span></li>
+      <li><a href="documentacao/ferramentas/#wave">WAVE</a><span>análise visual sobre o próprio layout</span></li>
+      <li><a href="documentacao/ferramentas/#lighthouse">Lighthouse</a><span>auditoria com nota de 0 a 100</span></li>
+      <li><a href="documentacao/ferramentas/#axe-devtools">Axe DevTools</a><span>análise automática e testes guiados</span></li>
+      <li><a href="documentacao/ferramentas/#ases-web">ASES Web</a><span>avaliador oficial do Governo Federal (eMAG)</span></li>
+      <li><a href="documentacao/ferramentas/#nvda">NVDA</a><span>leitor de tela para Windows</span></li>
+      <li><a href="documentacao/ferramentas/#voiceover">VoiceOver</a><span>leitor de tela da Apple</span></li>
+      <li><a href="documentacao/ferramentas/#talkback">TalkBack</a><span>leitor de tela do Android</span></li>
     </ul>
   </section>
   <section aria-labelledby="tg-tecnicas">
@@ -217,19 +230,6 @@ hide:
 </div>
 
 <p class="tool-cta"><a class="home-button secondary" href="documentacao/">Ver todo o conteúdo de IHC →</a></p>
-
-<h2>Informações acadêmicas</h2>
-
-<div class="home-academic">
-  <div class="academic-grid-2col">
-    <div><span>Instituição: </span><strong>Universidade de Brasília (UnB)</strong></div>
-    <div><span>Curso: </span><strong>Engenharia de Software</strong></div>
-    <div><span>Disciplina: </span><strong>Interação Humano-Computador</strong></div>
-    <div><span>Docente: </span><strong>Prof.ª Rejane Figueiredo</strong></div>
-    <div><span>Semestre: </span><strong>2026.2</strong></div>
-    <div><span>Equipe: </span><strong>Grupo 11</strong></div>
-  </div>
-</div>
 
 <h2>Referências</h2>
 
