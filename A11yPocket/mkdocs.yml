@@ -52,6 +52,7 @@ plugins:
 extra_css:
   - css/extra.css
   - css/guia.css
+  - css/relatorio.css
 
 extra_javascript:
   - js/guia-checklist.js
@@ -86,7 +87,14 @@ nav:
           - Design empático: documentacao/ux-dcu/design-empatico.md
       - Avaliações:
           - Avaliação do site: documentacao/avaliacao-site.md
-          - Avaliação com usuário: documentacao/avaliacao-usuario.md
+          - Avaliação com usuário:
+            - Visão geral: documentacao/avaliacao-usuario/index.md
+            - Metodologia: documentacao/avaliacao-usuario/metodologia.md
+            - Métricas e Score SUS: documentacao/avaliacao-usuario/resultados.md
+            - Análise e achados: documentacao/avaliacao-usuario/analise.md
+            - Recomendações e conclusão: documentacao/avaliacao-usuario/recomendacoes.md
+            - "Anexo A — Roteiro do teste": documentacao/avaliacao-usuario/anexo-a.md
+            - "Anexo B — Termo de consentimento": documentacao/avaliacao-usuario/anexo-b.md
       - Referências: referencias.md
   - Checklist:
       - Introdução: checklist/index.md
