@@ -23,7 +23,7 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
     <span>Como a norma e o guia se complementam, pilar por pilar.</span>
   </a>
   <a class="guia-card" href="wcag/">
-    <span class="guia-kicker">W3C <span class="badge badge-new">Novo</span></span>
+    <span class="guia-kicker">W3C</span>
     <strong>WCAG 2.2</strong>
     <span>Princípios POUR, níveis A, AA e AAA e considerações sobre NBR e WCAG.</span>
   </a>
@@ -33,7 +33,7 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 <div class="guia-cards guia-cards--3">
   <a class="guia-card" href="ux-dcu/">
-    <span class="guia-kicker">UX/DCU <span class="badge badge-new">Novo</span></span>
+    <span class="guia-kicker">UX/DCU Checklist</span>
     <strong>Técnicas de UX/DCU</strong>
     <span>Personas, jornadas, service blueprint, canvas e design empático.</span>
   </a>
@@ -43,12 +43,16 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 <div class="guia-cards guia-cards--3">
   <a class="guia-card" href="avaliacao-site/">
+<<<<<<< HEAD
     <span class="guia-kicker">Tg-02</span>
+=======
+    <span class="guia-kicker">Tg-02 </span>
+>>>>>>> 58a50be2812bc8dfff496a704183352823b4942d
     <strong>Avaliação do site</strong>
     <span>Relatório fundamentado de um site do governo federal ou de uma empresa.</span>
   </a>
   <a class="guia-card" href="avaliacao-usuario/">
-    <span class="guia-kicker">Tg-03 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-03 </span>
     <strong>Avaliação com usuário</strong>
     <span>Teste de usabilidade com usuário real e entrevista.</span>
   </a>
@@ -65,7 +69,7 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 ## O que é novo nesta versão
 
-Estas seções foram acrescentadas à versão anterior do guia e aparecem com o selo <span class="badge badge-new">Novo</span>:
+Estas seções foram acrescentadas à versão anterior do guia e aparecem com o selo Checklist:
 
 - **WCAG 2.2**, a versão mais recente das diretrizes do W3C;
 - **Ferramentas** de teste, com comparativo e passo a passo;

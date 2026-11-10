@@ -1,0 +1,117 @@
+/* ==========================================================================
+   A11yPocket — layout das páginas internas e estilo do menu / índice
+   Depende dos tokens --ap-* de extra.css. Carregue DEPOIS de guia.css.
+   Não afeta a home (que tem o próprio layout).
+   ========================================================================== */
+
+:root {
+  --ap-content-width: 40rem;   /* largura do texto: 40rem ≈ 96 caracteres/linha; 36rem ≈ 85; 32rem ≈ 75 (guia recomenda ~80) */
+  --ap-nav-width: 13.5rem;      /* menu da esquerda */
+  --ap-toc-width: 11.5rem;      /* índice da direita */
+}
+
+/* ---------- 1. Layout: barras laterais nas bordas, texto no centro ---------- */
+.md-grid { max-width: 100rem; }
+
+@media (min-width: 76.25em) {
+  .md-header__inner.md-grid, .md-tabs .md-grid, .md-footer .md-grid { padding-inline: 1.2rem; }
+  .md-main__inner { padding-inline: 0.6rem; }
+  .md-sidebar--primary { width: var(--ap-nav-width); }
+}
+@media (min-width: 60em) {
+  .md-sidebar--secondary { width: var(--ap-toc-width); }
+}
+/* o texto fica centralizado no espaço que sobra entre as duas barras */
+/* No desktop o Material fixa a margem com seletores muito específicos
+   (`[dir=ltr] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner`), por isso este seletor é
+   longo de propósito. `:not(:has(.home-hero))` preserva o layout próprio da home.
+   Padding (e não margem) mantém a folga que as tabelas do Material usam para rolar sozinhas. */
+[dir] .md-main .md-main__inner .md-content > .md-content__inner:not(:has(.home-hero)) {
+  max-width: calc(var(--ap-content-width) + 1.6rem);
+  margin-inline: auto; padding-inline: 0.8rem;
+}
+/* o breadcrumb ("Início › Documentação…") acompanha a mesma coluna do texto */
+.md-content > .md-path {
+  max-width: calc(var(--ap-content-width) + 1.6rem);
+  margin-inline: auto; padding-inline: 0.8rem;
+}
+
+/* ---------- 2. Menu da esquerda (desktop) ---------- */
+@media (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav { font-size: 0.72rem; }
+
+  /* título da seção ("Documentação", "Checklist e ferramentas") */
+  .md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
+    padding: 0 0.8rem 0.7rem; margin-bottom: 0.6rem;
+    font-size: 0.95rem; font-weight: 800; color: var(--ap-ink);
+    border-bottom: 2px solid var(--ap-border);
+  }
+
+  /* título principal da aba ("Documentação", "Checklist e ferramentas"): o mais forte do menu */
+  .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+    margin: 0 0 0.5rem; padding: 0 0.8rem 0.7rem;
+    font-size: 0.9rem; font-weight: 800; letter-spacing: 0; text-transform: none;
+    color: var(--ap-ink); border-bottom: 2px solid var(--ap-border);
+    border-radius: 0;   /* fundo e sombra originais ficam: o título é fixo no topo enquanto o menu rola */
+  }
+
+  /* títulos de grupo ("Fundamentos de acessibilidade", "Eixos do guia"…) */
+  .md-sidebar--primary .md-nav[data-md-level="2"] > .md-nav__title,
+  .md-sidebar--primary .md-nav__item--section > .md-nav__link {
+    padding: 0 0.8rem; margin: 1.3rem 0 0.35rem;
+    font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ap-muted);
+  }
+
+  /* itens */
+  .md-sidebar--primary .md-nav__link {
+    margin: 0.1rem 0; padding: 0.5rem 0.8rem;
+    border-radius: 0.6rem; font-weight: 500; line-height: 1.35;
+    color: var(--ap-ink);
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .md-sidebar--primary .md-nav__link:hover { background: var(--ap-surface); color: var(--ap-ink); }
+
+  /* página atual: pílula com barra lateral, como no modelo */
+  .md-sidebar--primary .md-nav__link--active,
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link--active {
+    background: color-mix(in srgb, var(--ap-brand) 13%, transparent);
+    color: var(--ap-link); font-weight: 700;
+    box-shadow: inset 3px 0 0 var(--ap-brand);
+  }
+
+  /* grupos recolhíveis (nível 3+): seta e linha-guia à esquerda dos filhos */
+  .md-sidebar--primary .md-nav__item--nested:not(.md-nav__item--section) > .md-nav > .md-nav__list {
+    margin-left: 1rem; padding-left: 0.2rem; border-left: 2px solid var(--ap-border);
+  }
+  .md-sidebar--primary .md-nav__item--nested:not(.md-nav__item--section) > .md-nav__link { font-weight: 600; }
+  .md-sidebar--primary .md-nav__icon { color: var(--ap-muted); }
+}
+
+/* ---------- 3. Índice da direita ("Índice") ---------- */
+@media (min-width: 60em) {
+  .md-sidebar--secondary .md-nav--secondary { font-size: 0.7rem; }
+  .md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+    padding: 0 0 0.6rem 0.95rem; margin: 0;
+    font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ap-muted);
+  }
+  /* trilho vertical; o item ativo "acende" um trecho dele */
+  .md-sidebar--secondary .md-nav--secondary .md-nav__list {
+    margin-left: 0.3rem; border-left: 2px solid var(--ap-border);
+  }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__list .md-nav__list { margin-left: 0.6rem; }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link {
+    margin: 0; padding: 0.3rem 0.9rem; line-height: 1.35;
+    color: var(--ap-muted); font-weight: 500;
+    transition: color 0.15s ease;
+  }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link:hover { color: var(--ap-ink); }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link--active {
+    color: var(--ap-link); font-weight: 700; box-shadow: -2px 0 0 var(--ap-brand);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-sidebar .md-nav__link { transition: none; }
+}

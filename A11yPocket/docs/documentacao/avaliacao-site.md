@@ -1,4 +1,4 @@
-# Avaliação do site <span class="badge badge-wip">Em construção</span>
+# Avaliação do site 
 
 !!! warning "Em construção"
     Esta página receberá o **relatório de avaliação** de um site do governo federal ou de uma empresa, escolhido pelo grupo (entrega **Tg-02**). Ela está reservada para que a avaliação seja implementada em outra branch.

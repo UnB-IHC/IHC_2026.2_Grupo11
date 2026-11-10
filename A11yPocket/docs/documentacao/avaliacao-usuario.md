@@ -1,4 +1,4 @@
-# Avaliação com usuário <span class="badge badge-wip">Em construção</span>
+# Avaliação com usuário 
 
 !!! warning "Em construção"
     Esta página receberá o **teste de usabilidade com usuário real** e a **entrevista** (entrega **Tg-03**, apresentada também no seminário **Tg-04**). Ela está reservada para que a avaliação seja implementada em outra branch.
