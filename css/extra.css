@@ -114,12 +114,17 @@
 .md-content__inner:has(.home-hero) { margin: 0; padding: 0; max-width: none; }
 .md-content__inner:has(.home-hero)::before { display: none; }
 
+/* Home sem a barra superior (cabeçalho + abas); as demais páginas mantêm a navegação.
+   Para voltar a mostrar na home, apague este bloco. */
+body:has(.home-hero) .md-header,
+body:has(.home-hero) .md-tabs { display: none; }
+
 .home-hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 2rem;
-  min-height: calc(100vh - 6rem);
+  min-height: 100vh;
   padding: 3rem clamp(1.5rem, 10vw, 12rem);
   background:
     radial-gradient(circle at 82% 22%, rgb(79 195 247 / 28%), transparent 42%),
@@ -146,7 +151,7 @@
   color: var(--ap-hero-title);
 }
 .hero-lead { max-width: 36rem; font-size: 1.1rem; line-height: 1.8; color: var(--ap-ink); }
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; margin-top: 1.8rem; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem; margin-top: 1.8rem; }
 
 .md-typeset .home-button {
   display: inline-block;
