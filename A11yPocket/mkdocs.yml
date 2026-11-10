@@ -52,6 +52,7 @@ plugins:
 extra_css:
   - css/extra.css
   - css/guia.css
+  - css/avaliacao.css
 
 extra_javascript:
   - js/guia-checklist.js
@@ -85,7 +86,19 @@ nav:
           - Canvas (UX Canvas / Lean UX Canvas): documentacao/ux-dcu/canvas.md
           - Design empático: documentacao/ux-dcu/design-empatico.md
       - Avaliações:
-          - Avaliação do site: documentacao/avaliacao-site.md
+          - Avaliação do site:
+            - Resumo: documentacao/avaliacao-site/index.md
+            - Escopo: documentacao/avaliacao-site/escopo.md
+            - Metodologia: documentacao/avaliacao-site/metodologia.md
+            - Avaliação automática: documentacao/avaliacao-site/avaliacao-automatica.md
+            - Avaliação manual: documentacao/avaliacao-site/avaliacao-manual.md
+            - Heurísticas de Nielsen: documentacao/avaliacao-site/heuristicas.md
+            - Tabela de problemas: documentacao/avaliacao-site/problemas.md
+            - Teste com usuário: documentacao/avaliacao-site/teste-usuario.md
+            - Recomendações e conclusão: documentacao/avaliacao-site/recomendacoes.md
+            - Apêndice B – Prints das ferramentas: documentacao/avaliacao-site/evidencias-ferramentas.md
+            - Apêndice C – Evidências dos problemas: documentacao/avaliacao-site/evidencias-manuais.md
+            - Referências do relatório: documentacao/avaliacao-site/referencias.md
           - Avaliação com usuário: documentacao/avaliacao-usuario.md
       - Referências: referencias.md
   - Checklist:

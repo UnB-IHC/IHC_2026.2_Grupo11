@@ -43,7 +43,7 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 <div class="guia-cards guia-cards--3">
   <a class="guia-card" href="avaliacao-site/">
-    <span class="guia-kicker">Tg-02 <span class="badge badge-wip">Em construção</span></span>
+    <span class="guia-kicker">Tg-02</span>
     <strong>Avaliação do site</strong>
     <span>Relatório fundamentado de um site do governo federal ou de uma empresa.</span>
   </a>
