@@ -1,26 +1,102 @@
-site_name: A11yPocket
-site_description: Guia de boas práticas para acessibilidade digital
-site_author: Grupo 11
+site_name: A11yPocket G11
+site_description: Guia prático com checklists interativos e boas práticas de acessibilidade em interfaces web.
+site_url: https://unb-ihc.github.io/IHC_2026.2_Grupo11/
+copyright: © 2026 Grupo 11 — Interação Humano-Computador, UnB
 
 theme:
   name: material
   language: pt-BR
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
+    - navigation.path
     - navigation.top
-    - search.suggest
+    - navigation.footer
+    - toc.follow
     - search.highlight
-
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/extra.js
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Ativar modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Ativar modo claro
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+
+plugins:
+  - search:
+      lang: pt
+
+extra_css:
+  - css/extra.css
+  - css/guia.css
+  - css/navegacao.css
+
+extra_javascript:
+  - js/guia-checklist.js
+
+nav:
+  - Início: index.md
+  - Documentação:
+      - Visão geral: documentacao/index.md
+      - Fundamentos de acessibilidade:
+          - Guia UK-Brasil: documentacao/guia-uk-brasil.md
+          - Norma ABNT NBR 17225: documentacao/nbr-17225.md
+          - Alinhamento NBR × Guia: documentacao/alinhamento.md
+          - WCAG 2.2: documentacao/wcag.md
+      - Ferramentas de teste:
+        - Visão geral: documentacao/ferramentas/index.md
+        - Ferramentas de análise de acessibilidade:
+          - WAVE: documentacao/ferramentas/wave.md
+          - Lighthouse (Google): documentacao/ferramentas/lighthouse.md
+          - Axe DevTools (Deque Systems): documentacao/ferramentas/axe.md
+          - ASES Web (Gov.br): documentacao/ferramentas/ases.md
+        - Leitores de tela:
+          - NVDA: documentacao/ferramentas/nvda.md
+          - VoiceOver (iOS): documentacao/ferramentas/voiceover.md
+          - TalkBack (Android): documentacao/ferramentas/talkback.md
+      - Métodos de IHC:
+        - Visão geral: documentacao/ux-dcu/index.md
+        - Técnicas de UX/DCU:
+          - Personas: documentacao/ux-dcu/personas.md
+          - Jornadas do usuário (User Journeys): documentacao/ux-dcu/jornadas.md
+          - Blueprint de serviços (Service Blueprint): documentacao/ux-dcu/blueprint.md
+          - Canvas (UX Canvas / Lean UX Canvas): documentacao/ux-dcu/canvas.md
+          - Design empático: documentacao/ux-dcu/design-empatico.md
+      - Avaliações:
+          - Avaliação do site: documentacao/avaliacao-site.md
+          - Avaliação com usuário: documentacao/avaliacao-usuario.md
+      - Referências: referencias.md
+  - Checklist:
+      - Introdução: checklist/index.md
+      - Visão geral do progresso: checklist/progresso.md
+      - Eixos do guia:
+          - Gestão de Projetos: checklist/gestao-projetos.md
+          - Desenvolvimento e testes: checklist/desenvolvimento.md
+          - Design: checklist/design.md
+          - Conteúdo: checklist/conteudo.md
+      - Complemento:
+          - Heurísticas: checklist/heuristicas.md
+  - GitHub ↗: https://github.com/UnB-IHC/IHC_2026.2_Grupo11
