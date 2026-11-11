@@ -53,14 +53,14 @@
     padding-bottom: 0.8rem;
   }
 
-  /* título da seção ("Documentação", "Checklist e ferramentas") */
+  /* título da seção ("Documentação", "Checklist") */
   .md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
     padding: 0 0.8rem 0.7rem; margin-bottom: 0.6rem;
     font-size: 0.95rem; font-weight: 800; color: var(--ap-ink);
     border-bottom: 2px solid var(--ap-border);
   }
 
-  /* título principal da aba ("Documentação", "Checklist e ferramentas"): o mais forte do menu */
+  /* título principal da aba ("Documentação", "Checklist"): o mais forte do menu */
   .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
     margin: 0 0 0.5rem; padding: 0 0.8rem 0.7rem;
     font-size: 0.9rem; font-weight: 800; letter-spacing: 0; text-transform: none;
@@ -127,4 +127,11 @@
 
 @media (prefers-reduced-motion: reduce) {
   .md-sidebar .md-nav__link { transition: none; }
+}
+
+/* Evita animações durante a restauração dos menus */
+.restaurando-menu .md-nav,
+.restaurando-menu .md-nav * {
+  transition: none !important;
+  animation: none !important;
 }

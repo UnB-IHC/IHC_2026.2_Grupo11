@@ -150,3 +150,145 @@
   .prob-card { padding: 0.9rem 0.9rem 1rem; }
   .md-typeset ul.rel-sevbar { flex-wrap: wrap; }
 }
+
+/* ---------- resumo expansível de problemas ---------- */
+
+/* O cartão principal ocupa toda a largura */
+.rel-stat-main {
+  grid-column: 1 / -1;
+}
+
+/* O próprio details é o cartão principal */
+.md-typeset details.rel-stat-expand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+
+  /* Preserva a identidade visual original */
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-top: 4px solid var(--ap-brand);
+  border-radius: 0.6rem;
+  box-shadow: none;
+}
+
+/* Área clicável: mantém a disposição original do cartão */
+.md-typeset details.rel-stat-expand > summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem 0 0;
+  margin: 0;
+
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/* Remove os marcadores padrão */
+.md-typeset details.rel-stat-expand > summary::-webkit-details-marker {
+  display: none;
+}
+
+.md-typeset details.rel-stat-expand > summary::marker {
+  content: "";
+}
+
+/* Seta de expansão */
+.md-typeset details.rel-stat-expand > summary::after {
+  content: "⌄";
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: auto;
+  height: auto;
+
+  background: none;
+  mask: none;
+  color: var(--ap-muted);
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+
+  transition: transform 0.25s ease;
+}
+
+/* Rotaciona a seta quando expandido */
+.md-typeset details.rel-stat-expand[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* Hover */
+.md-typeset details.rel-stat-expand > summary:hover {
+  cursor: pointer;
+}
+
+/* Foco pelo teclado */
+.md-typeset details.rel-stat-expand > summary:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+/* Grade dos quatro cartões internos */
+.md-typeset ul.rel-stats-breakdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+
+  margin: 0.8rem 0 0 !important;
+  padding: 08rem 0 0 !important;
+
+  border-top: 1px solid var(--ap-border);
+  list-style: none;
+}
+
+/* Remove interferências dos estilos de listas do tema */
+.md-typeset ul.rel-stats-breakdown > li {
+  margin: 0;
+  min-width: 0;
+  list-style: none;
+}
+
+/* Responsividade */
+@media (max-width: 760px) {
+  .md-typeset ul.rel-stats-breakdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Remove o ícone injetado antes do summary */
+.md-typeset details.rel-stat-expand > summary::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  mask: none !important;
+}
+
+/* Remove o espaço entre o cartão principal e os internos */
+.md-typeset details.rel-stat-expand {
+  gap: 0 !important;
+}
+
+/* Mantém apenas o espaçamento interno da linha divisória */
+.md-typeset ul.rel-stats-breakdown {
+  margin-top: 0 !important;
+  padding-top: 0.8rem !important;
+}
