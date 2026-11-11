@@ -1,200 +1,228 @@
-/* A11yPocket — Relatório de avaliação com usuário (Tg-03). CSS autônomo, prefixo rel-.
-   Usa apenas os tokens --ap-* de extra.css (claro/escuro) e reaproveita .guia-card / .guia-cards de guia.css.
-   Estado nunca depende só da cor: todo selo traz texto + forma (WCAG 1.4.1). */
 
-/* ---------- tokens de estado ----------
-   Declarados também em [data-md-color-scheme] (o <body>): um var() em :root seria
-   resolvido com o tema claro e herdado "congelado" no escuro (mesma razão do guia.css). */
-:root,
-[data-md-color-scheme] {
-  --rel-ok: var(--ap-green);
-  --rel-help: #8a5a00;
-  --rel-fail: #a61b1b;
-  --rel-neutral: var(--ap-muted);
-}
-[data-md-color-scheme="slate"] {
-  --rel-help: #ffc857;
-  --rel-fail: #ff8a80;
+/* ==========================================
+   A11yPocket — Tabela interativa de problemas
+   ========================================== */
+
+/* Tabela principal */
+
+.md-typeset table.ap-problems-table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-radius: .65rem;
+  overflow: hidden;
 }
 
-/* ---------- texto de abertura ---------- */
-.md-typeset .rel-lead { font-size: 1.05rem; line-height: 1.75; color: var(--ap-ink); max-width: 46rem; }
+.md-typeset .ap-problems-table th,
+.md-typeset .ap-problems-table td {
+  padding: .8rem .85rem;
+  vertical-align: middle;
+}
 
-/* ---------- capa ---------- */
-.rel-cover {
-  display: flex; align-items: center; gap: 1.5rem;
-  margin: 1.2rem 0 1.5rem; padding: 1.5rem 1.7rem;
-  background:
-    radial-gradient(circle at 92% 12%, rgb(79 195 247 / 25%), transparent 45%),
-    linear-gradient(180deg, var(--ap-hero-top), var(--ap-hero-bottom));
-  border: 1px solid var(--ap-border); border-radius: 0.8rem;
+.md-typeset .ap-problems-table th {
+  background: var(--ap-surface);
+  color: var(--ap-ink);
+  font-weight: 750;
 }
-.md-typeset .rel-cover img { flex: none; width: 5.5rem; height: auto; margin: 0; border-radius: 0.25rem; }
-.md-typeset .rel-cover p { margin: 0; }
-.rel-cover__inst { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ap-hero-title); }
-.rel-cover__course { margin-top: 0.1rem !important; font-size: 0.88rem; color: var(--ap-muted); }
-.rel-cover__title { margin-top: 0.7rem !important; font-size: 1.3rem; font-weight: 800; line-height: 1.3; color: var(--ap-ink); }
-.rel-cover__sub { margin-top: 0.2rem !important; color: var(--ap-ink); }
-.rel-cover__code {
-  display: inline-block; margin-top: 0.8rem; padding: 0.15rem 0.8rem;
-  border: 1px solid var(--ap-border); border-radius: 999px;
-  background: rgb(255 255 255 / 55%); color: var(--ap-muted);
-  font-size: 0.8rem; font-weight: 700;
-}
-[data-md-color-scheme="slate"] .rel-cover__code { background: rgb(255 255 255 / 6%); }
 
-/* ---------- ficha do grupo (lista de definição) ---------- */
-.md-typeset dl.rel-meta {
-  display: grid; grid-template-columns: 9rem 1fr; gap: 0.7rem 1.4rem;
-  margin: 1rem 0 1.5rem; padding: 1rem 1.3rem;
-  background: var(--ap-surface); border: 1px solid var(--ap-border); border-radius: 0.7rem;
-}
-.md-typeset .rel-meta dt { margin: 0; font-weight: 700; color: var(--ap-muted); }
-.md-typeset .rel-meta dd { margin: 0; }
-.md-typeset ul.rel-people { columns: 2; column-gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
-.md-typeset ul.rel-people li { margin: 0 0 0.2rem; break-inside: avoid; }
+/* ID */
 
-/* ---------- números-chave ---------- */
-.md-typeset ul.rel-kpis {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); gap: 0.9rem;
-  margin: 1rem 0 0.5rem; padding: 0; list-style: none;
+.md-typeset .ap-problems-table th:first-child,
+.md-typeset .ap-problems-table
+  tr:not(.ap-detail-row) > td:first-child {
+  width: 4.3rem;
+  white-space: nowrap;
 }
-.md-typeset ul.rel-kpis li {
-  display: flex; flex-direction: column; gap: 0.1rem;
-  margin: 0; padding: 0.9rem 1.1rem 1rem; list-style: none;
-  background: var(--ap-card); border: 1px solid var(--ap-border);
-  border-top: 5px solid var(--rel-c, var(--ap-brand)); border-radius: 0.6rem;
-}
-.rel-kpi__value { font-size: 2.1rem; font-weight: 800; line-height: 1.1; color: var(--ap-ink); font-variant-numeric: tabular-nums; }
-.rel-kpi__label { font-weight: 700; color: var(--ap-ink); }
-.rel-kpi__note { font-size: 0.82rem; color: var(--ap-muted); }
 
-/* ---------- selos de estado (texto + forma) ---------- */
-.rel-badge {
-  display: inline-flex; align-items: center; gap: 0.4em;
-  padding: 0.05rem 0.65rem; border: 2px solid var(--rel-c, var(--rel-neutral)); border-radius: 999px;
-  background: color-mix(in srgb, var(--rel-c, var(--rel-neutral)) 13%, var(--ap-card));
-  color: var(--ap-ink); font-size: 0.78rem; font-weight: 700; line-height: 1.6; white-space: nowrap;
-}
-.rel-badge::before { content: "●"; content: "●" / ""; font-size: 0.7em; color: var(--rel-c, var(--rel-neutral)); }
-.rel-badge--ok { --rel-c: var(--rel-ok); }
-.rel-badge--help { --rel-c: var(--rel-help); }
-.rel-badge--help::before { content: "▲"; content: "▲" / ""; }
-.rel-badge--fail { --rel-c: var(--rel-fail); }
-.rel-badge--fail::before { content: "■"; content: "■" / ""; }
-.rel-badge--info { --rel-c: var(--ap-brand); }
-.rel-badge--info::before { content: "◆"; content: "◆" / ""; }
-.rel-badge--sev-3 { --rel-c: var(--rel-fail); }
-.rel-badge--sev-3::before { content: "■"; content: "■" / ""; }
-.rel-badge--sev-2 { --rel-c: var(--rel-help); }
-.rel-badge--sev-2::before { content: "▲"; content: "▲" / ""; }
+/* Severidade */
 
-/* ---------- tabelas (HTML semântico: caption, scope, região rolável por teclado) ---------- */
-.rel-table-wrap {
-  overflow-x: auto; margin: 1rem 0 1.6rem;
-  background: var(--ap-card); border: 1px solid var(--ap-border); border-radius: 0.6rem;
+.md-typeset .ap-problems-table th:last-child,
+.md-typeset .ap-problems-table
+  tr:not(.ap-detail-row) > td:last-child {
+  width: 8rem;
+  white-space: nowrap;
+  text-align: center;
 }
-.md-typeset table.rel-table {
-  display: table; width: 100%; min-width: 28rem; margin: 0;
-  border-collapse: collapse; font-size: 0.82rem; box-shadow: none;
-}
-.rel-table caption {
-  padding: 0.75rem 1rem; text-align: left; font-size: 0.9rem; font-weight: 700; color: var(--ap-ink);
-  border-bottom: 1px solid var(--ap-border);
-}
-.md-typeset .rel-table th,
-.md-typeset .rel-table td {
-  padding: 0.65rem 0.9rem; text-align: left; vertical-align: top;
-  border-bottom: 1px solid var(--ap-border); color: var(--ap-ink);
-}
-.md-typeset .rel-table thead th { background: var(--ap-surface); font-weight: 700; }
-.md-typeset .rel-table tbody th[scope="row"] { font-weight: 700; }
-.md-typeset .rel-table tbody tr:last-child th,
-.md-typeset .rel-table tbody tr:last-child td { border-bottom: 0; }
-.md-typeset .rel-table tfoot th,
-.md-typeset .rel-table tfoot td { background: var(--ap-surface); font-weight: 800; border-top: 2px solid var(--ap-border); border-bottom: 0; }
-.md-typeset .rel-table .rel-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.rel-table tr:target > * { background: color-mix(in srgb, var(--ap-brand) 12%, var(--ap-card)); }
-.rel-table code { font-size: 0.78rem; white-space: nowrap; }
 
-/* ---------- listas de especificação (termo + descrição) ---------- */
-.md-typeset dl.rel-spec {
-  margin: 1rem 0 1.6rem; overflow: hidden;
-  background: var(--ap-card); border: 1px solid var(--ap-border); border-radius: 0.6rem;
-}
-.rel-spec > div {
-  display: grid; grid-template-columns: 10rem 1fr; gap: 0.3rem 1.3rem;
-  padding: 0.8rem 1.1rem; border-bottom: 1px solid var(--ap-border);
-}
-.rel-spec > div:last-child { border-bottom: 0; }
-.md-typeset .rel-spec dt { margin: 0; font-weight: 700; color: var(--ap-muted); }
-.md-typeset .rel-spec dd { margin: 0; }
-.md-typeset .rel-spec dd p { margin: 0 0 0.5rem; }
-.md-typeset .rel-spec dd p:last-child { margin-bottom: 0; }
+/* ==========================================
+   Cores por severidade
+   ========================================== */
 
-/* ---------- fórmula e escala SUS ---------- */
-.md-typeset .rel-formula {
-  margin: 1rem 0; padding: 0.9rem 1.2rem;
-  background: var(--ap-surface); border: 1px solid var(--ap-border); border-left: 5px solid var(--ap-brand);
-  border-radius: 0.5rem; font-weight: 600; line-height: 1.9; color: var(--ap-ink);
+.md-typeset .ap-problem-row,
+.md-typeset .ap-detail-row {
+  --ap-severity: var(--ap-brand);
 }
-.md-typeset .rel-formula p { margin: 0; }
 
-.rel-scale {
-  margin: 1rem 0 1.6rem; padding: 0.4rem 1.4rem 0.4rem;
-  background: var(--ap-surface); border: 1px solid var(--ap-border); border-radius: 0.7rem;
+.md-typeset .ap-sev-4 {
+  --ap-severity: var(--rel-crit-bar);
 }
-.rel-scale__track { position: relative; height: 1rem; margin: 2.6rem 0 3.6rem; border-radius: 999px; background: var(--ap-track); }
-.rel-scale__fill { position: absolute; inset: 0 auto 0 0; width: calc(var(--v) * 1%); border-radius: 999px; background: var(--rel-help); }
-.rel-scale__mark { position: absolute; top: -0.5rem; bottom: -0.5rem; left: calc(var(--p) * 1%); width: 0; border-left: 3px solid var(--ap-ink); }
-.rel-scale__label {
-  position: absolute; left: calc(var(--p) * 1%); transform: translateX(-50%);
-  font-size: 0.82rem; font-weight: 700; line-height: 1.3; text-align: center; color: var(--ap-ink); white-space: nowrap;
-}
-.rel-scale__label--top { bottom: calc(100% + 0.7rem); }
-.rel-scale__label--bottom { top: calc(100% + 0.7rem); }
-.rel-scale__label small { display: block; font-size: 0.72rem; font-weight: 600; color: var(--ap-muted); }
-.rel-scale__label--edge-l { transform: none; }
-.rel-scale__label--edge-r { transform: translateX(-100%); }
 
-/* ---------- prioridades ---------- */
-.md-typeset ol.rel-priorities { display: grid; gap: 0.8rem; margin: 1rem 0 1.6rem; padding: 0; list-style: none; counter-reset: rel-prio; }
-.md-typeset ol.rel-priorities > li {
-  position: relative; margin: 0; padding: 0.9rem 1.2rem 0.95rem 4.1rem; counter-increment: rel-prio;
-  background: var(--ap-card); border: 1px solid var(--ap-border);
-  border-left: 5px solid var(--rel-c, var(--ap-brand)); border-radius: 0.6rem;
+.md-typeset .ap-sev-3 {
+  --ap-severity: var(--rel-grave-bar);
 }
-.md-typeset ol.rel-priorities > li::before {
-  content: counter(rel-prio); position: absolute; left: 1.1rem; top: 0.85rem;
-  display: grid; place-items: center; width: 2.1rem; height: 2.1rem;
-  border: 2px solid var(--rel-c, var(--ap-brand)); border-radius: 50%;
-  background: var(--ap-surface); color: var(--ap-ink); font-weight: 800;
-}
-.md-typeset .rel-priorities p { margin: 0; }
-.rel-priority__head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem !important; }
-.md-typeset .rel-priorities .rel-ref { margin-left: 0.2rem; font-weight: 700; white-space: nowrap; }
 
-/* ---------- termo de consentimento (Apêndice B) ---------- */
-.rel-term {
-  margin: 1rem 0 1.6rem; padding: 1.2rem 1.5rem;
-  background: var(--ap-card); border: 1px solid var(--ap-border); border-top: 5px solid var(--ap-brand); border-radius: 0.6rem;
+.md-typeset .ap-sev-2 {
+  --ap-severity: var(--rel-mod-bar);
 }
-.md-typeset .rel-term h2 { margin: 0 0 1rem; font-size: 1.05rem; text-align: center; letter-spacing: 0.02em; }
-.md-typeset .rel-term p { margin: 0 0 0.8rem; }
-.md-typeset ul.rel-checks { margin: 0 0 0.8rem; padding: 0; list-style: none; }
-.md-typeset ul.rel-checks li { margin: 0 0 0.3rem; }
-.rel-checks .rel-badge { margin-right: 0.5rem; }
 
-/* ---------- responsivo ---------- */
-@media (max-width: 760px) {
-  .rel-cover { flex-direction: column; align-items: flex-start; padding: 1.2rem; }
-  .md-typeset dl.rel-meta { grid-template-columns: 1fr; gap: 0.2rem; }
-  .md-typeset .rel-meta dd { margin-bottom: 0.7rem; }
-  .md-typeset ul.rel-people { columns: 1; }
-  .rel-spec > div { grid-template-columns: 1fr; }
-  .md-typeset ol.rel-priorities > li { padding-left: 3.6rem; }
-  .md-typeset ol.rel-priorities > li::before { left: 0.8rem; }
+.md-typeset .ap-sev-1 {
+  --ap-severity: var(--rel-leve-bar);
 }
-@media (max-width: 480px) {
-  .rel-scale { padding-inline: 1rem; }
+
+/* ==========================================
+   Linhas interativas
+   ========================================== */
+
+.md-typeset .ap-problem-row {
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.md-typeset .ap-problem-row > td:first-child {
+  border-left: 4px solid transparent;
+}
+
+.md-typeset .ap-problem-row:hover > td,
+.md-typeset .ap-problem-row.ap-is-open > td {
+  background: color-mix(
+    in srgb,
+    var(--ap-severity) 8%,
+    var(--ap-card)
+  );
+}
+
+/* Borda colorida somente quando expandido */
+
+.md-typeset .ap-problem-row.ap-is-open
+  > td:first-child {
+  border-left-color: var(--ap-severity);
+}
+
+/* ==========================================
+   Botão do ID
+   ========================================== */
+
+.md-typeset .ap-problem-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+
+  padding: .3rem .2rem;
+
+  font: inherit;
+  font-weight: 800;
+
+  color: var(--ap-severity);
+
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.md-typeset .ap-problem-toggle:hover {
+  text-decoration-thickness: 2px;
+}
+
+.md-typeset .ap-problem-toggle:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: 2px;
+  border-radius: .2rem;
+}
+
+/* ==========================================
+   Detalhamento expandido
+   ========================================== */
+
+.md-typeset .ap-detail-row > td {
+  padding: 1.15rem 1.25rem 1.4rem;
+
+  text-align: left !important;
+  white-space: normal !important;
+
+  background: var(--ap-card);
+
+  border-left: 4px solid var(--ap-severity);
+}
+
+/* Reutiliza a ficha original */
+
+.md-typeset .ap-detail-row .ap-movable-card {
+  display: block !important;
+  margin: 0;
+}
+
+.md-typeset .ap-detail-row .prob-card {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* O selo já aparece na tabela */
+
+.md-typeset .ap-detail-row .prob-card > .sev {
+  display: none;
+}
+
+/* Imagem da evidência */
+
+.md-typeset .ap-detail-row .prob-fig {
+  margin-top: 1rem;
+}
+
+.md-typeset .ap-detail-row .prob-fig img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 34rem;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ==========================================
+   Oculta fichas originais após inicialização
+   ========================================== */
+
+.md-typeset .prob-card.ap-movable-card {
+  display: none;
+}
+
+/* ==========================================
+   Responsividade
+   ========================================== */
+
+@media (max-width: 600px) {
+  .md-typeset .ap-problems-table th,
+  .md-typeset .ap-problems-table td {
+    padding: .6rem .45rem;
+  }
+
+  .md-typeset .ap-problems-table th:first-child,
+  .md-typeset .ap-problems-table
+    tr:not(.ap-detail-row) > td:first-child {
+    width: 3.5rem;
+  }
+
+  .md-typeset .ap-problems-table th:last-child,
+  .md-typeset .ap-problems-table
+    tr:not(.ap-detail-row) > td:last-child {
+    width: 6rem;
+  }
+
+  .md-typeset .ap-detail-row > td {
+    padding: .85rem;
+  }
+}
+
+/* Respeita preferência por movimento reduzido */
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .ap-problem-row {
+    transition: none;
+  }
 }

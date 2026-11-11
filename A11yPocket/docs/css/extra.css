@@ -375,29 +375,3 @@ div.guia-card:hover { transform: none; box-shadow: none; }
     width: min(70%, 14rem);
   }
 }
-
-/* Botão de fechar a imagem */
-.image-wrapper {
-  position: relative; /* Necessário para posicionar o botão */
-  display: inline-block;
-}
-
-.close-btn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 2px 6px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.close-btn:hover {
-  background-color: rgba(255, 0, 0, 0.8);
-}
-
-    

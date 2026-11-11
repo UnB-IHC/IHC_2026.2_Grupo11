@@ -1,0 +1,77 @@
+/* Tabela interativa — somente página de problemas */
+.md-typeset .ap-problems-table tbody tr.ap-problem-row { cursor: pointer; --ap-level: var(--rel-leve-bar); }
+.md-typeset .ap-problems-table tbody tr.ap-sev-4 { --ap-level: var(--rel-crit-bar); --ap-level-text: var(--rel-crit-fg); }
+.md-typeset .ap-problems-table tbody tr.ap-sev-3 { --ap-level: var(--rel-grave-bar); --ap-level-text: var(--rel-grave-fg); }
+.md-typeset .ap-problems-table tbody tr.ap-sev-2 { --ap-level: var(--rel-mod-bar); --ap-level-text: var(--rel-mod-fg); }
+.md-typeset .ap-problems-table tbody tr.ap-sev-1 { --ap-level: var(--rel-leve-bar); --ap-level-text: var(--rel-leve-fg); }
+.md-typeset .ap-problems-table .ap-problem-toggle {
+  background: transparent; border: 0; padding: .35rem .2rem; color: var(--ap-level-text);
+  font: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-underline-offset: .2em;
+}
+.md-typeset .ap-problems-table .ap-problem-toggle:focus-visible {
+  outline: 3px solid var(--ap-focus); outline-offset: 2px; border-radius: .2rem;
+}
+.md-typeset .ap-problems-table tr.ap-problem-row:hover > td { background: color-mix(in srgb, var(--ap-level) 7%, var(--ap-card)); }
+.md-typeset .ap-problems-table tr.ap-is-open > td {
+  background: color-mix(in srgb, var(--ap-level) 11%, var(--ap-card));
+  border-bottom-color: var(--ap-level);
+}
+.md-typeset .ap-problems-table tr.ap-is-open > td:first-child { box-shadow: inset 4px 0 0 var(--ap-level); }
+.md-typeset .ap-problems-table tr.ap-detail-row > td {
+  padding: 1rem; background: var(--ap-surface); box-shadow: none !important;
+}
+.md-typeset .ap-problems-table .ap-detail-row h3 { margin: 0 0 .7rem; font-size: 1rem; }
+.md-typeset .ap-problems-table .ap-detail-row .prob-card { margin: 0; }
+.md-typeset .ap-problems-table .ap-detail-row .prob-fig img { max-height: 32rem; object-fit: contain; }
+.md-typeset .ap-original-details[hidden] { display: none !important; }
+
+/* Tabela ocupando toda a largura disponível */
+
+.md-typeset .md-typeset__table {
+  display: block;
+  width: 100%;
+}
+
+.md-typeset .md-typeset__table > table.ap-problems-table {
+  display: table;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+
+/* Distribuição das três colunas */
+
+.md-typeset .ap-problems-table th:first-child {
+  width: 9%;
+}
+
+.md-typeset .ap-problems-table th:nth-child(2) {
+  width: 73%;
+}
+
+.md-typeset .ap-problems-table th:last-child {
+  width: 18%;
+}
+
+/* Detalhamento integrado à tabela */
+
+.md-typeset .ap-detail-row > td {
+  padding: 1.5rem 2rem;
+  background: var(--ap-card);
+  border-left: 4px solid var(--ap-severity);
+  border-bottom: 1px solid var(--ap-border);
+}
+
+/* Linha selecionada conectada ao detalhamento */
+
+.md-typeset .ap-problem-row.ap-is-open > td {
+  border-bottom: 0;
+}
+
+/* Evita largura excessiva do conteúdo interno */
+
+.md-typeset .ap-detail-row .prob-card {
+  width: 100%;
+  max-width: none;
+}
+

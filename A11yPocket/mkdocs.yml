@@ -55,9 +55,11 @@ extra_css:
   - css/relatorio.css
   - css/avaliacao.css
   - css/navegacao.css
+  - css/problemas-interativos.css
 
 extra_javascript:
   - js/guia-checklist.js
+  - js/problemas-interativos.js
 
 nav:
   - Início: index.md

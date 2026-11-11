@@ -6,15 +6,6 @@ title: Tabela de problemas
 
 Foram registrados **11 problemas**. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em [Metodologia](metodologia.md#escala-de-severidade).
 
-## Resumo por severidade
-
-<ul class="rel-sevbar" aria-label="Distribuição dos problemas por severidade">
-  <li class="lvl-4" style="flex: 4">4 críticos</li>
-  <li class="lvl-3" style="flex: 1">1 grave</li>
-  <li class="lvl-2" style="flex: 5">5 moderados</li>
-  <li class="lvl-1" style="flex: 1">1 leve</li>
-</ul>
-
 ## Visão geral
 
 | ID | Problema | Página / local | Severidade | Evidência |

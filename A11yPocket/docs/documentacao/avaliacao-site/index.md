@@ -2,18 +2,19 @@
 
 Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detran-DF](<https://portal.detran.df.gov.br/>) e do Detran Digital. A avaliação aplica o [Guia de Acessibilidade](../../checklist/index.md) do grupo, as WCAG 2.2, a ABNT NBR 17225, as heurísticas de Nielsen, ferramentas automáticas, avaliação manual com leitor de tela e um teste de usabilidade com usuário real.
 
+
+
 <ul class="rel-stats" aria-label="Resumo dos resultados">
 
   <li class="rel-stat-main">
-    <details class="rel-stat rel-stat-expand">
+    <div class="rel-stat rel-stat-expand">
 
-      <summary>
+      <div class="rel-stat-header">
         <strong>11</strong>
         <span>problemas encontrados</span>
-      </summary>
+      </div>
 
       <ul class="rel-stats-breakdown">
-
         <li class="rel-stat lvl-4">
           <strong>4</strong>
           <span>críticos</span>
@@ -33,10 +34,9 @@ Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detr
           <strong>1</strong>
           <span>leve</span>
         </li>
-
       </ul>
 
-    </details>
+    </div>
   </li>
 
 </ul>
