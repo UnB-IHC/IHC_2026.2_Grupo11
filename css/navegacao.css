@@ -5,9 +5,9 @@
    ========================================================================== */
 
 :root {
-  --ap-content-width: 40rem;   /* largura do texto: 40rem ≈ 96 caracteres/linha; 36rem ≈ 85; 32rem ≈ 75 (guia recomenda ~80) */
+  --ap-content-width: 50rem;   /* largura do texto: 40rem ≈ 96 caracteres/linha; 36rem ≈ 85; 32rem ≈ 75 (guia recomenda ~80) */
   --ap-nav-width: 13.5rem;      /* menu da esquerda */
-  --ap-toc-width: 11.5rem;      /* índice da direita */
+  --ap-toc-width: 0em;      /* índice da direita */
 }
 
 /* ---------- 1. Layout: barras laterais nas bordas, texto no centro ---------- */
@@ -39,6 +39,19 @@
 /* ---------- 2. Menu da esquerda (desktop) ---------- */
 @media (min-width: 76.25em) {
   .md-sidebar--primary .md-nav { font-size: 0.72rem; }
+  .md-sidebar--primary {
+    height: calc(100dvh - var(--md-header-height, 4.8rem));
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    max-height: 100%;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+  }
+
+  .md-sidebar--primary .md-nav--primary > .md-nav__list {
+    padding-bottom: 0.8rem;
+  }
 
   /* título da seção ("Documentação", "Checklist e ferramentas") */
   .md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
