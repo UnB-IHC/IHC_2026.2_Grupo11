@@ -28,9 +28,9 @@
 /* ---------- tokens: modo escuro ---------- */
 [data-md-color-scheme="slate"] {
   --ap-ink: #ffffff;
-  --ap-muted: #ffffff;
+  --ap-muted: #ffffffd2;
   --ap-brand: #7cc8f5;
-  --ap-link: #94cefd;
+  --ap-link: #c3e0f8;
   --ap-green: #5fd39a;
   --ap-surface: #1c2231;
   --ap-card: #232a3d;
@@ -102,6 +102,27 @@
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
+
+[data-md-color-scheme="default"] .md-typeset p a,
+[data-md-color-scheme="default"] .md-typeset li a {
+  color: #0e1b68;
+}
+
+[data-md-color-scheme="slate"] .md-typeset p a,
+[data-md-color-scheme="slate"] .md-typeset li a {
+  color: #7cc8f5;
+}
+
+[data-md-color-scheme="default"] .md-typeset p a:hover,
+[data-md-color-scheme="default"] .md-typeset li a:hover {
+  color: var(--ap-link);
+}
+
+[data-md-color-scheme="slate"] .md-typeset p a:hover,
+[data-md-color-scheme="slate"] .md-typeset li a:hover {
+  color: var(--ap-link);
+}
+
 .md-typeset p a:hover, .md-typeset li a:hover { text-decoration-thickness: 0.14em; }
 
 /* ==========================================================================
@@ -126,10 +147,45 @@
   padding-right: 0 !important;
 }
 
-/* Home sem a barra superior (cabeçalho + abas); as demais páginas mantêm a navegação.
-   Para voltar a mostrar na home, apague este bloco. */
-body:has(.home-hero) .md-header,
-body:has(.home-hero) .md-tabs { display: none; }
+/* Home: cabeçalho sem ocupar espaço */
+body:has(.home-hero) .md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  min-height: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+/* Remove a altura interna */
+body:has(.home-hero) .md-header__inner {
+  height: 0;
+  min-height: 0;
+}
+
+/* Oculta logo, nome do projeto e pesquisa */
+body:has(.home-hero) .md-header__button.md-logo,
+body:has(.home-hero) .md-header__title,
+body:has(.home-hero) .md-search {
+  display: none !important;
+}
+
+/* Mantém somente o controle de tema */
+body:has(.home-hero) [data-md-component="palette"] {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+/* Oculta as abas superiores */
+body:has(.home-hero) .md-tabs {
+  display: none;
+}
 
 .home-hero {
   display: grid;
@@ -150,7 +206,7 @@ body:has(.home-hero) .md-tabs { display: none; }
   padding: 0.2rem 0.8rem;
   border: 1px solid var(--ap-border);
   border-radius: 999px;
-  background: rgb(255 255 255 / 55%);
+  background: rgba(241, 241, 241, 0.55);
   color: var(--ap-muted);
   font-size: 0.8rem;
   font-weight: 700;
