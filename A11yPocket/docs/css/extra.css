@@ -101,8 +101,28 @@
   text-decoration: underline;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
-  color: #6db0fc;
 }
+
+[data-md-color-scheme="default"] .md-typeset p a,
+[data-md-color-scheme="default"] .md-typeset li a {
+  color: #0e1b68;
+}
+
+[data-md-color-scheme="slate"] .md-typeset p a,
+[data-md-color-scheme="slate"] .md-typeset li a {
+  color: #7cc8f5;
+}
+
+[data-md-color-scheme="default"] .md-typeset p a:hover,
+[data-md-color-scheme="default"] .md-typeset li a:hover {
+  color: var(--ap-link);
+}
+
+[data-md-color-scheme="slate"] .md-typeset p a:hover,
+[data-md-color-scheme="slate"] .md-typeset li a:hover {
+  color: var(--ap-link);
+}
+
 .md-typeset p a:hover, .md-typeset li a:hover { text-decoration-thickness: 0.14em; }
 
 /* ==========================================================================
@@ -127,10 +147,45 @@
   padding-right: 0 !important;
 }
 
-/* Home sem a barra superior (cabeçalho + abas); as demais páginas mantêm a navegação.
-   Para voltar a mostrar na home, apague este bloco. */
-body:has(.home-hero) .md-header,
-body:has(.home-hero) .md-tabs { display: none; }
+/* Home: cabeçalho sem ocupar espaço */
+body:has(.home-hero) .md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  min-height: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+/* Remove a altura interna */
+body:has(.home-hero) .md-header__inner {
+  height: 0;
+  min-height: 0;
+}
+
+/* Oculta logo, nome do projeto e pesquisa */
+body:has(.home-hero) .md-header__button.md-logo,
+body:has(.home-hero) .md-header__title,
+body:has(.home-hero) .md-search {
+  display: none !important;
+}
+
+/* Mantém somente o controle de tema */
+body:has(.home-hero) [data-md-component="palette"] {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+/* Oculta as abas superiores */
+body:has(.home-hero) .md-tabs {
+  display: none;
+}
 
 .home-hero {
   display: grid;

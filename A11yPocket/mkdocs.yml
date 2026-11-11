@@ -24,14 +24,14 @@ theme:
       primary: white
       accent: blue
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Ativar modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: blue
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Ativar modo claro
 
 markdown_extensions:
