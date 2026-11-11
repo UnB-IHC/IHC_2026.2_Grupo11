@@ -1,7 +1,14 @@
-# Anexo B — Termo de consentimento
+---
+hide:
+  - navigation
+  - toc
+  - footer
+---
+
+# Apêndice B — Termo de consentimento
 
 !!! info "Sobre esta página"
-    O termo foi assinado em 08/11/2026. Conforme a cláusula de **Sigilo** do próprio termo, o nome da participante não consta nos trabalhos (ela é identificada como “P1”); por isso, o documento assinado, que traz nome, assinatura e telefones de contato, **não é reproduzido nesta página pública**. Abaixo estão o texto do termo e as autorizações concedidas. A via assinada deve acompanhar a entrega do trabalho, conforme o [Anexo A](anexo-a.md#a4).
+    O termo foi assinado em 08/11/2026. Conforme a cláusula de **Sigilo** do próprio termo, o nome da participante não consta nos trabalhos (ela é identificada como “P1”); por isso, o documento assinado, que traz nome, assinatura e telefones de contato, **não é reproduzido nesta página pública**. Abaixo estão o texto do termo e as autorizações concedidas. A via assinada deve acompanhar a entrega do trabalho, conforme o [Apêndice A](anexo-a.md#a4).
 
 <article class="rel-term" aria-labelledby="termo-titulo">
   <h2 id="termo-titulo">Termo de Consentimento Livre e Esclarecido</h2>

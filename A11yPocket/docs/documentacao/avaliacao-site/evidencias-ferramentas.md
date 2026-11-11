@@ -1,8 +1,11 @@
 ---
-title: Anexo B – Prints das ferramentas
+title: Apêndice B – Prints das ferramentas
+hide:
+    - navigation
+    - toc
 ---
 
-# Anexo B: prints das ferramentas automáticas
+# Apêndice B: prints das ferramentas automáticas
 
 Capturas de tela dos relatórios do WAVE e do axe DevTools. Clique em uma imagem para abri-la ampliada em outra aba. Os números estão resumidos em [Avaliação automática](avaliacao-automatica.md).
 

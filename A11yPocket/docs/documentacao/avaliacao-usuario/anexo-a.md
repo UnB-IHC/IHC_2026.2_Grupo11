@@ -1,4 +1,11 @@
-# Anexo A — Roteiro do teste de usabilidade
+---
+hide:
+  - navigation
+  - toc
+  - footer
+---
+
+# Apêndice A — Roteiro do teste de usabilidade
 
 !!! info "Fonte do anexo"
     Fonte: Roteiro_Teste_Usabilidade_Detran_DF_Tg_IHC_03_ABNT_v3.1. Os cenários e os tempos de referência foram transcritos do roteiro. Ele ainda se identifica como “para validação” e mantém campos de caminhos, respostas e limites finais em aberto. Os caminhos descritos abaixo foram reconstituídos da sessão para documentar o percurso de referência, sem atribuir validação prévia não registrada.

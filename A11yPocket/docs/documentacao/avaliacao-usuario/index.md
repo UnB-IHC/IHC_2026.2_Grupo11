@@ -56,12 +56,12 @@ Detalhes em [Métricas e Score SUS](resultados.md). O SUS é um escore de 0 a 10
     <span>Priorização das correções e conclusões do estudo.</span>
   </a>
   <a class="guia-card" href="anexo-a/">
-    <span class="guia-kicker">Anexo A</span>
+    <span class="guia-kicker">Apêndice A</span>
     <strong>Roteiro do teste</strong>
     <span>Cenários, critérios, caminhos de referência, tempos e entrevistas.</span>
   </a>
   <a class="guia-card" href="anexo-b/">
-    <span class="guia-kicker">Anexo B</span>
+    <span class="guia-kicker">Apêndice B</span>
     <strong>Termo de consentimento</strong>
     <span>Texto do termo e autorizações concedidas pela participante.</span>
   </a>

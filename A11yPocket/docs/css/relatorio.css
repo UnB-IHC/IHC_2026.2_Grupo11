@@ -174,7 +174,7 @@
 .rel-priority__head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem !important; }
 .md-typeset .rel-priorities .rel-ref { margin-left: 0.2rem; font-weight: 700; white-space: nowrap; }
 
-/* ---------- termo de consentimento (Anexo B) ---------- */
+/* ---------- termo de consentimento (Apêndice B) ---------- */
 .rel-term {
   margin: 1rem 0 1.6rem; padding: 1.2rem 1.5rem;
   background: var(--ap-card); border: 1px solid var(--ap-border); border-top: 5px solid var(--ap-brand); border-radius: 0.6rem;

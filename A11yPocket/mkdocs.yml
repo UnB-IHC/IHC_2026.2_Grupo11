@@ -59,7 +59,6 @@ extra_css:
 extra_javascript:
   - js/guia-checklist.js
 
-
 nav:
   - Início: index.md
 
@@ -96,7 +95,7 @@ nav:
           - Problemas encontrados: documentacao/avaliacao-site/problemas.md
           - Teste com usuário: documentacao/avaliacao-site/teste-usuario.md
           - Recomendações: documentacao/avaliacao-site/recomendacoes.md
-      - Avaliação com usuários:
+      - Avaliação com usuário:
           - Visão geral: documentacao/avaliacao-usuario/index.md
           - Metodologia: documentacao/avaliacao-usuario/metodologia.md
           - Resultados: documentacao/avaliacao-usuario/resultados.md

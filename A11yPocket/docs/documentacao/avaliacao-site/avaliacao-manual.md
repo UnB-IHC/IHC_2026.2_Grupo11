@@ -78,4 +78,4 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | CON-04 e CON-05: descrição de imagens e ausência de texto embutido em imagens | 1.1.1 e 1.4.5 | <span class="res res-part">Parcial</span> |
 
 !!! info "Como ler os resultados"
-    **Passa**, **Parcial** e **Falha** aparecem sempre com texto e símbolo (✓, ≈, ✕), nunca só com cor. As evidências ficam no [Anexo C](evidencias-manuais.md).
+    **Passa**, **Parcial** e **Falha** aparecem sempre com texto e símbolo (✓, ≈, ✕), nunca só com cor. As evidências ficam no [Apêndice C](evidencias-manuais.md).

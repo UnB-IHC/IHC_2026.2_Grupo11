@@ -1,18 +1,44 @@
----
-title: "Avaliação do site: Detran-DF"
-description: Relatório de avaliação de acessibilidade e usabilidade do portal do Detran-DF (Tg-02).
----
-
-# Avaliação do site: Detran-DF
+# Avaliação do site
 
 Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detran-DF](<https://portal.detran.df.gov.br/>) e do Detran Digital. A avaliação aplica o [Guia de Acessibilidade](../../checklist/index.md) do grupo, as WCAG 2.2, a ABNT NBR 17225, as heurísticas de Nielsen, ferramentas automáticas, avaliação manual com leitor de tela e um teste de usabilidade com usuário real.
 
-<ul class="rel-stats" aria-label="Resumo dos resultados" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; list-style: none; padding: 0;">
-  <li class="rel-stat"><strong>11</strong><span>problemas encontrados</span></li>
-  <li class="rel-stat lvl-4"><strong>4</strong><span>críticos</span></li>
-  <li class="rel-stat lvl-3"><strong>1</strong><span>grave</span></li>
-  <li class="rel-stat lvl-2"><strong>5</strong><span>moderados</span></li>
-  <li class="rel-stat lvl-1"><strong>1</strong><span>leve</span></li>
+<ul class="rel-stats" aria-label="Resumo dos resultados">
+
+  <li class="rel-stat-main">
+    <details class="rel-stat rel-stat-expand">
+
+      <summary>
+        <strong>11</strong>
+        <span>problemas encontrados</span>
+      </summary>
+
+      <ul class="rel-stats-breakdown">
+
+        <li class="rel-stat lvl-4">
+          <strong>4</strong>
+          <span>críticos</span>
+        </li>
+
+        <li class="rel-stat lvl-3">
+          <strong>1</strong>
+          <span>grave</span>
+        </li>
+
+        <li class="rel-stat lvl-2">
+          <strong>5</strong>
+          <span>moderados</span>
+        </li>
+
+        <li class="rel-stat lvl-1">
+          <strong>1</strong>
+          <span>leve</span>
+        </li>
+
+      </ul>
+
+    </details>
+  </li>
+
 </ul>
 
 ## Resumo executivo

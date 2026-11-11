@@ -35,4 +35,4 @@ O teste foi guiado por um roteiro estruturado (v3) com 4 cenários representativ
 3. **Agendamento de atendimento:** simulação do início de um agendamento presencial.
 4. **Consulta de multas e pontuação:** localização da área de infrações sem inserir dados.
 
-O [Anexo A](anexo-a.md) reúne os cenários, pontos de partida, critérios de sucesso, caminhos de referência, tempos do ensaio e justificativa de limites do roteiro v3.1. Os campos ainda não validados no registro original são identificados no anexo.
+O [Apêndice A](anexo-a.md) reúne os cenários, pontos de partida, critérios de sucesso, caminhos de referência, tempos do ensaio e justificativa de limites do roteiro v3.1. Os campos ainda não validados no registro original são identificados no anexo.

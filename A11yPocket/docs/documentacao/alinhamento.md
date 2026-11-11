@@ -30,4 +30,4 @@ Esse alinhamento se materializa nos quatro pilares do guia.
 
 [Veja o checklist →](../checklist/index.md)
 
-[Veja a norma em detalhes →](../../documentacao/nbr17225.md)
+[Veja a norma em detalhes →](nbr-17225.md)
