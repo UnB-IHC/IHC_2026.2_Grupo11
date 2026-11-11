@@ -1,12 +1,9 @@
 # Avaliação com usuário
 
 <p class="rel-lead">
-  Relatório da entrega: teste de usabilidade com uma usuária real do Portal do Detran-DF,
-  com protocolo <em>Think Aloud</em>, questionário SUS e entrevista, cruzado com os critérios do
-  guia de acessibilidade do grupo.
+  Relatório da entrega: teste de usabilidade com uma usuária real do <a href="https://detran.df.gov.br">Portal do Detran-DF</a>, com protocolo <em>Think Aloud</em>, questionário SUS e entrevista, cruzado com os critérios do guia de acessibilidade do grupo.
 </p>
 
-<d><a href="https://www.detran.df.gov.br/">https://www.detran.df.gov.br/</a> (Portal do Detran-DF)</d>
 
 ## Resultados em resumo
 

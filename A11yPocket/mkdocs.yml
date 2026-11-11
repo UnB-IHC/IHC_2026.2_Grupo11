@@ -15,7 +15,6 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.top
-    - navigation.footer
     - toc.follow
     - search.highlight
     - search.suggest
@@ -44,6 +43,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+  - toc:
+      toc_depth: 0
+    
 
 plugins:
   - search:

@@ -27,10 +27,10 @@
 
 /* ---------- tokens: modo escuro ---------- */
 [data-md-color-scheme="slate"] {
-  --ap-ink: #eef1fa;
-  --ap-muted: #b9c2d6;
+  --ap-ink: #ffffff;
+  --ap-muted: #ffffffd2;
   --ap-brand: #7cc8f5;
-  --ap-link: #8cbcf7;
+  --ap-link: #c3e0f8;
   --ap-green: #5fd39a;
   --ap-surface: #1c2231;
   --ap-card: #232a3d;
@@ -101,6 +101,7 @@
   text-decoration: underline;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
+  color: #6db0fc;
 }
 .md-typeset p a:hover, .md-typeset li a:hover { text-decoration-thickness: 0.14em; }
 
@@ -114,6 +115,18 @@
 .md-content__inner:has(.home-hero) { margin: 0; padding: 0; max-width: none; }
 .md-content__inner:has(.home-hero)::before { display: none; }
 
+.md-grid:has(.home-hero),
+.md-main__inner:has(.home-hero),
+.md-content:has(.home-hero),
+.md-content__inner:has(.home-hero) {
+  max-width: none !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* Home sem a barra superior (cabeçalho + abas); as demais páginas mantêm a navegação.
    Para voltar a mostrar na home, apague este bloco. */
 body:has(.home-hero) .md-header,
@@ -121,11 +134,13 @@ body:has(.home-hero) .md-tabs { display: none; }
 
 .home-hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  gap: 2rem;
-  min-height: 100vh;
-  padding: 3rem clamp(1.5rem, 10vw, 12rem);
+  gap: clamp(2rem, 5vw, 4rem);
+  min-height: 100dvh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(2.5rem, 6vh, 4rem) clamp(1.5rem, 7vw, 8rem);
   background:
     radial-gradient(circle at 82% 22%, rgb(79 195 247 / 28%), transparent 42%),
     linear-gradient(180deg, var(--ap-hero-top), var(--ap-hero-bottom));
@@ -136,7 +151,7 @@ body:has(.home-hero) .md-tabs { display: none; }
   padding: 0.2rem 0.8rem;
   border: 1px solid var(--ap-border);
   border-radius: 999px;
-  background: rgb(255 255 255 / 55%);
+  background: rgba(241, 241, 241, 0.55);
   color: var(--ap-muted);
   font-size: 0.8rem;
   font-weight: 700;
@@ -151,7 +166,7 @@ body:has(.home-hero) .md-tabs { display: none; }
   color: var(--ap-hero-title);
 }
 .hero-lead { max-width: 36rem; font-size: 1.1rem; line-height: 1.8; color: var(--ap-ink); }
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem; margin-top: 1.8rem; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.0rem; margin-top: 1.8rem; }
 
 .md-typeset .home-button {
   display: inline-block;
@@ -187,7 +202,7 @@ body:has(.home-hero) .md-tabs { display: none; }
 [data-md-color-scheme="slate"] .md-typeset ul.hero-chips li { background: rgb(255 255 255 / 6%); }
 .hero-chips strong { color: var(--ap-hero-title); font-weight: 800; }
 
-.hero-illustration { justify-self: center; width: min(100%, 22rem); color: var(--ap-ink); }
+.hero-illustration { justify-self: center; width: min(100%, 26rem); color: var(--ap-ink); }
 .hero-illustration svg { display: block; width: 100%; height: auto; animation: ap-float 7s ease-in-out infinite; }
 .hero-illustration .node { fill: var(--ap-hero-node); }
 @keyframes ap-float {
@@ -219,24 +234,12 @@ body:has(.home-hero) .md-tabs { display: none; }
 /* cartões que não são links (ex.: princípios POUR) não "pulam" ao passar o mouse */
 div.guia-card:hover { transform: none; box-shadow: none; }
 
-/* ---------- selos ("Novo", "Em construção") ---------- */
-.md-typeset .badge, .guia-card .badge {
-  display: inline-block; padding: 0.05rem 0.55rem; border-radius: 999px;
-  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
-  vertical-align: middle; line-height: 1.5;
-}
-.md-typeset .badge.badge-new, .guia-card .badge.badge-new { background: var(--ap-green); color: #fff; }
-[data-md-color-scheme="slate"] .md-typeset .badge.badge-new,
-[data-md-color-scheme="slate"] .guia-card .badge.badge-new { color: #07281a; }
-.md-typeset .badge.badge-wip, .guia-card .badge.badge-wip { background: transparent; border: 1.5px solid var(--ap-muted); color: var(--ap-muted); }
-.md-typeset h1 .badge { font-size: 0.7rem; margin-left: 0.4rem; transform: translateY(-0.2em); }
-
 /* ---------- ferramentas e técnicas (home) ---------- */
 .tool-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; }
 .tool-groups section { padding: 1rem 1.2rem; background: var(--ap-card); border: 1px solid var(--ap-border); border-top: 4px solid var(--ap-brand); border-radius: 0.7rem; }
 .md-typeset .tool-groups h3 { margin: 0 0 0.6rem; font-size: 1rem; }
 .md-typeset ul.tool-links { margin: 0; padding: 0; list-style: none; }
-.md-typeset ul.tool-links li { margin: 0; padding: 0.45rem 0; list-style: none; border-top: 1px solid var(--ap-border); display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.6rem; }
+.md-typeset ul.tool-links li { margin: 0; padding: 0.45rem 0; list-style: none; border-top: 1px solid var(--ap-border); display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.2rem; }
 .md-typeset ul.tool-links li:first-child { border-top: 0; }
 .md-typeset ul.tool-links a { font-weight: 700; }
 .tool-links span { color: var(--ap-muted); font-size: 0.85rem; }
@@ -292,4 +295,28 @@ div.guia-card:hover { transform: none; box-shadow: none; }
   * { transition: none !important; scroll-behavior: auto !important; }
   .hero-illustration svg { animation: none; }
   .md-typeset .home-button:hover, .guia-card:hover, .team-card:hover { transform: none; }
+}
+
+@media (max-width: 54em) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions,
+  .md-typeset ul.hero-chips {
+    justify-content: center;
+  }
+
+  .hero-illustration {
+    order: -1; /* Coloca o ícone acima do título no celular */
+    width: min(70%, 14rem);
+  }
 }

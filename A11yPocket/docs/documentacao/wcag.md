@@ -1,4 +1,4 @@
-# WCAG 2.2 <span class="badge badge-new">Novo</span>
+# WCAG 2.2 
 
 As **Diretrizes de Acessibilidade para Conteúdo Web** (*Web Content Accessibility Guidelines*, WCAG 2.2) são recomendações internacionais desenvolvidas pelo World Wide Web Consortium (W3C), por meio da Web Accessibility Initiative (WAI). Seu objetivo é estabelecer critérios para tornar conteúdos e aplicações web mais acessíveis às pessoas com deficiência, contemplando diferentes necessidades de percepção, interação, compreensão e utilização dos recursos digitais.
 
@@ -48,4 +48,4 @@ A análise conjunta da ABNT NBR 17225:2025 e do Guia de Boas Práticas evidencia
 Conclui-se que o atendimento aos requisitos da norma não deve ser encarado apenas como uma etapa de validação final ou estrita obrigação legal, mas como a materialização técnica de um modelo operacional inclusivo, que valorize o desenho universal e garanta a autonomia, a segurança e a usabilidade para todas as pessoas em ambientes virtuais.
 
 !!! note "Fonte"
-    WORLD WIDE WEB CONSORTIUM (W3C). *Web Content Accessibility Guidelines (WCAG) 2.2*. 5 out. 2023. Disponível em: <https://www.w3.org/TR/WCAG22/>.
+    WORLD WIDE WEB CONSORTIUM (W3C). [*Web Content Accessibility Guidelines (WCAG) 2.2*](https://www.w3.org/TR/WCAG22/).
