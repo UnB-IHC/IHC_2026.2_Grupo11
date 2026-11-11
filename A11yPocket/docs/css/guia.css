@@ -80,7 +80,7 @@
 .guia-row span { color: var(--guia-muted); font-size: 0.85rem; white-space: nowrap; }
 
 /* ---------- cartões dos eixos (introdução do guia) ---------- */
-.guia-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
+.guia-cards { display: grid; grid-template-columns: repeat(2, minmax(15rem, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
 .guia-card {
   display: flex; flex-direction: column; gap: 0.35rem;
   padding: 1rem 1.1rem;
@@ -89,6 +89,11 @@
   color: var(--guia-text); text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
+.guia-cards--full {
+  grid-template-columns: 1fr;
+}
+
 .guia-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgb(0 0 0 / 14%); }
 .guia-card strong { font-size: 1.02rem; }
 .guia-card span { color: var(--guia-muted); font-size: 0.86rem; }

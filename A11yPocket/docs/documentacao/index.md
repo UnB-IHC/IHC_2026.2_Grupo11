@@ -2,7 +2,7 @@
 
 Esta aba reúne o **conteúdo de IHC** que embasa o projeto e os **relatórios de avaliação**: a síntese do Guia de Boas Práticas UK-Brasil, a norma ABNT NBR 17225:2025, as WCAG 2.2, as técnicas de UX/DCU e, nas próximas entregas, a avaliação de um site e o teste com usuário real.
 
-O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferramentas](../checklist/index.md).
+O checklist interativo e as ferramentas de teste estão na aba [Checklist](../checklist/index.md) e [ferramentas](../documentacao/ferramentas/index.md).
 
 ## Fundamentos de acessibilidade
 
@@ -31,9 +31,9 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 ## Métodos de IHC
 
-<div class="guia-cards guia-cards--3">
+<div class="guia-cards guia-cards--full">
   <a class="guia-card" href="ux-dcu/">
-    <span class="guia-kicker">UX/DCU Checklist</span>
+    <span class="guia-kicker">UX/DCU</span>
     <strong>Técnicas de UX/DCU</strong>
     <span>Personas, jornadas, service blueprint, canvas e design empático.</span>
   </a>
@@ -56,19 +56,11 @@ O checklist interativo e as ferramentas de teste estão na aba [Checklist e ferr
 
 | Entrega | Onde está no site |
 |---|---|
-| Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist e ferramentas](../checklist/index.md) |
+| Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist](../checklist/index.md) e [ferramentas](../documentacao/ferramentas/index.md) |
 | Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](avaliacao-site/index.md) |
 | Teste de usabilidade com usuário real | [Avaliação com usuário](avaliacao-usuario/index.md) |
 | Seminário | Agenda definida em sala pela docente |
 
-## O que é novo nesta versão
-
-Estas seções foram acrescentadas à versão anterior do guia e aparecem com o selo Checklist:
-
-- **WCAG 2.2**, a versão mais recente das diretrizes do W3C;
-- **Ferramentas** de teste, com comparativo e passo a passo;
-- **Técnicas de UX/DCU**;
-- **Referências** no formato ABNT, em [Referências](../referencias.md).
 
 !!! info "Base"
     O conteúdo se apoia na norma **ABNT NBR 17225:2025**, nas **WCAG 2.2** e no material do Gov.br sobre [Acessibilidade Digital](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital). As fontes completas estão em [Referências](../referencias.md).

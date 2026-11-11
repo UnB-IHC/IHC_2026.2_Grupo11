@@ -6,7 +6,7 @@ A WCAG 2.2 foi publicada como recomendação oficial do W3C em **5 de outubro de
 
 ## Princípios fundamentais
 
-A WCAG 2.2 organiza suas diretrizes em quatro princípios, conhecidos pela sigla **POUR**:
+A WCAG 2.2 organiza suas diretrizes em quatro princípios, conhecidos pela sigla **POUR**, que Perceivable (Perceptível), Operable (Operável), Understandable (Compreensível) e Robust (Robusto):
 
 <div class="guia-cards">
   <div class="guia-card">

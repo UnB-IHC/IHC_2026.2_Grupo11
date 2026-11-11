@@ -12,7 +12,7 @@ Baseia-se no ciclo do PMI (iniciação, planejamento, execução, monitoramento/
 </div>
 
 !!! info "Como usar"
-    Leia cada critério, avalie a interface com evidências observáveis e marque apenas quando a condição for atendida. O progresso fica salvo **somente neste navegador** e alimenta a [Visão geral do progresso](progresso.md).
+    Leia cada critério, avalie a interface com evidências observáveis e marque apenas quando a condição for atendida. O progresso fica salvo **somente neste navegador** e alimenta a [Visão geral do progresso](index.md#progresso-do-checklist).
 
 - [ ] Acessibilidade considerada desde a fase de iniciação do projeto.
 - [ ] Definição de personas heterogêneas (incluindo PcD, idosos, baixo letramento digital).

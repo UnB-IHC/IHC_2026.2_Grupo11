@@ -1,6 +1,6 @@
 # Guia UK-Brasil
 
-O **Guia de Boas Práticas para Acessibilidade Digital** (Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital) organiza a acessibilidade em quatro eixos temáticos. Cada eixo tem um checklist interativo na aba [Checklist e ferramentas](../checklist/index.md).
+O **Guia de Boas Práticas para Acessibilidade Digital** (Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital) organiza a acessibilidade em quatro eixos temáticos. Cada eixo tem um checklist interativo na aba [Checklist](../checklist/index.md) e [ferramentas](../documentacao/ferramentas/index.md).
 
 ## Síntese por eixo temático
 

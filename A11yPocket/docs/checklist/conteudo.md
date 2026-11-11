@@ -12,7 +12,7 @@ Trata da produção de conteúdo acessível: terminologia correta (“pessoa com
 </div>
 
 !!! info "Como usar"
-    Leia cada critério, avalie a interface com evidências observáveis e marque apenas quando a condição for atendida. O progresso fica salvo **somente neste navegador** e alimenta a [Visão geral do progresso](progresso.md).
+    Leia cada critério, avalie a interface com evidências observáveis e marque apenas quando a condição for atendida. O progresso fica salvo **somente neste navegador** e alimenta a [Visão geral do progresso](index.md#progresso-do-checklist).
 
 ## Linguagem e terminologia
 

@@ -15,7 +15,7 @@ hide:
     </p>
     <div class="hero-actions">
       <a class="home-button primary" href="documentacao/">Documentação →</a>
-      <a class="home-button secondary" href="checklist/">Checklist</a>
+      <a class="home-button secondary" href="checklist/">Checklist de boas práticas</a>
       <a class="hero-link" href="https://github.com/UnB-IHC/IHC_2026.2_Grupo11" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
     <ul class="hero-chips" aria-label="Resumo do guia">

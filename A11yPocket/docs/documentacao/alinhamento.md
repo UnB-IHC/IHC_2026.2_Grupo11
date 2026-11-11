@@ -28,5 +28,6 @@ Esse alinhamento se materializa nos quatro pilares do guia.
 
 **A norma** obriga, tecnicamente, a existência do atributo de texto alternativo (`alt`), a estruturação lógica de cabeçalhos (H1, H2) para organização do texto e a exigência de legendas e audiodescrição para aprovação de conformidade do conteúdo multimídia.
 
-[Veja a norma em detalhes](nbr-17225.md){ .md-button }
-[Veja o checklist](../checklist/index.md){ .md-button }
+[Veja o checklist →](../checklist/index.md)
+
+[Veja a norma em detalhes →](../../documentacao/nbr17225.md)

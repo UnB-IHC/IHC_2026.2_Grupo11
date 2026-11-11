@@ -6,7 +6,7 @@ title: Metodologia
 
 ## Referenciais utilizados
 
-- **Guia de Acessibilidade melhorado (Tg-01):** cada item tem um ID, usado como referência nos problemas (por exemplo, `DEV-02`, `DES-02`, `HU-d3`). O guia está na aba [Checklist e ferramentas](../../checklist/index.md).
+- **Guia de Acessibilidade melhorado (Tg-01):** cada item tem um ID, usado como referência nos problemas (por exemplo, `DEV-02`, `DES-02`, `HU-d3`). O guia está na aba [Checklist](../../checklist/index.md) e [ferramentas](../../documentacao/ferramentas/index.md).
 - **WCAG 2.2:** critérios de sucesso, com nível A, AA ou AAA.
 - **ABNT NBR 17225:** itens aplicáveis a conteúdo web.
 - **Heurísticas de Nielsen:** 10 heurísticas (H1 a H10), aplicadas com as perguntas do Guia. Veja o [checklist de heurísticas](../../checklist/heuristicas.md).
@@ -20,7 +20,7 @@ title: Metodologia
 | axe DevTools | Violações de WCAG | 4.117.1 |
 | NVDA | Avaliação manual | 2026.3 |
 
-Mais sobre as ferramentas em [Ferramentas de teste](../ferramentas/index.md).
+Mais sobre as ferramentas em [Ferramentas de teste](../../documentacao/ferramentas/index.md).
 
 ## Escala de severidade
 
