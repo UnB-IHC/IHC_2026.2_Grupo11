@@ -940,3 +940,279 @@ div.guia-card:hover { transform: none; box-shadow: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   A11yPocket — Cards expansíveis da documentação
+   ========================================== */
+
+/* Mantém a aparência original dos cards */
+
+.md-typeset .guia-cards > details.guia-card.ap-doc-accordion {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-left: 5px solid var(--ap-green);
+  border-radius: .7rem;
+
+  overflow: hidden;
+}
+
+/* Cabeçalho clicável do card */
+
+.md-typeset .ap-doc-accordion > summary.ap-doc-accordion__trigger {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: .65rem;
+
+  padding: 1.2rem 3rem 1.2rem 1.25rem;
+
+  background: transparent;
+  color: var(--ap-ink);
+  cursor: pointer;
+
+  list-style: none;
+}
+
+/* Remove marcadores padrão do navegador e do Material */
+
+.md-typeset .ap-doc-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.md-typeset .ap-doc-accordion > summary::marker {
+  content: "";
+}
+
+.md-typeset .ap-doc-accordion > summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Mantém apenas a seta à direita */
+
+.md-typeset .ap-doc-accordion > summary::after {
+  content: "›";
+  position: absolute;
+
+  right: 1.15rem;
+  top: 50%;
+
+  color: var(--ap-brand);
+  font-size: 1.8rem;
+  line-height: 1;
+
+  transform: translateY(-50%);
+  transition: transform .2s ease;
+}
+
+.md-typeset .ap-doc-accordion[open] > summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Tipografia igual à dos outros cards */
+
+.md-typeset .ap-doc-accordion__trigger .guia-kicker {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ap-muted);
+}
+
+.md-typeset .ap-doc-accordion__trigger strong {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--ap-ink);
+}
+
+.md-typeset .ap-doc-accordion__trigger > span:last-of-type {
+  color: var(--ap-muted);
+  font-size: .85rem;
+  line-height: 1.55;
+}
+
+/* Hover discreto */
+
+.md-typeset .ap-doc-accordion > summary:hover {
+  background: color-mix(
+    in srgb,
+    var(--ap-brand) 5%,
+    var(--ap-card)
+  );
+}
+
+/* Foco visível */
+
+.md-typeset .ap-doc-accordion > summary:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: -4px;
+}
+
+/* Conteúdo expandido */
+
+.md-typeset .ap-doc-accordion__content {
+  padding: 1rem 1.25rem 1.2rem;
+
+  background: var(--ap-card);
+  border-top: 1px solid var(--ap-border);
+}
+
+/* Subtítulos */
+
+.md-typeset .ap-doc-accordion__label {
+  margin: .3rem 0 .7rem;
+  color: var(--ap-ink);
+  font-size: .82rem;
+  font-weight: 750;
+}
+
+/* Lista de subtópicos */
+
+.md-typeset ul.ap-doc-accordion__links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem;
+
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .ap-doc-accordion__links li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .ap-doc-accordion__links a {
+  display: block;
+  padding: .6rem .75rem;
+
+  background: var(--ap-surface);
+  color: var(--ap-ink);
+
+  border: 1px solid var(--ap-border);
+  border-radius: .45rem;
+
+  font-size: .82rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.md-typeset .ap-doc-accordion__links a:hover {
+  border-color: var(--ap-brand);
+  color: var(--ap-link);
+}
+
+/* Botão de visão geral */
+
+.md-typeset a.ap-doc-accordion__overview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: .5rem;
+  min-height: 2.5rem;
+  padding: .65rem 1rem;
+
+  color: var(--ap-btn-fg);
+  background: var(--ap-btn-bg);
+  border: 1px solid var(--ap-btn-bg);
+  border-radius: .45rem;
+
+  font-size: .82rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.md-typeset a.ap-doc-accordion__overview:hover {
+  filter: brightness(.94);
+  color: var(--ap-btn-fg);
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .md-typeset ul.ap-doc-accordion__links {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .ap-doc-accordion > summary {
+    padding: 1rem 2.5rem 1rem 1rem;
+  }
+
+  .md-typeset .ap-doc-accordion__content {
+    padding: 1rem;
+  }
+}
+
+/* Movimento reduzido */
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .ap-doc-accordion > summary::after {
+    transition: none;
+  }
+}
+/* ==========================================
+   A11yPocket — Cards expansíveis em largura total
+   ========================================== */
+
+/* Ocupa toda a largura da seção */
+.md-typeset .guia-cards:has(> .ap-doc-accordion) {
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+
+/* Faz o card acompanhar a largura do contêiner */
+.md-typeset .guia-cards > .ap-doc-accordion {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+/* Garante que o cabeçalho também ocupe toda a largura */
+.md-typeset .ap-doc-accordion__trigger {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botão de gravação da avaliação */
+.md-typeset a.home-button.ap-video-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 2.5rem;
+  padding: 0.6rem 1rem;
+
+  border: 1px solid #244b65;
+  border-radius: 0.5rem;
+
+  background: #183249;
+  color: #ffffff;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.md-typeset a.home-button.ap-video-button:hover {
+  background: #244b65;
+  border-color: #244b65;
+  color: #ffffff;
+}
+
+.md-typeset a.home-button.ap-video-button:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: 3px;
+}

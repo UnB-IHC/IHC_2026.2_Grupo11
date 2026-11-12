@@ -502,3 +502,93 @@
   color: var(--rel-mod-fg);
   background: var(--rel-mod-bg);
 }
+
+/* ==========================================
+   A11yPocket — Panorama de problemas
+   ========================================== */
+
+.md-typeset .rel-problems-overview {
+  margin: 2rem 0 2.5rem;
+}
+
+/* Título */
+
+.md-typeset .rel-problems-overview h2 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--ap-ink);
+}
+
+/* Grade dos indicadores */
+
+.md-typeset .rel-problems-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  padding: 2rem 0 1rem;
+  border-top: 1px solid var(--ap-border);
+}
+
+/* Cada indicador */
+
+.md-typeset .rel-problems-overview__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  min-width: 0;
+  text-align: center;
+}
+
+/* Número */
+
+.md-typeset .rel-problems-overview__item strong {
+  display: block;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 850;
+  line-height: 1.1;
+}
+
+/* Descrição */
+
+.md-typeset .rel-problems-overview__item span {
+  color: var(--ap-ink);
+  font-size: clamp(.85rem, 1.6vw, 1.15rem);
+  font-weight: 750;
+}
+
+/* Cores de severidade */
+
+.md-typeset .rel-problems-overview__item.lvl-4 strong {
+  color: var(--rel-crit-bar);
+}
+
+.md-typeset .rel-problems-overview__item.lvl-3 strong {
+  color: var(--rel-grave-bar);
+}
+
+.md-typeset .rel-problems-overview__item.lvl-2 strong {
+  color: var(--rel-mod-bar);
+}
+
+.md-typeset .rel-problems-overview__item.lvl-1 strong {
+  color: var(--rel-leve-fg);
+}
+
+/* Telas menores */
+
+@media (max-width: 600px) {
+  .md-typeset .rel-problems-overview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .md-typeset .rel-problems-overview__item {
+    gap: .5rem;
+  }
+}
