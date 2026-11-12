@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#explore-as-ferramentas" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -671,6 +680,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -687,6 +714,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-as-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explore as ferramentas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore as ferramentas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-analise-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas de análise automática
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leitores-de-tela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leitores de tela
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2052,6 +2135,53 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-as-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explore as ferramentas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore as ferramentas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-analise-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas de análise automática
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leitores-de-tela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leitores de tela
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2133,63 +2263,59 @@
 
 
 
-<h1 id="ferramentas-de-teste">Ferramentas de teste</h1>
-<p>Ferramentas automáticas <strong>ajudam a encontrar erros</strong>, mas não substituem a avaliação humana: nenhuma delas diz, por exemplo, se a descrição de uma imagem faz sentido. Por isso, esta página reúne as ferramentas de <strong>análise automática</strong> e os <strong>leitores de tela</strong>, com um comparativo e um passo a passo de uso. Use-as junto com o <a href="../../checklist/">checklist</a>.</p>
-<h2 id="comparativo-rapido">Comparativo rápido</h2>
-<table>
-<thead>
-<tr>
-<th>Ferramenta</th>
-<th>Tipo</th>
-<th>Plataforma</th>
-<th>Use quando você quer…</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>WAVE</strong></td>
-<td>Análise visual (extensão e site)</td>
-<td>Navegador</td>
-<td>Ver erros sobre o próprio layout: contraste, títulos e <code>alt</code>.</td>
-</tr>
-<tr>
-<td><strong>Lighthouse</strong></td>
-<td>Auditoria automática</td>
-<td>Chrome DevTools</td>
-<td>Acompanhar uma <strong>nota de 0 a 100</strong> entre versões e sprints.</td>
-</tr>
-<tr>
-<td><strong>Axe DevTools</strong></td>
-<td>Análise automática + testes guiados</td>
-<td>Navegador / DevTools</td>
-<td>Varrer o código com poucos falsos positivos e guiar testes manuais.</td>
-</tr>
-<tr>
-<td><strong>ASES Web</strong></td>
-<td>Avaliador oficial do Governo Federal</td>
-<td>Web</td>
-<td>Medir a conformidade com o <strong>eMAG</strong> em sites públicos.</td>
-</tr>
-<tr>
-<td><strong>NVDA</strong></td>
-<td>Leitor de tela</td>
-<td>Windows</td>
-<td>Testar o fluxo “ouvido” de cima para baixo.</td>
-</tr>
-<tr>
-<td><strong>VoiceOver</strong></td>
-<td>Leitor de tela</td>
-<td>macOS, iOS, iPadOS</td>
-<td>Testar gestos, alvos de toque e agrupamentos no celular da Apple.</td>
-</tr>
-<tr>
-<td><strong>TalkBack</strong></td>
-<td>Leitor de tela</td>
-<td>Android</td>
-<td>Conferir a ordem de foco em apps e sites no Android.</td>
-</tr>
-</tbody>
-</table>
+  <h1>Visão geral</h1>
+
+<h2 id="explore-as-ferramentas">Explore as ferramentas</h2>
+<p>As ferramentas de avaliação possuem objetivos e métodos
+diferentes. Conheça seus recursos e saiba quando utilizá-las.</p>
+<h3 id="ferramentas-de-analise-automatica">Ferramentas de análise automática</h3>
+<div class="guia-cards guia-cards--3">
+  <a class="guia-card" href="wave.md">
+    <span class="guia-kicker">Análise visual</span>
+    <strong>WAVE</strong>
+    <span>Identificação visual de problemas de acessibilidade, contraste e estrutura.</span>
+  </a>
+
+  <a class="guia-card" href="axe.md">
+    <span class="guia-kicker">Auditoria automática</span>
+    <strong>axe DevTools</strong>
+    <span>Inspeção de violações de acessibilidade e orientação para correção.</span>
+  </a>
+
+  <a class="guia-card" href="lighthouse.md">
+    <span class="guia-kicker">Auditoria de qualidade</span>
+    <strong>Lighthouse</strong>
+    <span>Auditorias automatizadas de acessibilidade e outros aspectos de qualidade web.</span>
+  </a>
+
+  <a class="guia-card" href="ases.md">
+    <span class="guia-kicker">eMAG</span>
+    <strong>ASES Web</strong>
+    <span>Avaliação de páginas web com foco nas recomendações brasileiras de acessibilidade.</span>
+  </a>
+</div>
+
+<h3 id="leitores-de-tela">Leitores de tela</h3>
+<div class="guia-cards guia-cards--3">
+  <a class="guia-card" href="nvda.md">
+    <span class="guia-kicker">Windows</span>
+    <strong>NVDA</strong>
+    <span>Teste da navegação e interpretação de interfaces com leitor de tela.</span>
+  </a>
+
+  <a class="guia-card" href="voiceover.md">
+    <span class="guia-kicker">Apple</span>
+    <strong>VoiceOver</strong>
+    <span>Avaliação da experiência com leitor de tela em dispositivos Apple.</span>
+  </a>
+
+  <a class="guia-card is-wide" href="talkback.md">
+    <span class="guia-kicker">Android</span>
+    <strong>TalkBack</strong>
+    <span>Teste de navegação, gestos e interação acessível em dispositivos Android.</span>
+  </a>
+</div>
+
 <div class="admonition tip">
 <p class="admonition-title">Sugestão de fluxo de teste</p>
 <ol>
@@ -2264,6 +2390,10 @@
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../js/guia-checklist.js"></script>
+      
+        <script src="../../js/problemas-interativos.js"></script>
+      
+        <script src="../../js/evidencias-lightbox.js"></script>
       
     
   </body>

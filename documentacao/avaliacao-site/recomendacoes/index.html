@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#recomendacoes-e-conclusao" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1402,6 +1411,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recomendações
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1419,6 +1448,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recomendacoes-priorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomendações priorizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próximos passos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2143,60 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recomendacoes-priorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomendações priorizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próximos passos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2160,7 +2306,7 @@
 </div>
 <p>Os detalhes de cada problema estão na <a href="../problemas/">tabela de problemas</a>.</p>
 <h2 id="conclusao">Conclusão</h2>
-<p>A avaliação mostrou que o site do Detran-DF atende apenas parcialmente aos critérios de acessibilidade e usabilidade adotados. Foram registrados 11 problemas: 4 críticos, 1 grave, 5 moderados e 1 leve.</p>
+<p>A avaliação mostrou que o site do Detran-DF atende apenas parcialmente aos critérios de acessibilidade e usabilidade adotados. Foram registrados 14 problemas: 4 críticos, 4 graves, 5 moderados e 1 leve.</p>
 <p>Os críticos e graves se concentram na Página Inicial e afetam sobretudo usuários de leitor de tela: imagens e links de imagem sem texto alternativo, campos sem rótulo e botões sem nome acessível. Também é crítico o loop de autenticação na integração com o gov.br, que deixa o usuário sem retorno de status no Detran Digital.</p>
 <p>As ferramentas automáticas confirmaram esse quadro, com destaque para a Página Inicial 2 (E22), que teve 276 erros no WAVE, e para o E19, com 72 erros de contraste. A avaliação manual apontou ainda falhas de landmarks, de anúncio de mensagens dinâmicas, de zoom e de contraste do texto do corpo.</p>
 <p>Por outro lado, a maior parte das funções é acessível pelo teclado, e a página inicial oferece um atalho para os serviços mais acessados. Na análise heurística, o site atende parcialmente H1, H2, H3, H5, H6, H7, H8, H9 e H10, e não atende à H4.</p>
@@ -2246,6 +2392,10 @@
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../js/guia-checklist.js"></script>
+      
+        <script src="../../../js/problemas-interativos.js"></script>
+      
+        <script src="../../../js/evidencias-lightbox.js"></script>
       
     
   </body>

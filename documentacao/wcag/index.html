@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#wcag-22" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -500,6 +509,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WCAG 2.2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -517,6 +546,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principios-fundamentais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Princípios fundamentais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#niveis-de-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Níveis de conformidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-acerca-da-nbr-e-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações acerca da NBR e WCAG
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretando-criterios-na-pratica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretando critérios na prática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-recomendado-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo recomendado de avaliação
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2154,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principios-fundamentais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Princípios fundamentais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#niveis-de-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Níveis de conformidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-acerca-da-nbr-e-wcag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações acerca da NBR e WCAG
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpretando-criterios-na-pratica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretando critérios na prática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-recomendado-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo recomendado de avaliação
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2194,6 +2362,57 @@
 <p class="admonition-title">Fonte</p>
 <p>WORLD WIDE WEB CONSORTIUM (W3C). <a href="https://www.w3.org/TR/WCAG22/"><em>Web Content Accessibility Guidelines (WCAG) 2.2</em></a>.</p>
 </div>
+<h2 id="interpretando-criterios-na-pratica">Interpretando critérios na prática</h2>
+<p>As WCAG organizam os critérios sob os princípios <strong>Perceptível, Operável, Compreensível e Robusto (POUR)</strong>. A avaliação de um critério exige observar as condições indicadas no próprio texto, incluindo exceções e níveis de conformidade.</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Critério frequentemente relevante</th>
+<th>Como verificar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Imagem informativa</td>
+<td>1.1.1 — Conteúdo não textual</td>
+<td>Confira se a alternativa transmite o propósito da imagem.</td>
+</tr>
+<tr>
+<td>Contraste do texto</td>
+<td>1.4.3 — Contraste (mínimo)</td>
+<td>Meça contraste entre texto e fundo em diferentes estados.</td>
+</tr>
+<tr>
+<td>Acesso sem mouse</td>
+<td>2.1.1 — Teclado</td>
+<td>Percorra a interface usando somente o teclado.</td>
+</tr>
+<tr>
+<td>Rótulos de campos</td>
+<td>3.3.2 — Rótulos ou instruções</td>
+<td>Confira nome acessível e instruções junto ao campo.</td>
+</tr>
+<tr>
+<td>Estados de controles</td>
+<td>4.1.2 — Nome, função, valor</td>
+<td>Confirme que o leitor de tela anuncia função e estado.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Atenção ao uso da tabela</p>
+<p>Estes são <strong>exemplos de aplicação</strong>, não uma reprodução integral nem substituição dos critérios normativos. Verifique a redação e as exceções na documentação oficial antes de declarar conformidade.</p>
+</div>
+<h2 id="processo-recomendado-de-avaliacao">Processo recomendado de avaliação</h2>
+<ol>
+<li>Definir páginas, fluxos e necessidades de acesso; </li>
+<li>Identificar critérios pertinentes;</li>
+<li>Realizar varredura automática; </li>
+<li>Testar teclado, leitor de tela, contraste e ampliação; </li>
+<li>Documentar evidência, impacto e correção; </li>
+<li>Retestar após a implementação.</li>
+</ol>
 
 
 
@@ -2259,6 +2478,10 @@
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../js/guia-checklist.js"></script>
+      
+        <script src="../../js/problemas-interativos.js"></script>
+      
+        <script src="../../js/evidencias-lightbox.js"></script>
       
     
   </body>

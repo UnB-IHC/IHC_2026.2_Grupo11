@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#tabela-de-problemas" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1346,6 +1355,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas encontrados
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1363,6 +1392,207 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P01 · Contraste insuficiente nos serviços mais acessados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P02 · Imagens de aplicativos sem texto alternativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P03 · Campo de formulário sem rótulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P04 · Botões sem nome acessível
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P05 · Possível loop de autenticação com o gov.br
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P06 · Inconsistência visual entre o portal e o Detran Digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P07 · Mensagens de erro genéricas em formulários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P08 · Renovação de CNH difícil de encontrar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P09 · Logoff sem confirmação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P10 · FAQ ausente ou pouco visível no portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P11 · Transferência de veículo sem opção de desfazer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P12 · Falha na hierarquia de títulos e cabeçalhos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P13 · Regiões da página inadequadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P14 · Zoom e reflow insuficientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2281,198 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P01 · Contraste insuficiente nos serviços mais acessados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P02 · Imagens de aplicativos sem texto alternativo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P03 · Campo de formulário sem rótulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P04 · Botões sem nome acessível
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P05 · Possível loop de autenticação com o gov.br
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P06 · Inconsistência visual entre o portal e o Detran Digital
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P07 · Mensagens de erro genéricas em formulários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P08 · Renovação de CNH difícil de encontrar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P09 · Logoff sem confirmação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P10 · FAQ ausente ou pouco visível no portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P11 · Transferência de veículo sem opção de desfazer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P12 · Falha na hierarquia de títulos e cabeçalhos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P13 · Regiões da página inadequadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P14 · Zoom e reflow insuficientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2134,15 +2556,7 @@
 
 
 <h1 id="tabela-de-problemas">Tabela de problemas</h1>
-<p>Foram registrados <strong>11 problemas</strong>. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em <a href="../metodologia/#escala-de-severidade">Metodologia</a>.</p>
-<h2 id="resumo-por-severidade">Resumo por severidade</h2>
-<ul class="rel-sevbar" aria-label="Distribuição dos problemas por severidade">
-  <li class="lvl-4" style="flex: 4">4 críticos</li>
-  <li class="lvl-3" style="flex: 1">1 grave</li>
-  <li class="lvl-2" style="flex: 5">5 moderados</li>
-  <li class="lvl-1" style="flex: 1">1 leve</li>
-</ul>
-
+<p>Foram registrados <strong>14 problemas</strong>. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em <a href="../metodologia/#escala-de-severidade">Metodologia</a>.</p>
 <h2 id="visao-geral">Visão geral</h2>
 <table>
 <thead>
@@ -2160,49 +2574,49 @@
 <td>Contraste insuficiente nos serviços mais acessados</td>
 <td>E1 – Página Inicial</td>
 <td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
-<td><a href="../evidencias-manuais/#fig-c14">Fig. C14</a></td>
+<td>Fig. C14</td>
 </tr>
 <tr>
 <td><a href="#p02">P02</a></td>
 <td>Imagens de aplicativos sem texto alternativo</td>
 <td>E1 – Página Inicial</td>
 <td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
-<td><a href="../evidencias-manuais/#fig-c15">Fig. C15</a></td>
+<td>Fig. C15</td>
 </tr>
 <tr>
 <td><a href="#p03">P03</a></td>
 <td>Campo de formulário sem rótulo</td>
 <td>E1 – Página Inicial</td>
 <td style="text-align: center;"><span class="sev sev-3">Grave</span></td>
-<td><a href="../evidencias-manuais/#fig-c16">Fig. C16</a></td>
+<td>Fig. C16</td>
 </tr>
 <tr>
 <td><a href="#p04">P04</a></td>
 <td>Botões sem nome acessível</td>
 <td>E1 – Página Inicial</td>
 <td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
-<td><a href="../evidencias-manuais/#fig-c17">Fig. C17</a></td>
+<td>Fig. C17</td>
 </tr>
 <tr>
 <td><a href="#p05">P05</a></td>
 <td>Possível loop de autenticação com o gov.br</td>
 <td>E21 – Página de Login do Detran Digital</td>
 <td style="text-align: center;"><span class="sev sev-4">Crítico</span></td>
-<td><a href="../evidencias-manuais/#fig-c18">Fig. C18</a></td>
+<td>Fig. C18</td>
 </tr>
 <tr>
 <td><a href="#p06">P06</a></td>
 <td>Inconsistência visual entre o portal e o Detran Digital</td>
 <td>E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital)</td>
 <td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
-<td><a href="../evidencias-manuais/#fig-c19">Fig. C19</a>, <a href="../evidencias-manuais/#fig-c20">Fig. C20</a></td>
+<td>Fig. C19, Fig. C20</td>
 </tr>
 <tr>
 <td><a href="#p07">P07</a></td>
 <td>Mensagens de erro genéricas em formulários</td>
 <td>E7 – Página de Transferência de Veículo no Detran Digital</td>
 <td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
-<td><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></td>
+<td>Fig. C21</td>
 </tr>
 <tr>
 <td><a href="#p08">P08</a></td>
@@ -2216,21 +2630,42 @@
 <td>Logoff sem confirmação</td>
 <td>E1 – Página Inicial do Detran Digital</td>
 <td style="text-align: center;"><span class="sev sev-1">Leve</span></td>
-<td><a href="../evidencias-manuais/#fig-c22">Fig. C22</a></td>
+<td>Fig. C22</td>
 </tr>
 <tr>
 <td><a href="#p10">P10</a></td>
 <td>FAQ ausente ou pouco visível no portal</td>
 <td>E22 – Página Inicial do Detran-DF</td>
 <td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
-<td><a href="../evidencias-manuais/#fig-c23">Fig. C23</a></td>
+<td>Fig. C23</td>
 </tr>
 <tr>
 <td><a href="#p11">P11</a></td>
 <td>Transferência de veículo sem opção de desfazer</td>
 <td>E7 – Página de Transferência de Veículo</td>
 <td style="text-align: center;"><span class="sev sev-2">Moderado</span></td>
-<td><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></td>
+<td>Fig. C21</td>
+</tr>
+<tr>
+<td><a href="#p12">P12</a></td>
+<td>Falha na hierarquia de títulos e cabeçalhos</td>
+<td>E1, E14 e E21</td>
+<td style="text-align: center;"><span class="sev sev-3">Grave</span></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-c3.webp">Fig. C3</a></td>
+</tr>
+<tr>
+<td><a href="#p13">P13</a></td>
+<td>Regiões da página (landmarks) ausentes ou inadequadas</td>
+<td>E1, E14, E18–E21</td>
+<td style="text-align: center;"><span class="sev sev-3">Grave</span></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-c6.webp">Fig. C6</a></td>
+</tr>
+<tr>
+<td><a href="#p14">P14</a></td>
+<td>Perda de conteúdo e rolagem horizontal com ampliação</td>
+<td>Todas as páginas avaliadas</td>
+<td style="text-align: center;"><span class="sev sev-3">Grave</span></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-c8.webp">Fig. C8</a>, <a href="../../../assets/images/avaliacao-detran/fig-c9.webp">Fig. C9</a></td>
 </tr>
 </tbody>
 </table>
@@ -2247,16 +2682,16 @@
 <p><span class="prob-label">Referência</span>WCAG 1.4.3, Guia DES-02 (contraste mínimo) e HU-h2</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c14">Fig. C14</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C14</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Alterar a cor do texto para um tom mais contrastante com o fundo, de preferência um tom mais escuro.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c14.webp" rel="noopener" target="_blank"><img alt="Cartões de serviços da Página Inicial com o texto descritivo em cinza claro sobre fundo branco, de baixo contraste." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c14.webp" /></a></p>
+<p><img alt="Cartões de serviços da Página Inicial com o texto descritivo em cinza claro sobre fundo branco, de baixo contraste." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c14.webp" /></p>
 <figcaption>
-<p><strong>Fig. C14</strong> · Evidência de P01. <a href="../evidencias-manuais/#fig-c14">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C14</strong> · Evidência de P01.</p>
 </figcaption>
 </figure>
 </div>
@@ -2272,16 +2707,16 @@
 <p><span class="prob-label">Referência</span>WCAG 1.1.1, WCAG 2.4.4, Guia DEV-02 e CON-12</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c15">Fig. C15</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C15</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Inserir texto alternativo (<code>alt</code>) na imagem que descreva claramente o destino ou a ação do link (ex.: <code>alt="Acessar serviços de Habilitação"</code>), e não apenas o que a imagem é.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c15.webp" rel="noopener" target="_blank"><img alt="Botões de download da App Store e do Google Play na Página Inicial, cada um acompanhado de um ícone de imagem sem texto alternativo." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c15.webp" /></a></p>
+<p><img alt="Botões de download da App Store e do Google Play na Página Inicial, cada um acompanhado de um ícone de imagem sem texto alternativo." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c15.webp" /></p>
 <figcaption>
-<p><strong>Fig. C15</strong> · Evidência de P02. <a href="../evidencias-manuais/#fig-c15">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C15</strong> · Evidência de P02.</p>
 </figcaption>
 </figure>
 </div>
@@ -2297,16 +2732,16 @@
 <p><span class="prob-label">Referência</span>WCAG 1.3.1 (Informações e Relações), WCAG 3.3.2 (Rótulos ou Instruções), Guia DEV-14</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c16">Fig. C16</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C16</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Associar um elemento <code>&lt;label&gt;</code> válido ao campo <code>&lt;input&gt;</code> através dos atributos <code>for</code> e <code>id</code>, ou utilizar <code>aria-label</code> caso o layout não permita um rótulo visual.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c16.webp" rel="noopener" target="_blank"><img alt="Campo de mensagem do assistente virtual (“Digite uma mensagem”) sem rótulo associado." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c16.webp" /></a></p>
+<p><img alt="Campo de mensagem do assistente virtual (“Digite uma mensagem”) sem rótulo associado." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c16.webp" /></p>
 <figcaption>
-<p><strong>Fig. C16</strong> · Evidência de P03. <a href="../evidencias-manuais/#fig-c16">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C16</strong> · Evidência de P03.</p>
 </figcaption>
 </figure>
 </div>
@@ -2322,16 +2757,16 @@
 <p><span class="prob-label">Referência</span>WCAG 4.1.2 (link para as redes sociais), Guia DEV-11 e DEV-01</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c17">Fig. C17</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C17</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Adicionar texto descritivo no interior da tag <code>&lt;button&gt;</code>. Se o botão utilizar apenas um ícone visual, deve-se adicionar o atributo <code>aria-label="[Ação do botão]"</code>.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c17.webp" rel="noopener" target="_blank"><img alt="Ícones de redes sociais (Facebook, X, LinkedIn) acompanhados de ícones de imagem sem nome acessível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c17.webp" /></a></p>
+<p><img alt="Ícones de redes sociais (Facebook, X, LinkedIn) acompanhados de ícones de imagem sem nome acessível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c17.webp" /></p>
 <figcaption>
-<p><strong>Fig. C17</strong> · Evidência de P04. <a href="../evidencias-manuais/#fig-c17">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C17</strong> · Evidência de P04.</p>
 </figcaption>
 </figure>
 </div>
@@ -2347,16 +2782,16 @@
 <p><span class="prob-label">Referência</span>WCAG 4.1.3 (Mensagens de Status, AA), Guia DEV-10 e HU-a1</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c18">Fig. C18</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C18</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Resolver os problemas de integração da plataforma gov.br com o Detran Digital.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c18.webp" rel="noopener" target="_blank"><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c18.webp" /></a></p>
+<p><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c18.webp" /></p>
 <figcaption>
-<p><strong>Fig. C18</strong> · Evidência de P05. <a href="../evidencias-manuais/#fig-c18">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C18</strong> · Evidência de P05.</p>
 </figcaption>
 </figure>
 </div>
@@ -2372,22 +2807,22 @@
 <p><span class="prob-label">Referência</span>WCAG 3.2.3 (Navegação Consistente, AA), Guia DES-06, HU-d1 e HU-d3</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c19">Fig. C19</a>, <a href="../evidencias-manuais/#fig-c20">Fig. C20</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C19, Fig. C20</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Integrar as características visuais das duas páginas a fim de encontrar uma solução visual consistente e lógica.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c19.webp" rel="noopener" target="_blank"><img alt="Página inicial do Detran Digital, com layout diferente do portal público." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c19.webp" /></a></p>
+<p><img alt="Página inicial do Detran Digital, com layout diferente do portal público." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c19.webp" /></p>
 <figcaption>
-<p><strong>Fig. C19</strong> · Evidência de P06. <a href="../evidencias-manuais/#fig-c19">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C19</strong> · Evidência de P06.</p>
 </figcaption>
 </figure>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c20.webp" rel="noopener" target="_blank"><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c20.webp" /></a></p>
+<p><img alt="Página de login do Detran Digital, com o botão “Entrar com gov.br”." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c20.webp" /></p>
 <figcaption>
-<p><strong>Fig. C20</strong> · Evidência de P06. <a href="../evidencias-manuais/#fig-c20">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C20</strong> · Evidência de P06.</p>
 </figcaption>
 </figure>
 </div>
@@ -2403,16 +2838,16 @@
 <p><span class="prob-label">Referência</span>WCAG 3.3.1 (Identificação do Erro, A), Guia DEV-16, HU-i1 e HU-i3</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C21</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Adicionar textos auxiliares de explicações de erros de preenchimento nos campos de formulários com esse problema.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c21.webp" rel="noopener" target="_blank"><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></a></p>
+<p><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></p>
 <figcaption>
-<p><strong>Fig. C21</strong> · Evidência de P07. <a href="../evidencias-manuais/#fig-c21">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C21</strong> · Evidência de P07.</p>
 </figcaption>
 </figure>
 </div>
@@ -2447,16 +2882,16 @@
 <p><span class="prob-label">Referência</span>Guia HU-e1</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c22">Fig. C22</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C22</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Inserir uma mensagem de confirmação na operação de logoff.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c22.webp" rel="noopener" target="_blank"><img alt="Menu do usuário do Detran Digital com a opção “Logoff” sem confirmação." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c22.webp" /></a></p>
+<p><img alt="Menu do usuário do Detran Digital com a opção “Logoff” sem confirmação." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c22.webp" /></p>
 <figcaption>
-<p><strong>Fig. C22</strong> · Evidência de P09. <a href="../evidencias-manuais/#fig-c22">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C22</strong> · Evidência de P09.</p>
 </figcaption>
 </figure>
 </div>
@@ -2472,16 +2907,16 @@
 <p><span class="prob-label">Referência</span>Guia HU-j1</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c23">Fig. C23</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C23</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Se houver uma seção correspondente, deixá-la visível e devidamente contrastada em todas as páginas associadas.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c23.webp" rel="noopener" target="_blank"><img alt="Página inicial do portal do Detran-DF, sem seção de perguntas frequentes visível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c23.webp" /></a></p>
+<p><img alt="Página inicial do portal do Detran-DF, sem seção de perguntas frequentes visível." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c23.webp" /></p>
 <figcaption>
-<p><strong>Fig. C23</strong> · Evidência de P10. <a href="../evidencias-manuais/#fig-c23">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C23</strong> · Evidência de P10.</p>
 </figcaption>
 </figure>
 </div>
@@ -2497,16 +2932,88 @@
 <p><span class="prob-label">Referência</span>HU-c1</p>
 </div>
 <div>
-<p><span class="prob-label">Evidência</span><a href="../evidencias-manuais/#fig-c21">Fig. C21</a></p>
+<p><span class="prob-label">Evidência</span>Fig. C21</p>
 </div>
 </div>
 <div class="prob-rec">
 <p><strong>Recomendação.</strong> Oferecer opção de desfazer ou cancelar a solicitação, com confirmação do resultado.</p>
 </div>
 <figure class="prob-fig">
-<p><a href="../../../assets/images/avaliacao-detran/fig-c21.webp" rel="noopener" target="_blank"><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></a></p>
+<p><img alt="Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c21.webp" /></p>
 <figcaption>
-<p><strong>Fig. C21</strong> · Evidência de P07. <a href="../evidencias-manuais/#fig-c21">Ver no Apêndice C</a>.</p>
+<p><strong>Fig. C21</strong> · Evidência de P07.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p12">P12 · Falha na hierarquia de títulos e cabeçalhos</h3>
+<div class="prob-card lvl-3">
+<p><span class="sev sev-3">Grave</span></p>
+<p>Estrutura de títulos e cabeçalhos (de <code>h1</code> a <code>h6</code>) inconsistente, dificultando compreender a organização da página e navegar por títulos com leitor de tela.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1, E14 e E21</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.3.1 e 2.4.6; Guia DEV-04</p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Organizar títulos de forma lógica, com níveis que representem as seções e descrições claras, evitando saltos que prejudiquem a estrutura compreendida por tecnologias assistivas.</p>
+</div>
+<figure class="prob-fig">
+<p><img alt="Exemplo de inspeção da estrutura de cabeçalhos do Detran-DF." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c3.webp" /></p>
+<figcaption>
+<p><strong>Fig. C3</strong> · Evidência de P12 registrada no relatório de avaliação.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p13">P13 · Regiões da página inadequadas</h3>
+<div class="prob-card lvl-3">
+<p><span class="sev sev-3">Grave</span></p>
+<p>Ausência ou marcação inadequada de regiões da página (<em>landmarks</em> HTML5/ARIA), que dificulta saltar diretamente para navegação, conteúdo principal ou rodapé por leitores de tela.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>E1, E14, E18, E19, E20 e E21</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.3.1; Guia DEV-01</p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Utilizar regiões semânticas como <code>header</code>, <code>nav</code>, <code>main</code> e <code>footer</code> e, quando necessário, atributos ARIA equivalentes, sem criar regiões redundantes.</p>
+</div>
+<figure class="prob-fig">
+<p><img alt="Registro de inspeção das regiões semânticas da interface." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c6.webp" /></p>
+<figcaption>
+<p><strong>Fig. C6</strong> · Evidência de P13 registrada no relatório de avaliação.</p>
+</figcaption>
+</figure>
+</div>
+<h3 id="p14">P14 · Zoom e reflow insuficientes</h3>
+<div class="prob-card lvl-3">
+<p><span class="sev sev-3">Grave</span></p>
+<p>Foi relatada perda de conteúdo a 200% de zoom e necessidade de rolagem horizontal a 400%, comprometendo o uso por pessoas com baixa visão.</p>
+<div class="prob-grid">
+<div>
+<p><span class="prob-label">Onde</span>Páginas avaliadas no relatório</p>
+</div>
+<div>
+<p><span class="prob-label">Referência</span>WCAG 1.4.4 e 1.4.10; Guia DES-01 e DES-04</p>
+</div>
+</div>
+<div class="prob-rec">
+<p><strong>Recomendação.</strong> Utilizar layout responsivo com unidades flexíveis e adaptação do conteúdo para preservar sua leitura e operação em ampliação, observadas as exceções dos critérios aplicáveis.</p>
+</div>
+<figure class="prob-fig">
+<p><img alt="Registro do problema de ampliação na interface avaliada." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c8.webp" /></p>
+<figcaption>
+<p><strong>Fig. C8</strong> · Evidência de P14.</p>
+</figcaption>
+</figure>
+<figure class="prob-fig">
+<p><img alt="Registro de rolagem horizontal na ampliação da interface avaliada." loading="lazy" src="../../../assets/images/avaliacao-detran/fig-c9.webp" /></p>
+<figcaption>
+<p><strong>Fig. C9</strong> · Evidência complementar de P14.</p>
 </figcaption>
 </figure>
 </div>
@@ -2578,6 +3085,10 @@
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../js/guia-checklist.js"></script>
+      
+        <script src="../../../js/problemas-interativos.js"></script>
+      
+        <script src="../../../js/evidencias-lightbox.js"></script>
       
     
   </body>

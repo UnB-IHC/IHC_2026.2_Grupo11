@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#resultados-da-avaliacao-automatica" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1262,6 +1271,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação automática
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1279,6 +1308,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WAVE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axe-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        axe DevTools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principais-achados-automaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principais achados automáticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2132,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WAVE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axe-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        axe DevTools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principais-achados-automaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principais achados automáticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2134,14 +2258,19 @@
 
 
 <h1 id="resultados-da-avaliacao-automatica">Resultados da avaliação automática</h1>
-<p>As páginas foram analisadas com o <strong>WAVE</strong> e o <strong>axe DevTools</strong>. Os números abaixo vêm das capturas do <a href="../evidencias-ferramentas/">Apêndice B</a>.</p>
+<p>As páginas foram analisadas com o <strong>WAVE</strong> e o <strong>axe DevTools</strong>. Os valores abaixo foram registrados pela equipe nas capturas de avaliação. Clique em uma referência <strong>Fig. B...</strong> para ampliar a imagem na mesma página.</p>
 <ul class="rel-stats" aria-label="Destaques da avaliação automática">
   <li class="rel-stat lvl-4"><strong>276</strong><span>erros no WAVE na Página Inicial 2 (E22), pontuação 1,3</span></li>
   <li class="rel-stat lvl-4"><strong>72</strong><span>erros de contraste na consulta de instrutores (E19)</span></li>
   <li class="rel-stat lvl-3"><strong>72</strong><span>violações no axe DevTools na marcação de provas (E9)</span></li>
 </ul>
 
+<div class="admonition tip">
+<p class="admonition-title">Como consultar as evidências</p>
+<p>Clique em <strong>Fig. B...</strong> para ampliar a captura diretamente na página. Os dados da tabela são resultados automáticos e devem ser interpretados em conjunto com a inspeção manual.</p>
+</div>
 <h2 id="wave">WAVE</h2>
+<div class="rel-auto-tables">
 <table>
 <thead>
 <tr>
@@ -2160,7 +2289,7 @@
 <td style="text-align: right;">36</td>
 <td style="text-align: right;">39</td>
 <td style="text-align: right;">2,9</td>
-<td><a href="../evidencias-ferramentas/#fig-b1">Fig. B1</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b1.webp">Fig. B1</a></td>
 </tr>
 <tr>
 <td>E2</td>
@@ -2168,7 +2297,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b2">Fig. B2</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b2.webp">Fig. B2</a></td>
 </tr>
 <tr>
 <td>E3</td>
@@ -2176,7 +2305,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b3">Fig. B3</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b3.webp">Fig. B3</a></td>
 </tr>
 <tr>
 <td>E4</td>
@@ -2184,7 +2313,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b4">Fig. B4</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b4.webp">Fig. B4</a></td>
 </tr>
 <tr>
 <td>E5</td>
@@ -2192,7 +2321,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">22</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b5">Fig. B5</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b5.webp">Fig. B5</a></td>
 </tr>
 <tr>
 <td>E6</td>
@@ -2200,7 +2329,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">22</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b6">Fig. B6</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b6.webp">Fig. B6</a></td>
 </tr>
 <tr>
 <td>E7</td>
@@ -2208,7 +2337,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b7">Fig. B7</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b7.webp">Fig. B7</a></td>
 </tr>
 <tr>
 <td>E8</td>
@@ -2216,7 +2345,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">29</td>
 <td style="text-align: right;">3,8</td>
-<td><a href="../evidencias-ferramentas/#fig-b8">Fig. B8</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b8.webp">Fig. B8</a></td>
 </tr>
 <tr>
 <td>E9</td>
@@ -2224,7 +2353,7 @@
 <td style="text-align: right;">138 (34+35+35+34)</td>
 <td style="text-align: right;">94 (22+21+21+30)</td>
 <td style="text-align: right;">~4,23</td>
-<td><a href="../evidencias-ferramentas/#fig-b9">Fig. B9</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b9.webp">Fig. B9</a></td>
 </tr>
 <tr>
 <td>E10</td>
@@ -2232,7 +2361,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">33</td>
 <td style="text-align: right;">3,8</td>
-<td><a href="../evidencias-ferramentas/#fig-b10">Fig. B10</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b10.webp">Fig. B10</a></td>
 </tr>
 <tr>
 <td>E11</td>
@@ -2240,7 +2369,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b11">Fig. B11</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b11.webp">Fig. B11</a></td>
 </tr>
 <tr>
 <td>E12</td>
@@ -2248,7 +2377,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b12">Fig. B12</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b12.webp">Fig. B12</a></td>
 </tr>
 <tr>
 <td>E13</td>
@@ -2256,7 +2385,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b13">Fig. B13</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b13.webp">Fig. B13</a></td>
 </tr>
 <tr>
 <td>E14</td>
@@ -2264,7 +2393,7 @@
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">10</td>
-<td><a href="../evidencias-ferramentas/#fig-b14">Fig. B14</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b14.webp">Fig. B14</a></td>
 </tr>
 <tr>
 <td>E15</td>
@@ -2272,7 +2401,7 @@
 <td style="text-align: right;">35</td>
 <td style="text-align: right;">22</td>
 <td style="text-align: right;">4,7</td>
-<td><a href="../evidencias-ferramentas/#fig-b15">Fig. B15</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b15.webp">Fig. B15</a></td>
 </tr>
 <tr>
 <td>E16</td>
@@ -2280,7 +2409,7 @@
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">21</td>
 <td style="text-align: right;">4,4</td>
-<td><a href="../evidencias-ferramentas/#fig-b16">Fig. B16</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b16.webp">Fig. B16</a></td>
 </tr>
 <tr>
 <td>E18</td>
@@ -2288,7 +2417,7 @@
 <td style="text-align: right;">39</td>
 <td style="text-align: right;">24</td>
 <td style="text-align: right;">4,6</td>
-<td><a href="../evidencias-ferramentas/#fig-b17">Fig. B17</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b17.webp">Fig. B17</a></td>
 </tr>
 <tr>
 <td>E19</td>
@@ -2296,7 +2425,7 @@
 <td style="text-align: right;">42</td>
 <td style="text-align: right;"><strong>72</strong></td>
 <td style="text-align: right;"><strong>2,2</strong></td>
-<td><a href="../evidencias-ferramentas/#fig-b18">Fig. B18</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b18.webp">Fig. B18</a></td>
 </tr>
 <tr>
 <td>E20</td>
@@ -2304,7 +2433,7 @@
 <td style="text-align: right;">36</td>
 <td style="text-align: right;">24</td>
 <td style="text-align: right;">4,7</td>
-<td><a href="../evidencias-ferramentas/#fig-b19">Fig. B19</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b19.webp">Fig. B19</a></td>
 </tr>
 <tr>
 <td>E21</td>
@@ -2312,7 +2441,7 @@
 <td style="text-align: right;">27</td>
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">4,8</td>
-<td><a href="../evidencias-ferramentas/#fig-b20">Fig. B20</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b20.webp">Fig. B20</a></td>
 </tr>
 <tr>
 <td>E22</td>
@@ -2320,11 +2449,13 @@
 <td style="text-align: right;">47</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;"><strong>1,3</strong></td>
-<td><a href="../evidencias-ferramentas/#fig-b21">Fig. B21</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b21.webp">Fig. B21</a></td>
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="axe-devtools">axe DevTools</h2>
+<div class="rel-auto-tables">
 <table>
 <thead>
 <tr>
@@ -2345,7 +2476,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">39</td>
-<td><a href="../evidencias-ferramentas/#fig-b22">Fig. B22</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b22.webp">Fig. B22</a></td>
 </tr>
 <tr>
 <td>E2</td>
@@ -2354,7 +2485,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">14</td>
-<td><a href="../evidencias-ferramentas/#fig-b23">Fig. B23</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b23.webp">Fig. B23</a></td>
 </tr>
 <tr>
 <td>E3</td>
@@ -2363,7 +2494,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">14</td>
-<td><a href="../evidencias-ferramentas/#fig-b24">Fig. B24</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b24.webp">Fig. B24</a></td>
 </tr>
 <tr>
 <td>E4</td>
@@ -2372,7 +2503,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">15</td>
-<td><a href="../evidencias-ferramentas/#fig-b25">Fig. B25</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b25.webp">Fig. B25</a></td>
 </tr>
 <tr>
 <td>E5</td>
@@ -2381,7 +2512,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">14</td>
-<td><a href="../evidencias-ferramentas/#fig-b26">Fig. B26</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b26.webp">Fig. B26</a></td>
 </tr>
 <tr>
 <td>E6</td>
@@ -2390,7 +2521,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">15</td>
-<td><a href="../evidencias-ferramentas/#fig-b27">Fig. B27</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b27.webp">Fig. B27</a></td>
 </tr>
 <tr>
 <td>E7</td>
@@ -2399,7 +2530,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">15</td>
-<td><a href="../evidencias-ferramentas/#fig-b28">Fig. B28</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b28.webp">Fig. B28</a></td>
 </tr>
 <tr>
 <td>E8</td>
@@ -2408,7 +2539,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">23</td>
-<td><a href="../evidencias-ferramentas/#fig-b29">Fig. B29</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b29.webp">Fig. B29</a></td>
 </tr>
 <tr>
 <td>E9</td>
@@ -2417,7 +2548,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;"><strong>72</strong></td>
-<td><a href="../evidencias-ferramentas/#fig-b30">Fig. B30</a>, <a href="../evidencias-ferramentas/#fig-b31">Fig. B31</a>, <a href="../evidencias-ferramentas/#fig-b32">Fig. B32</a>, <a href="../evidencias-ferramentas/#fig-b33">Fig. B33</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b30.webp">Fig. B30</a>, <a href="../../../assets/images/avaliacao-detran/fig-b31.webp">Fig. B31</a>, <a href="../../../assets/images/avaliacao-detran/fig-b32.webp">Fig. B32</a>, <a href="../../../assets/images/avaliacao-detran/fig-b33.webp">Fig. B33</a></td>
 </tr>
 <tr>
 <td>E10</td>
@@ -2426,7 +2557,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">26</td>
-<td><a href="../evidencias-ferramentas/#fig-b34">Fig. B34</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b34.webp">Fig. B34</a></td>
 </tr>
 <tr>
 <td>E11</td>
@@ -2435,7 +2566,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">11</td>
-<td><a href="../evidencias-ferramentas/#fig-b35">Fig. B35</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b35.webp">Fig. B35</a></td>
 </tr>
 <tr>
 <td>E12</td>
@@ -2444,7 +2575,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">10</td>
-<td><a href="../evidencias-ferramentas/#fig-b36">Fig. B36</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b36.webp">Fig. B36</a></td>
 </tr>
 <tr>
 <td>E13</td>
@@ -2453,7 +2584,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">10</td>
-<td><a href="../evidencias-ferramentas/#fig-b37">Fig. B37</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b37.webp">Fig. B37</a></td>
 </tr>
 <tr>
 <td>E14</td>
@@ -2462,7 +2593,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td><a href="../evidencias-ferramentas/#fig-b38">Fig. B38</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b38.webp">Fig. B38</a></td>
 </tr>
 <tr>
 <td>E15</td>
@@ -2471,7 +2602,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">11</td>
-<td><a href="../evidencias-ferramentas/#fig-b39">Fig. B39</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b39.webp">Fig. B39</a></td>
 </tr>
 <tr>
 <td>E16</td>
@@ -2480,7 +2611,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">10</td>
-<td><a href="../evidencias-ferramentas/#fig-b40">Fig. B40</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b40.webp">Fig. B40</a></td>
 </tr>
 <tr>
 <td>E18</td>
@@ -2489,7 +2620,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">59</td>
-<td><a href="../evidencias-ferramentas/#fig-b41">Fig. B41</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b41.webp">Fig. B41</a></td>
 </tr>
 <tr>
 <td>E19</td>
@@ -2498,7 +2629,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;"><strong>64</strong></td>
-<td><a href="../evidencias-ferramentas/#fig-b42">Fig. B42</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b42.webp">Fig. B42</a></td>
 </tr>
 <tr>
 <td>E20</td>
@@ -2507,7 +2638,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">54</td>
-<td><a href="../evidencias-ferramentas/#fig-b43">Fig. B43</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b43.webp">Fig. B43</a></td>
 </tr>
 <tr>
 <td>E21</td>
@@ -2516,7 +2647,7 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">9</td>
-<td><a href="../evidencias-ferramentas/#fig-b44">Fig. B44</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b44.webp">Fig. B44</a></td>
 </tr>
 <tr>
 <td>E22</td>
@@ -2525,10 +2656,11 @@
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">37</td>
-<td><a href="../evidencias-ferramentas/#fig-b45">Fig. B45</a></td>
+<td><a href="../../../assets/images/avaliacao-detran/fig-b45.webp">Fig. B45</a></td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>O relatório não traz resultados automáticos para a página E17 (Processos de Penalidade de Suspensão de CNH).</p>
 <h2 id="principais-achados-automaticos">Principais achados automáticos</h2>
 <p>As ferramentas apontaram um padrão recorrente na maioria das páginas internas (E2 a E20), com cerca de 11 erros e 34 alertas no WAVE e entre 10 e 15 falhas no axe DevTools, originados principalmente no cabeçalho e no rodapé compartilhados do portal (links e botões sem nome acessível, imagens sem texto alternativo e campos sem rótulo).</p>
@@ -2605,6 +2737,10 @@
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../js/guia-checklist.js"></script>
+      
+        <script src="../../../js/problemas-interativos.js"></script>
+      
+        <script src="../../../js/evidencias-lightbox.js"></script>
       
     
   </body>

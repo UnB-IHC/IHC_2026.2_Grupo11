@@ -10,14 +10,14 @@
   --rel-crit-fg: #8c0f22;  --rel-crit-bg: #fdeaec;  --rel-crit-bar: #c2253d;
   --rel-grave-fg: #8a3300; --rel-grave-bg: #ffeedd; --rel-grave-bar: #c4560a;
   --rel-mod-fg: #5e4700;   --rel-mod-bg: #fff6d1;   --rel-mod-bar: #b88a00;
-  --rel-leve-fg: #0f4f73;  --rel-leve-bg: #e3f1fa;  --rel-leve-bar: #2b7fb0;
+  --rel-leve-fg: #0f4f73;  --rel-leve-bg: #e3f1fa;  --rel-leve-bar: #01ff41;
   --rel-pass-fg: #00552b;  --rel-pass-bg: #e0f5ea;  --rel-pass-bar: #1f8a52;
 }
 [data-md-color-scheme="slate"] {
   --rel-crit-fg: #ffb3bd;  --rel-crit-bg: #4a1a24;  --rel-crit-bar: #ff6b80;
   --rel-grave-fg: #ffc799; --rel-grave-bg: #47270f; --rel-grave-bar: #ff9a4d;
   --rel-mod-fg: #ffe38a;   --rel-mod-bg: #413514;   --rel-mod-bar: #ffd54f;
-  --rel-leve-fg: #9fd6f5;  --rel-leve-bg: #14354a;  --rel-leve-bar: #5bb4e8;
+  --rel-leve-fg: #9fd6f5;  --rel-leve-bg: #14354a;  --rel-leve-bar: #01ff41;
   --rel-pass-fg: #8be8b8;  --rel-pass-bg: #12392a;  --rel-pass-bar: #5fd39a;
 }
 
@@ -151,144 +151,105 @@
   .md-typeset ul.rel-sevbar { flex-wrap: wrap; }
 }
 
-/* ---------- resumo expansível de problemas ---------- */
 
-/* O cartão principal ocupa toda a largura */
-.rel-stat-main {
+/* ==========================================================
+   Resumo dos resultados — Cartão fixo
+   ========================================================== */
+
+/* Cartão principal ocupa toda a largura */
+.md-typeset ul.rel-stats > .rel-stat-main {
   grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+  list-style: none;
 }
 
-/* O próprio details é o cartão principal */
-.md-typeset details.rel-stat-expand {
+/* Estrutura do cartão principal */
+.md-typeset .rel-stat-main > .rel-stat-expand {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  box-sizing: border-box;
+  gap: 0;
+
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 
-  /* Preserva a identidade visual original */
   margin: 0;
   padding: 0.85rem 1rem;
+
   background: var(--ap-card);
   border: 1px solid var(--ap-border);
   border-top: 4px solid var(--ap-brand);
   border-radius: 0.6rem;
-  box-shadow: none;
 }
 
-/* Área clicável: mantém a disposição original do cartão */
-.md-typeset details.rel-stat-expand > summary {
+/* Cabeçalho com o total de problemas */
+.md-typeset .rel-stat-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.1rem;
 
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 2rem 0 0;
   margin: 0;
-
-  cursor: pointer;
-  user-select: none;
-  list-style: none;
-
-  border: 0;
-  background: transparent;
-  color: inherit;
+  padding: 0;
 }
 
-/* Remove os marcadores padrão */
-.md-typeset details.rel-stat-expand > summary::-webkit-details-marker {
-  display: none;
-}
-
-.md-typeset details.rel-stat-expand > summary::marker {
-  content: "";
-}
-
-/* Seta de expansão */
-.md-typeset details.rel-stat-expand > summary::after {
-  content: "⌄";
-
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  width: auto;
-  height: auto;
-
-  background: none;
-  mask: none;
-  color: var(--ap-muted);
-
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1;
-
-  transition: transform 0.25s ease;
-}
-
-/* Rotaciona a seta quando expandido */
-.md-typeset details.rel-stat-expand[open] > summary::after {
-  transform: rotate(180deg);
-}
-
-/* Hover */
-.md-typeset details.rel-stat-expand > summary:hover {
-  cursor: pointer;
-}
-
-/* Foco pelo teclado */
-.md-typeset details.rel-stat-expand > summary:focus-visible {
-  outline: 3px solid var(--ap-focus);
-  outline-offset: 3px;
-  border-radius: 0.25rem;
-}
-
-/* Grade dos quatro cartões internos */
+/* Distribuição dos problemas por severidade */
 .md-typeset ul.rel-stats-breakdown {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.8rem;
 
   margin: 0.8rem 0 0 !important;
-  padding: 08rem 0 0 !important;
+  padding: 0.8rem 0 0 !important;
 
   border-top: 1px solid var(--ap-border);
   list-style: none;
 }
 
-/* Remove interferências dos estilos de listas do tema */
+/* Cartões internos */
 .md-typeset ul.rel-stats-breakdown > li {
-  margin: 0;
   min-width: 0;
+  height: auto;
+
+  margin: 0;
+  padding: 0.85rem 1rem;
+
   list-style: none;
 }
 
-/* Responsividade */
+/* Duas colunas em telas menores */
 @media (max-width: 760px) {
   .md-typeset ul.rel-stats-breakdown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Remove o ícone injetado antes do summary */
-.md-typeset details.rel-stat-expand > summary::before {
-  content: none !important;
-  display: none !important;
-  background: none !important;
-  mask: none !important;
+/* Uma coluna em telas muito estreitas */
+@media (max-width: 360px) {
+  .md-typeset ul.rel-stats-breakdown {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Remove o espaço entre o cartão principal e os internos */
-.md-typeset details.rel-stat-expand {
-  gap: 0 !important;
+/* Número e descrição lado a lado */
+.md-typeset .rel-stat-header,
+.md-typeset ul.rel-stats-breakdown > li.rel-stat {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
 }
 
-/* Mantém apenas o espaçamento interno da linha divisória */
-.md-typeset ul.rel-stats-breakdown {
-  margin-top: 0 !important;
-  padding-top: 0.8rem !important;
+/* Evita que os números sejam comprimidos */
+.md-typeset .rel-stat-header strong,
+.md-typeset ul.rel-stats-breakdown > li.rel-stat strong {
+  flex-shrink: 0;
+}
+
+/* Permite que os textos se ajustem em telas menores */
+.md-typeset .rel-stat-header span,
+.md-typeset ul.rel-stats-breakdown > li.rel-stat span {
+  min-width: 0;
+  line-height: 1.35;
 }

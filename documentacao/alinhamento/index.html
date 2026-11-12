@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#alinhamento-nbr-guia" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -584,6 +593,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alinhamento
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -601,6 +630,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gestao-de-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Projetos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desenvolvimento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rastreabilidade-entre-fontes-e-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rastreabilidade entre fontes e implementação
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2154,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gestao-de-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Projetos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desenvolvimento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rastreabilidade-entre-fontes-e-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rastreabilidade entre fontes e implementação
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2150,6 +2318,39 @@
 <p><strong>A norma</strong> obriga, tecnicamente, a existência do atributo de texto alternativo (<code>alt</code>), a estruturação lógica de cabeçalhos (H1, H2) para organização do texto e a exigência de legendas e audiodescrição para aprovação de conformidade do conteúdo multimídia.</p>
 <p><a href="../../checklist/">Veja o checklist →</a></p>
 <p><a href="../nbr-17225/">Veja a norma em detalhes →</a></p>
+<h2 id="rastreabilidade-entre-fontes-e-implementacao">Rastreabilidade entre fontes e implementação</h2>
+<table>
+<thead>
+<tr>
+<th>Pergunta de projeto</th>
+<th>Material de apoio</th>
+<th>Evidência esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O fluxo pode ser operado sem mouse?</td>
+<td>WCAG, NBR e checklist DEV</td>
+<td>Execução por teclado e registro de foco.</td>
+</tr>
+<tr>
+<td>O conteúdo é perceptível?</td>
+<td>WCAG, NBR e guia de conteúdo</td>
+<td>Alternativas textuais e medições de contraste.</td>
+</tr>
+<tr>
+<td>Pessoas encontram os serviços?</td>
+<td>Heurísticas e testes de usabilidade</td>
+<td>Cenários, tempo, erros e relatos anonimizados.</td>
+</tr>
+<tr>
+<td>Uma ferramenta aprovou a página: está pronta?</td>
+<td>Guia de ferramentas</td>
+<td>Complemento com inspeção manual e usuários.</td>
+</tr>
+</tbody>
+</table>
+<p>O quadro resume aplicações e não atribui equivalência normativa automática entre documentos de naturezas distintas.</p>
 
 
 
@@ -2215,6 +2416,10 @@
       <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../js/guia-checklist.js"></script>
+      
+        <script src="../../js/problemas-interativos.js"></script>
+      
+        <script src="../../js/evidencias-lightbox.js"></script>
       
     
   </body>

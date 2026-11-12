@@ -63,6 +63,10 @@
     
       <link rel="stylesheet" href="../../../css/navegacao.css">
     
+      <link rel="stylesheet" href="../../../css/problemas-interativos.css">
+    
+      <link rel="stylesheet" href="../../../css/evidencias-lightbox.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,6 +90,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#analise-e-achados" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1572,6 +1581,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Análise
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1589,6 +1618,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#momentos-relevantes-da-entrevista-sinteses-nao-transcricao-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Momentos relevantes da entrevista (sínteses, não transcrição literal)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cruzamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cruzamento de dados: métricas quantitativas vs qualitativas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cruzamento de dados: métricas quantitativas vs qualitativas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#barreiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barreiras encontradas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crítica ao sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Achados de acessibilidade e UX (baseado nas diretrizes)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2051,6 +2160,77 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#momentos-relevantes-da-entrevista-sinteses-nao-transcricao-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Momentos relevantes da entrevista (sínteses, não transcrição literal)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cruzamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cruzamento de dados: métricas quantitativas vs qualitativas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cruzamento de dados: métricas quantitativas vs qualitativas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#barreiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barreiras encontradas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crítica ao sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Achados de acessibilidade e UX (baseado nas diretrizes)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2134,6 +2314,35 @@
 
 
 <h1 id="analise-e-achados">Análise e achados</h1>
+<p>Esta seção reúne os achados qualitativos do grupo. As classificações e marcações temporais de observações históricas devem ser interpretadas à luz do <a href="../resultados/">relatório final Tg-03</a>, que é a referência para os desfechos quantitativos.</p>
+<h2 id="momentos-relevantes-da-entrevista-sinteses-nao-transcricao-literal">Momentos relevantes da entrevista (sínteses, não transcrição literal)</h2>
+<p>O relatório final registra momentos da sessão que ajudam a compreender as dificuldades encontradas. Abaixo, os trechos são apresentados como <strong>paráfrases analíticas</strong>, sem reproduzir voz, imagem ou identificação da participante.</p>
+<table>
+<thead>
+<tr>
+<th>Momento aproximado do registro</th>
+<th>Observação fundamentada no relatório</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:00–02:13</td>
+<td>P1 relata familiaridade com o uso diário de internet e serviços públicos.</td>
+</tr>
+<tr>
+<td>07:35–11:17</td>
+<td>A procura pelas orientações de renovação da CNH evidencia dificuldade de localização; a marca de 160 s é o limite analítico.</td>
+</tr>
+<tr>
+<td>Entrevista final</td>
+<td>P1 identifica a renovação da CNH como principal dificuldade e sugere meios de busca mais evidentes.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Gravação e consentimento</p>
+<p>A exibição de trechos está autorizada apenas em sala de aula e sem identificação, nas condições do termo assinado. <strong>A gravação completa e seus trechos não estão publicados nem vinculados a este site público.</strong></p>
+</div>
 <h2 id="cruzamento">Cruzamento de dados: métricas quantitativas vs qualitativas</h2>
 <h3 id="barreiras">Barreiras encontradas</h3>
 <dl class="rel-spec">
@@ -2326,6 +2535,10 @@
       <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../js/guia-checklist.js"></script>
+      
+        <script src="../../../js/problemas-interativos.js"></script>
+      
+        <script src="../../../js/evidencias-lightbox.js"></script>
       
     
   </body>

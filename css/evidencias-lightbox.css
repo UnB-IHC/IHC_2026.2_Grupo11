@@ -1,0 +1,172 @@
+
+/* ==========================================
+   A11yPocket — Lightbox de evidências
+   ========================================== */
+
+.ap-evidence-open {
+  overflow: hidden;
+}
+
+.ap-evidence-overlay[hidden] {
+  display: none !important;
+}
+
+.ap-evidence-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+
+  padding: min(4vw, 1.5rem);
+
+  background: rgba(6, 10, 18, .88);
+
+  display: grid;
+  place-items: center;
+}
+
+/* Janela do visualizador */
+
+.ap-evidence-dialog {
+  width: min(100%, 74rem);
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+
+  padding: 1.1rem;
+  position: relative;
+
+  border: 1px solid var(--ap-border);
+  border-radius: .75rem;
+
+  background: var(--ap-card);
+  color: var(--ap-ink);
+
+  text-align: center;
+  box-shadow: 0 18px 75px rgba(0, 0, 0, .4);
+}
+
+/* Botão de fechar */
+
+.ap-evidence-close {
+  position: sticky;
+  top: 0;
+
+  display: block;
+  margin: 0 0 .6rem auto;
+
+  width: 2.75rem;
+  height: 2.75rem;
+
+  border: 1px solid var(--ap-border);
+  border-radius: .4rem;
+
+  background: var(--ap-surface);
+  color: var(--ap-ink);
+
+  cursor: pointer;
+
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.ap-evidence-close:hover {
+  background: var(--ap-border);
+}
+
+/* Foco acessível */
+
+.ap-evidence-close:focus-visible,
+.ap-evidence-trigger:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: 3px;
+}
+
+/* Imagem ampliada */
+
+.ap-evidence-image {
+  display: block;
+  margin: 0 auto;
+
+  width: auto;
+  max-width: 100%;
+
+  height: auto;
+  max-height: calc(100dvh - 13rem);
+
+  object-fit: contain;
+}
+
+/* Descrição abaixo da imagem */
+
+.ap-evidence-caption {
+  display: block;
+
+  width: 100%;
+  max-width: 65rem;
+
+  margin: 1rem auto .25rem;
+  padding: .85rem 1rem;
+
+  color: var(--ap-ink);
+  background: var(--ap-surface);
+
+  border: 1px solid var(--ap-border);
+  border-radius: .5rem;
+
+  font-size: .9rem;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.ap-evidence-caption:empty {
+  display: none;
+}
+
+/* Elementos que abrem o lightbox */
+
+.ap-evidence-trigger {
+  display: inline-block;
+  max-width: 100%;
+
+  text-align: left;
+  cursor: pointer;
+
+  background: none;
+  padding: 0;
+  border: 0;
+  color: inherit;
+}
+
+.ap-evidence-trigger img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Links para figuras: cursor de clique */
+
+.md-typeset .ap-evidence-trigger,
+.md-typeset .ap-evidence-trigger:hover,
+.md-typeset a[href*="/assets/images/avaliacao-detran/fig-"],
+.md-typeset a[href*="/assets/images/avaliacao-detran/fig-"]:hover {
+  cursor: pointer;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .ap-evidence-dialog {
+    padding: .75rem;
+  }
+
+  .ap-evidence-caption {
+    padding: .7rem .85rem;
+    font-size: .82rem;
+  }
+}
+
+/* Preferência por movimento reduzido */
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-evidence-dialog {
+    scroll-behavior: auto;
+  }
+}
