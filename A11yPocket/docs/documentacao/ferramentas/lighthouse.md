@@ -16,3 +16,33 @@ O Lighthouse é uma ferramenta de código aberto integrada ao Chrome DevTools. E
 
 !!! warning "A nota não é um atestado"
     O Lighthouse traz também **verificações manuais** (como ordem de tabulação e armadilhas de foco) que ele não consegue decidir sozinho. Uma nota alta não significa que o site seja acessível.
+
+## Contexto e finalidade
+
+Auditoria automatizada de páginas web no navegador. É uma etapa do processo de avaliação, não um veredito isolado. O ideal é formular antes **qual página, tarefa e critério** serão examinados.
+
+## Quando utilizar
+
+Triagem de acessibilidade combinada a outras dimensões de qualidade. Combine verificações automáticas e manuais para evitar conclusões parciais.
+
+## Como interpretar resultados
+
+Avalie os itens auditados, não apenas a nota; registre versão, navegador e estado da página.
+
+## Exemplo prático de verificação
+
+Uma nota elevada não elimina a necessidade de testar foco, formulários e tarefas reais. Documente o comportamento observado, a página, as condições do teste e o critério do guia relacionado.
+
+## Boas práticas e erros comuns
+
+- **Faça:** teste componentes em seus diferentes estados; registre ambiente, data e versão; reproduza o problema manualmente; compare o achado com WCAG e checklist.
+- **Evite:** tratar todo alerta como falha comprovada; afirmar que uma pontuação isolada mede a experiência real; publicar capturas que revelem dados pessoais.
+- **Limitação:** Pontuação é indicador de triagem, **não certificação** de acessibilidade.
+
+## Integração com a avaliação do grupo
+
+Consulte os [resultados da avaliação do Detran-DF](../avaliacao-site/index.md) para observar como ferramentas, testes manuais e resultados de usuários podem se complementar.
+
+## Fontes e continuidade
+
+Consulte a documentação oficial da ferramenta e as [referências do projeto](../../referencias.md). Reconfirme a interface e os comandos se a versão da ferramenta mudar.

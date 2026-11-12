@@ -1,5 +1,5 @@
 
-/* A11yPocket — Tabela interativa de problemas P01–P11.
+/* A11yPocket — Tabela interativa de problemas P01–P14.
    Mantém apenas um detalhamento aberto por vez.
    Sem JavaScript, a tabela e as fichas originais continuam disponíveis.
 */

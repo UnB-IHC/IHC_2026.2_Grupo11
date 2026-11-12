@@ -38,7 +38,7 @@ Os detalhes de cada problema estão na [tabela de problemas](problemas.md).
 
 ## Conclusão
 
-A avaliação mostrou que o site do Detran-DF atende apenas parcialmente aos critérios de acessibilidade e usabilidade adotados. Foram registrados 11 problemas: 4 críticos, 1 grave, 5 moderados e 1 leve.
+A avaliação mostrou que o site do Detran-DF atende apenas parcialmente aos critérios de acessibilidade e usabilidade adotados. Foram registrados 14 problemas: 4 críticos, 4 graves, 5 moderados e 1 leve.
 
 Os críticos e graves se concentram na Página Inicial e afetam sobretudo usuários de leitor de tela: imagens e links de imagem sem texto alternativo, campos sem rótulo e botões sem nome acessível. Também é crítico o loop de autenticação na integração com o gov.br, que deixa o usuário sem retorno de status no Detran Digital.
 

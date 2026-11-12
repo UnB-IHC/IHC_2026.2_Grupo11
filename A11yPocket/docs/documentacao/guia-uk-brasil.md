@@ -45,3 +45,14 @@ O guia reforça que acessibilidade não é um estado absoluto, mas um **processo
 
 !!! note "Fonte"
     SILVA, Reinaldo Ferraz da. *Guia de Boas Práticas para Acessibilidade Digital: Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital*. São Paulo: Ceweb.br, 2023. Referência completa em [Referências](../referencias.md).
+
+## Como utilizar o guia no ciclo de projeto
+
+- **Gestão:** reservar responsabilidades, capacitação e testes desde o planejamento.
+- **Desenvolvimento:** preferir HTML semântico, rótulos, nomes acessíveis e estados previsíveis.
+- **Design:** verificar contraste, foco, legibilidade, responsividade e alvos de interação.
+- **Conteúdo:** escrever em linguagem clara, estruturar títulos, oferecer alternativas textuais e legendas pertinentes.
+
+## Aplicação prática
+
+Um mesmo problema pode envolver mais de um eixo: um botão sem nome acessível depende de projeto visual, implementação semântica, conteúdo de rótulo e verificação na qualidade. Por isso, distribua a responsabilidade ao longo do ciclo do produto, em vez de transferi-la apenas à revisão final.

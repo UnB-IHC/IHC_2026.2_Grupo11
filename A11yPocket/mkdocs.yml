@@ -42,7 +42,7 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
   - toc:
-      toc_depth: 0
+      toc_depth: 3
     
 
 plugins:
@@ -56,10 +56,12 @@ extra_css:
   - css/avaliacao.css
   - css/navegacao.css
   - css/problemas-interativos.css
+  - css/evidencias-lightbox.css
 
 extra_javascript:
   - js/guia-checklist.js
   - js/problemas-interativos.js
+  - js/evidencias-lightbox.js
 
 nav:
   - Início: index.md

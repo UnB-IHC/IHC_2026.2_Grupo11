@@ -49,3 +49,27 @@ Conclui-se que o atendimento aos requisitos da norma não deve ser encarado apen
 
 !!! note "Fonte"
     WORLD WIDE WEB CONSORTIUM (W3C). [*Web Content Accessibility Guidelines (WCAG) 2.2*](https://www.w3.org/TR/WCAG22/).
+
+## Interpretando critérios na prática
+
+As WCAG organizam os critérios sob os princípios **Perceptível, Operável, Compreensível e Robusto (POUR)**. A avaliação de um critério exige observar as condições indicadas no próprio texto, incluindo exceções e níveis de conformidade.
+
+| Situação | Critério frequentemente relevante | Como verificar |
+|---|---|---|
+| Imagem informativa | 1.1.1 — Conteúdo não textual | Confira se a alternativa transmite o propósito da imagem. |
+| Contraste do texto | 1.4.3 — Contraste (mínimo) | Meça contraste entre texto e fundo em diferentes estados. |
+| Acesso sem mouse | 2.1.1 — Teclado | Percorra a interface usando somente o teclado. |
+| Rótulos de campos | 3.3.2 — Rótulos ou instruções | Confira nome acessível e instruções junto ao campo. |
+| Estados de controles | 4.1.2 — Nome, função, valor | Confirme que o leitor de tela anuncia função e estado. |
+
+!!! warning "Atenção ao uso da tabela"
+    Estes são **exemplos de aplicação**, não uma reprodução integral nem substituição dos critérios normativos. Verifique a redação e as exceções na documentação oficial antes de declarar conformidade.
+
+## Processo recomendado de avaliação
+
+1. Definir páginas, fluxos e necessidades de acesso; 
+2. Identificar critérios pertinentes;
+3. Realizar varredura automática; 
+4. Testar teclado, leitor de tela, contraste e ampliação; 
+5. Documentar evidência, impacto e correção; 
+6. Retestar após a implementação.

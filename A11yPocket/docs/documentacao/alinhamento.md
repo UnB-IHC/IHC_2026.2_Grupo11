@@ -31,3 +31,14 @@ Esse alinhamento se materializa nos quatro pilares do guia.
 [Veja o checklist →](../checklist/index.md)
 
 [Veja a norma em detalhes →](nbr-17225.md)
+
+## Rastreabilidade entre fontes e implementação
+
+| Pergunta de projeto | Material de apoio | Evidência esperada |
+|---|---|---|
+| O fluxo pode ser operado sem mouse? | WCAG, NBR e checklist DEV | Execução por teclado e registro de foco. |
+| O conteúdo é perceptível? | WCAG, NBR e guia de conteúdo | Alternativas textuais e medições de contraste. |
+| Pessoas encontram os serviços? | Heurísticas e testes de usabilidade | Cenários, tempo, erros e relatos anonimizados. |
+| Uma ferramenta aprovou a página: está pronta? | Guia de ferramentas | Complemento com inspeção manual e usuários. |
+
+O quadro resume aplicações e não atribui equivalência normativa automática entre documentos de naturezas distintas.

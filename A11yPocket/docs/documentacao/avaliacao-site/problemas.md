@@ -4,23 +4,26 @@ title: Tabela de problemas
 
 # Tabela de problemas
 
-Foram registrados **11 problemas**. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em [Metodologia](metodologia.md#escala-de-severidade).
+Foram registrados **14 problemas**. Cada um traz a página ou local, a evidência, a referência (WCAG, NBR, heurística de Nielsen ou ID do Guia), a severidade e a recomendação. A escala de severidade está em [Metodologia](metodologia.md#escala-de-severidade).
 
 ## Visão geral
 
 | ID | Problema | Página / local | Severidade | Evidência |
 |----|----------|----------------|:----------:|-----------|
-| [P01](#p01) | Contraste insuficiente nos serviços mais acessados | E1 – Página Inicial | <span class="sev sev-2">Moderado</span> | [Fig. C14](evidencias-manuais.md#fig-c14) |
-| [P02](#p02) | Imagens de aplicativos sem texto alternativo | E1 – Página Inicial | <span class="sev sev-4">Crítico</span> | [Fig. C15](evidencias-manuais.md#fig-c15) |
-| [P03](#p03) | Campo de formulário sem rótulo | E1 – Página Inicial | <span class="sev sev-3">Grave</span> | [Fig. C16](evidencias-manuais.md#fig-c16) |
-| [P04](#p04) | Botões sem nome acessível | E1 – Página Inicial | <span class="sev sev-4">Crítico</span> | [Fig. C17](evidencias-manuais.md#fig-c17) |
-| [P05](#p05) | Possível loop de autenticação com o gov.br | E21 – Página de Login do Detran Digital | <span class="sev sev-4">Crítico</span> | [Fig. C18](evidencias-manuais.md#fig-c18) |
-| [P06](#p06) | Inconsistência visual entre o portal e o Detran Digital | E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital) | <span class="sev sev-2">Moderado</span> | [Fig. C19](evidencias-manuais.md#fig-c19), [Fig. C20](evidencias-manuais.md#fig-c20) |
-| [P07](#p07) | Mensagens de erro genéricas em formulários | E7 – Página de Transferência de Veículo no Detran Digital | <span class="sev sev-2">Moderado</span> | [Fig. C21](evidencias-manuais.md#fig-c21) |
+| [P01](#p01) | Contraste insuficiente nos serviços mais acessados | E1 – Página Inicial | <span class="sev sev-2">Moderado</span> | Fig. C14 |
+| [P02](#p02) | Imagens de aplicativos sem texto alternativo | E1 – Página Inicial | <span class="sev sev-4">Crítico</span> | Fig. C15 |
+| [P03](#p03) | Campo de formulário sem rótulo | E1 – Página Inicial | <span class="sev sev-3">Grave</span> | Fig. C16 |
+| [P04](#p04) | Botões sem nome acessível | E1 – Página Inicial | <span class="sev sev-4">Crítico</span> | Fig. C17 |
+| [P05](#p05) | Possível loop de autenticação com o gov.br | E21 – Página de Login do Detran Digital | <span class="sev sev-4">Crítico</span> | Fig. C18 |
+| [P06](#p06) | Inconsistência visual entre o portal e o Detran Digital | E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital) | <span class="sev sev-2">Moderado</span> | Fig. C19, Fig. C20 |
+| [P07](#p07) | Mensagens de erro genéricas em formulários | E7 – Página de Transferência de Veículo no Detran Digital | <span class="sev sev-2">Moderado</span> | Fig. C21 |
 | [P08](#p08) | Renovação de CNH difícil de encontrar | E1 – Página Principal do Detran Digital | <span class="sev sev-4">Crítico</span> | — |
-| [P09](#p09) | Logoff sem confirmação | E1 – Página Inicial do Detran Digital | <span class="sev sev-1">Leve</span> | [Fig. C22](evidencias-manuais.md#fig-c22) |
-| [P10](#p10) | FAQ ausente ou pouco visível no portal | E22 – Página Inicial do Detran-DF | <span class="sev sev-2">Moderado</span> | [Fig. C23](evidencias-manuais.md#fig-c23) |
-| [P11](#p11) | Transferência de veículo sem opção de desfazer | E7 – Página de Transferência de Veículo | <span class="sev sev-2">Moderado</span> | [Fig. C21](evidencias-manuais.md#fig-c21) |
+| [P09](#p09) | Logoff sem confirmação | E1 – Página Inicial do Detran Digital | <span class="sev sev-1">Leve</span> | Fig. C22 |
+| [P10](#p10) | FAQ ausente ou pouco visível no portal | E22 – Página Inicial do Detran-DF | <span class="sev sev-2">Moderado</span> | Fig. C23 |
+| [P11](#p11) | Transferência de veículo sem opção de desfazer | E7 – Página de Transferência de Veículo | <span class="sev sev-2">Moderado</span> | Fig. C21 |
+| [P12](#p12) | Falha na hierarquia de títulos e cabeçalhos | E1, E14 e E21 | <span class="sev sev-3">Grave</span> | [Fig. C3](../../assets/images/avaliacao-detran/fig-c3.webp) |
+| [P13](#p13) | Regiões da página (landmarks) ausentes ou inadequadas | E1, E14, E18–E21 | <span class="sev sev-3">Grave</span> | [Fig. C6](../../assets/images/avaliacao-detran/fig-c6.webp) |
+| [P14](#p14) | Perda de conteúdo e rolagem horizontal com ampliação | Todas as páginas avaliadas | <span class="sev sev-3">Grave</span> | [Fig. C8](../../assets/images/avaliacao-detran/fig-c8.webp), [Fig. C9](../../assets/images/avaliacao-detran/fig-c9.webp) |
 
 ## Detalhamento
 
@@ -36,7 +39,7 @@ Os textos descritivos da seção “serviços mais acessados” apresentam contr
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 – Página Inicial</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 1.4.3, Guia DES-02 (contraste mínimo) e HU-h2</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C14](evidencias-manuais.md#fig-c14)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C14</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -44,8 +47,8 @@ Os textos descritivos da seção “serviços mais acessados” apresentam contr
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Cartões de serviços da Página Inicial com o texto descritivo em cinza claro sobre fundo branco, de baixo contraste.](../../assets/images/avaliacao-detran/fig-c14.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c14.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C14** · Evidência de P01. [Ver no Apêndice C](evidencias-manuais.md#fig-c14).</figcaption>
+![Cartões de serviços da Página Inicial com o texto descritivo em cinza claro sobre fundo branco, de baixo contraste.](../../assets/images/avaliacao-detran/fig-c14.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C14** · Evidência de P01.</figcaption>
 </figure>
 
 </div>
@@ -62,7 +65,7 @@ Imagens que levam à plataforma de aplicativos mobile não possuem opção de te
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 – Página Inicial</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 1.1.1, WCAG 2.4.4, Guia DEV-02 e CON-12</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C15](evidencias-manuais.md#fig-c15)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C15</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -70,8 +73,8 @@ Imagens que levam à plataforma de aplicativos mobile não possuem opção de te
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Botões de download da App Store e do Google Play na Página Inicial, cada um acompanhado de um ícone de imagem sem texto alternativo.](../../assets/images/avaliacao-detran/fig-c15.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c15.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C15** · Evidência de P02. [Ver no Apêndice C](evidencias-manuais.md#fig-c15).</figcaption>
+![Botões de download da App Store e do Google Play na Página Inicial, cada um acompanhado de um ícone de imagem sem texto alternativo.](../../assets/images/avaliacao-detran/fig-c15.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C15** · Evidência de P02.</figcaption>
 </figure>
 
 </div>
@@ -88,7 +91,7 @@ Campo de formulário (como o de busca ou login) não possui um rótulo associado
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 – Página Inicial</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 1.3.1 (Informações e Relações), WCAG 3.3.2 (Rótulos ou Instruções), Guia DEV-14</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C16](evidencias-manuais.md#fig-c16)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C16</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -96,8 +99,8 @@ Campo de formulário (como o de busca ou login) não possui um rótulo associado
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Campo de mensagem do assistente virtual (“Digite uma mensagem”) sem rótulo associado.](../../assets/images/avaliacao-detran/fig-c16.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c16.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C16** · Evidência de P03. [Ver no Apêndice C](evidencias-manuais.md#fig-c16).</figcaption>
+![Campo de mensagem do assistente virtual (“Digite uma mensagem”) sem rótulo associado.](../../assets/images/avaliacao-detran/fig-c16.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C16** · Evidência de P03.</figcaption>
 </figure>
 
 </div>
@@ -114,7 +117,7 @@ Botões não possuem texto explicativo de suas funções.
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 – Página Inicial</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 4.1.2 (link para as redes sociais), Guia DEV-11 e DEV-01</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C17](evidencias-manuais.md#fig-c17)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C17</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -122,8 +125,8 @@ Botões não possuem texto explicativo de suas funções.
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Ícones de redes sociais (Facebook, X, LinkedIn) acompanhados de ícones de imagem sem nome acessível.](../../assets/images/avaliacao-detran/fig-c17.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c17.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C17** · Evidência de P04. [Ver no Apêndice C](evidencias-manuais.md#fig-c17).</figcaption>
+![Ícones de redes sociais (Facebook, X, LinkedIn) acompanhados de ícones de imagem sem nome acessível.](../../assets/images/avaliacao-detran/fig-c17.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C17** · Evidência de P04.</figcaption>
 </figure>
 
 </div>
@@ -140,7 +143,7 @@ Possibilidade de loop de autenticação em relação à integração gov.br no D
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E21 – Página de Login do Detran Digital</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 4.1.3 (Mensagens de Status, AA), Guia DEV-10 e HU-a1</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C18](evidencias-manuais.md#fig-c18)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C18</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -148,8 +151,8 @@ Possibilidade de loop de autenticação em relação à integração gov.br no D
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Página de login do Detran Digital, com o botão “Entrar com gov.br”.](../../assets/images/avaliacao-detran/fig-c18.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c18.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C18** · Evidência de P05. [Ver no Apêndice C](evidencias-manuais.md#fig-c18).</figcaption>
+![Página de login do Detran Digital, com o botão “Entrar com gov.br”.](../../assets/images/avaliacao-detran/fig-c18.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C18** · Evidência de P05.</figcaption>
 </figure>
 
 </div>
@@ -166,7 +169,7 @@ Inconsistência visual entre o site principal do Detran-DF e o Detran Digital.
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 (Página Inicial do Portal do Detran-DF) e E21/E22 (Detran Digital)</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 3.2.3 (Navegação Consistente, AA), Guia DES-06, HU-d1 e HU-d3</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C19](evidencias-manuais.md#fig-c19), [Fig. C20](evidencias-manuais.md#fig-c20)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C19, Fig. C20</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -174,13 +177,13 @@ Inconsistência visual entre o site principal do Detran-DF e o Detran Digital.
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Página inicial do Detran Digital, com layout diferente do portal público.](../../assets/images/avaliacao-detran/fig-c19.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c19.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C19** · Evidência de P06. [Ver no Apêndice C](evidencias-manuais.md#fig-c19).</figcaption>
+![Página inicial do Detran Digital, com layout diferente do portal público.](../../assets/images/avaliacao-detran/fig-c19.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C19** · Evidência de P06.</figcaption>
 </figure>
 
 <figure class="prob-fig" markdown="1">
-[![Página de login do Detran Digital, com o botão “Entrar com gov.br”.](../../assets/images/avaliacao-detran/fig-c20.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c20.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C20** · Evidência de P06. [Ver no Apêndice C](evidencias-manuais.md#fig-c20).</figcaption>
+![Página de login do Detran Digital, com o botão “Entrar com gov.br”.](../../assets/images/avaliacao-detran/fig-c20.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C20** · Evidência de P06.</figcaption>
 </figure>
 
 </div>
@@ -197,7 +200,7 @@ Alguns formulários não indicam causas de erro de preenchimento e retornam mens
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E7 – Página de Transferência de Veículo no Detran Digital</div>
 <div markdown="1"><span class="prob-label">Referência</span>WCAG 3.3.1 (Identificação do Erro, A), Guia DEV-16, HU-i1 e HU-i3</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C21](evidencias-manuais.md#fig-c21)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C21</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -205,8 +208,8 @@ Alguns formulários não indicam causas de erro de preenchimento e retornam mens
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela.](../../assets/images/avaliacao-detran/fig-c21.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c21.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C21** · Evidência de P07. [Ver no Apêndice C](evidencias-manuais.md#fig-c21).</figcaption>
+![Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela.](../../assets/images/avaliacao-detran/fig-c21.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C21** · Evidência de P07.</figcaption>
 </figure>
 
 </div>
@@ -246,7 +249,7 @@ A opção de Logoff na plataforma do Detran Digital não exige confirmação do 
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E1 – Página Inicial do Detran Digital</div>
 <div markdown="1"><span class="prob-label">Referência</span>Guia HU-e1</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C22](evidencias-manuais.md#fig-c22)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C22</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -254,8 +257,8 @@ A opção de Logoff na plataforma do Detran Digital não exige confirmação do 
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Menu do usuário do Detran Digital com a opção “Logoff” sem confirmação.](../../assets/images/avaliacao-detran/fig-c22.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c22.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C22** · Evidência de P09. [Ver no Apêndice C](evidencias-manuais.md#fig-c22).</figcaption>
+![Menu do usuário do Detran Digital com a opção “Logoff” sem confirmação.](../../assets/images/avaliacao-detran/fig-c22.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C22** · Evidência de P09.</figcaption>
 </figure>
 
 </div>
@@ -272,7 +275,7 @@ O Portal não possui uma aba de FAQ ou Perguntas Frequentes clara e de fácil ac
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E22 – Página Inicial do Detran-DF</div>
 <div markdown="1"><span class="prob-label">Referência</span>Guia HU-j1</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C23](evidencias-manuais.md#fig-c23)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C23</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -280,8 +283,8 @@ O Portal não possui uma aba de FAQ ou Perguntas Frequentes clara e de fácil ac
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Página inicial do portal do Detran-DF, sem seção de perguntas frequentes visível.](../../assets/images/avaliacao-detran/fig-c23.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c23.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C23** · Evidência de P10. [Ver no Apêndice C](evidencias-manuais.md#fig-c23).</figcaption>
+![Página inicial do portal do Detran-DF, sem seção de perguntas frequentes visível.](../../assets/images/avaliacao-detran/fig-c23.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C23** · Evidência de P10.</figcaption>
 </figure>
 
 </div>
@@ -298,7 +301,7 @@ A Transferência de Veículo não tem um recurso claro de “Desfazer” ou de c
 <div class="prob-grid" markdown="1">
 <div markdown="1"><span class="prob-label">Onde</span>E7 – Página de Transferência de Veículo</div>
 <div markdown="1"><span class="prob-label">Referência</span>HU-c1</div>
-<div markdown="1"><span class="prob-label">Evidência</span>[Fig. C21](evidencias-manuais.md#fig-c21)</div>
+<div markdown="1"><span class="prob-label">Evidência</span>Fig. C21</div>
 </div>
 
 <div class="prob-rec" markdown="1">
@@ -306,8 +309,79 @@ A Transferência de Veículo não tem um recurso claro de “Desfazer” ou de c
 </div>
 
 <figure class="prob-fig" markdown="1">
-[![Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela.](../../assets/images/avaliacao-detran/fig-c21.webp){ loading=lazy }](../../assets/images/avaliacao-detran/fig-c21.webp){ target=_blank rel=noopener }
-<figcaption markdown="1">**Fig. C21** · Evidência de P07. [Ver no Apêndice C](evidencias-manuais.md#fig-c21).</figcaption>
+![Formulário de Transferência de Veículos com campos de placa e Renavam e uma mensagem genérica de erro no canto da tela.](../../assets/images/avaliacao-detran/fig-c21.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C21** · Evidência de P07.</figcaption>
 </figure>
 
+</div>
+
+
+### P12 · Falha na hierarquia de títulos e cabeçalhos {#p12}
+
+<div class="prob-card lvl-3" markdown="1">
+<span class="sev sev-3">Grave</span>
+
+Estrutura de títulos e cabeçalhos (de `h1` a `h6`) inconsistente, dificultando compreender a organização da página e navegar por títulos com leitor de tela.
+
+<div class="prob-grid" markdown="1">
+<div markdown="1"><span class="prob-label">Onde</span>E1, E14 e E21</div>
+<div markdown="1"><span class="prob-label">Referência</span>WCAG 1.3.1 e 2.4.6; Guia DEV-04</div>
+</div>
+
+<div class="prob-rec" markdown="1">
+**Recomendação.** Organizar títulos de forma lógica, com níveis que representem as seções e descrições claras, evitando saltos que prejudiquem a estrutura compreendida por tecnologias assistivas.
+</div>
+
+<figure class="prob-fig" markdown="1">
+![Exemplo de inspeção da estrutura de cabeçalhos do Detran-DF.](../../assets/images/avaliacao-detran/fig-c3.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C3** · Evidência de P12 registrada no relatório de avaliação.</figcaption>
+</figure>
+</div>
+
+### P13 · Regiões da página inadequadas {#p13}
+
+<div class="prob-card lvl-3" markdown="1">
+<span class="sev sev-3">Grave</span>
+
+Ausência ou marcação inadequada de regiões da página (*landmarks* HTML5/ARIA), que dificulta saltar diretamente para navegação, conteúdo principal ou rodapé por leitores de tela.
+
+<div class="prob-grid" markdown="1">
+<div markdown="1"><span class="prob-label">Onde</span>E1, E14, E18, E19, E20 e E21</div>
+<div markdown="1"><span class="prob-label">Referência</span>WCAG 1.3.1; Guia DEV-01</div>
+</div>
+
+<div class="prob-rec" markdown="1">
+**Recomendação.** Utilizar regiões semânticas como `header`, `nav`, `main` e `footer` e, quando necessário, atributos ARIA equivalentes, sem criar regiões redundantes.
+</div>
+
+<figure class="prob-fig" markdown="1">
+![Registro de inspeção das regiões semânticas da interface.](../../assets/images/avaliacao-detran/fig-c6.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C6** · Evidência de P13 registrada no relatório de avaliação.</figcaption>
+</figure>
+</div>
+
+### P14 · Zoom e reflow insuficientes {#p14}
+
+<div class="prob-card lvl-3" markdown="1">
+<span class="sev sev-3">Grave</span>
+
+Foi relatada perda de conteúdo a 200% de zoom e necessidade de rolagem horizontal a 400%, comprometendo o uso por pessoas com baixa visão.
+
+<div class="prob-grid" markdown="1">
+<div markdown="1"><span class="prob-label">Onde</span>Páginas avaliadas no relatório</div>
+<div markdown="1"><span class="prob-label">Referência</span>WCAG 1.4.4 e 1.4.10; Guia DES-01 e DES-04</div>
+</div>
+
+<div class="prob-rec" markdown="1">
+**Recomendação.** Utilizar layout responsivo com unidades flexíveis e adaptação do conteúdo para preservar sua leitura e operação em ampliação, observadas as exceções dos critérios aplicáveis.
+</div>
+
+<figure class="prob-fig" markdown="1">
+![Registro do problema de ampliação na interface avaliada.](../../assets/images/avaliacao-detran/fig-c8.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C8** · Evidência de P14.</figcaption>
+</figure>
+<figure class="prob-fig" markdown="1">
+![Registro de rolagem horizontal na ampliação da interface avaliada.](../../assets/images/avaliacao-detran/fig-c9.webp){ loading=lazy }
+<figcaption markdown="1">**Fig. C9** · Evidência complementar de P14.</figcaption>
+</figure>
 </div>

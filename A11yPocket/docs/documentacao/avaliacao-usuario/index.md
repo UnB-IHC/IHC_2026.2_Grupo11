@@ -1,101 +1,132 @@
-# Avaliação com usuário
 
-<p class="rel-lead">
-  Relatório da entrega: teste de usabilidade com uma usuária real do <a href="https://detran.df.gov.br">Portal do Detran-DF</a>, com protocolo <em>Think Aloud</em>, questionário SUS e entrevista, cruzado com os critérios do guia de acessibilidade do grupo.
-</p>
+# Avaliação de Usabilidade com Usuário Real
 
+A avaliação de usabilidade com usuário real foi realizada pelo **Grupo 11 de Interação Humano-Computador (IHC) da Universidade de Brasília**, com o objetivo de compreender como uma pessoa interage com os serviços digitais disponibilizados pelo Detran-DF.
 
-## Resultados em resumo
+Diferentemente das avaliações automáticas e heurísticas, esse tipo de investigação permite observar dificuldades, comportamentos e decisões durante a realização de tarefas reais.
 
-<ul class="rel-kpis" role="list" aria-label="Resultados em resumo" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; list-style: none; padding: 0;">
-  <li style="--rel-c: var(--rel-ok)">
-    <span class="rel-kpi__value">25%</span>
-    <span class="rel-kpi__label">Sucesso sem ajuda</span>
-    <span class="rel-kpi__note">1 de 4 tarefas</span>
-  </li>
-  <li style="--rel-c: var(--rel-help)">
-    <span class="rel-kpi__value">50%</span>
-    <span class="rel-kpi__label">Sucesso com ajuda</span>
-    <span class="rel-kpi__note">2 de 4 tarefas</span>
-  </li>
-  <li style="--rel-c: var(--rel-fail)">
-    <span class="rel-kpi__value">25%</span>
-    <span class="rel-kpi__label">Falha</span>
-    <span class="rel-kpi__note">1 de 4 tarefas</span>
-  </li>
-  <li style="--rel-c: var(--ap-brand)">
-    <span class="rel-kpi__value">52,5</span>
-    <span class="rel-kpi__label">Score SUS</span>
-    <span class="rel-kpi__note">Marginal · média de mercado: 68</span>
-  </li>
-</ul>
+A avaliação complementa os resultados técnicos apresentados na [Avaliação do Site](../avaliacao-site/index.md), contribuindo para uma compreensão mais ampla da experiência do usuário.
 
-Detalhes em [Métricas e Score SUS](resultados.md). O SUS é um escore de 0 a 100, e não uma porcentagem.
+## Sobre o estudo
 
-## Sumário
+O teste ocorreu em **8 de novembro de 2026**, de forma remota, com uma participante adulta de 58 anos, habituada à utilização de serviços públicos digitais.
 
-<div class="guia-cards">
-  <a class="guia-card" href="metodologia/">
-    <span class="guia-kicker">Seção 4</span>
-    <strong>Metodologia</strong>
-    <span>Abordagem de teste, participante, procedimento e cenários de avaliação.</span>
-  </a>
-  <a class="guia-card" href="resultados/">
-    <span class="guia-kicker">Seções 5 e 6</span>
-    <strong>Métricas e Score SUS</strong>
-    <span>Eficácia, tempo e erros por cenário; cálculo e análise do SUS.</span>
-  </a>
-  <a class="guia-card" href="analise/">
-    <span class="guia-kicker">Seções 7 e 8</span>
-    <strong>Análise e achados</strong>
-    <span>Barreiras, tabela de problemas, severidade e cruzamento com o guia.</span>
-  </a>
-  <a class="guia-card" href="recomendacoes/">
-    <span class="guia-kicker">Seções 9 e 10</span>
-    <strong>Recomendações e conclusão</strong>
-    <span>Priorização das correções e conclusões do estudo.</span>
-  </a>
-  <a class="guia-card" href="anexo-a/">
-    <span class="guia-kicker">Apêndice A</span>
-    <strong>Roteiro do teste</strong>
-    <span>Cenários, critérios, caminhos de referência, tempos e entrevistas.</span>
-  </a>
-  <a class="guia-card" href="anexo-b/">
-    <span class="guia-kicker">Apêndice B</span>
-    <strong>Termo de consentimento</strong>
-    <span>Texto do termo e autorizações concedidas pela participante.</span>
-  </a>
+A sessão combinou três procedimentos:
+
+- **Teste de usabilidade:** observação da execução de quatro tarefas representativas.
+- **Think Aloud:** verbalização dos pensamentos e dificuldades durante a interação.
+- **System Usability Scale (SUS):** questionário aplicado após as tarefas para avaliar a percepção de usabilidade.
+
+As atividades contemplaram a busca por informações de biometria presencial, renovação da CNH, agendamento de atendimento e consulta de multas e pontuação.
+
+O objetivo foi investigar aspectos relacionados à **eficácia, eficiência, satisfação, encontrabilidade e clareza da navegação**.
+
+## Resultados principais
+
+Os indicadores a seguir sintetizam os resultados observados durante a sessão.
+
+<div class="ap-user-kpis">
+
+  <div class="ap-user-kpi ap-user-kpi--success">
+    <strong class="ap-user-kpi__value">50%</strong>
+    <span class="ap-user-kpi__label">Sucesso sem ajuda</span>
+    <span class="ap-user-kpi__note">2 de 4 tarefas</span>
+  </div>
+
+  <div class="ap-user-kpi ap-user-kpi--help">
+    <strong class="ap-user-kpi__value">25%</strong>
+    <span class="ap-user-kpi__label">Sucesso com ajuda</span>
+    <span class="ap-user-kpi__note">1 de 4 tarefas</span>
+  </div>
+
+  <div class="ap-user-kpi ap-user-kpi--fail">
+    <strong class="ap-user-kpi__value">25%</strong>
+    <span class="ap-user-kpi__label">Tarefa não concluída</span>
+    <span class="ap-user-kpi__note">1 de 4 tarefas</span>
+  </div>
+
+  <div class="ap-user-kpi ap-user-kpi--sus">
+    <strong class="ap-user-kpi__value">52,5</strong>
+    <span class="ap-user-kpi__label">Pontuação SUS</span>
+    <span class="ap-user-kpi__note">Escala de 0 a 100</span>
+  </div>
+
 </div>
 
-## Introdução { #introducao }
+O questionário SUS resultou em **52,5 pontos**, indicando uma percepção de usabilidade que merece atenção quando analisada em conjunto com as dificuldades observadas.
 
-Este relatório técnico apresenta a avaliação de usabilidade e acessibilidade realizada no Portal do Detran-DF, desenvolvida no âmbito da disciplina de Interação Humano-Computador (IHC) da Universidade de Brasília (UnB), no semestre 2026.2, sob a orientação da Professora Rejane M. C. Figueiredo. O objetivo primordial deste estudo consiste em mapear a experiência de um utilizador real através de testes empíricos baseados em cenários cotidianos de serviços veiculares e de habilitação. Pretende-se, deste modo, articular os conceitos teóricos de IHC identificando barreiras de interface e propondo melhorias estruturais.
+O resultado do SUS não representa uma porcentagem de tarefas concluídas, mas uma pontuação calculada a partir das respostas ao questionário.
 
-## Caracterização do site { #caracterizacao }
+!!! info "Interpretação dos resultados"
+    Como a avaliação contou com uma participante, seus resultados descrevem a experiência observada nessa sessão. Eles não devem ser generalizados automaticamente para todos os usuários do Detran-DF.
 
-O site oficial do Departamento de Trânsito do Distrito Federal (Detran-DF) é um portal institucional e de prestação de serviços públicos voltado aos cidadãos condutores e proprietários de veículos da região.
+## Principais observações
 
-A plataforma serve como o principal canal digital para emissão de taxas (como IPVA), consultas de infrações, agendamento de atendimentos presenciais e processos de habilitação (CNH). O portal divide-se entre uma área pública informativa e o “Detran Digital”, uma área restrita para realização de serviços mediante autenticação.
+### Dificuldade na renovação da CNH
 
-## Perfil de usuário { #perfil }
+A tarefa relacionada à renovação da CNH foi a única não concluída conforme os critérios de análise estabelecidos.
 
-A seleção e a caracterização do perfil do utilizador seguiram os critérios do roteiro de testes [Roteiro de Teste Usabilidade DetranDF v3](https://docs.google.com/document/u/0/d/1_-41jDTGt5vW_feVFJfzYhxXMuct4U0z7vemd_ixY_k/edit), focando-se em uma cidadã real que utiliza serviços públicos do Distrito Federal:
+A participante encontrou dificuldades para localizar as orientações necessárias, mesmo possuindo familiaridade com serviços digitais.
 
-<dl class="rel-spec">
-  <div>
-    <dt>Identificação</dt>
-    <dd>Usuária adulta, 58 anos.</dd>
-  </div>
-  <div>
-    <dt>Contexto de uso</dt>
-    <dd>Utilizadora diária da internet, acessando serviços públicos como Detran, Secretaria da Fazenda e Terracap (por motivos profissionais) através de notebook e smartphone. Utiliza o Detran-DF para emissão de IPVA, CNH e consulta de pendências.</dd>
-  </div>
-  <div>
-    <dt>Familiaridade tecnológica</dt>
-    <dd>Alta. Não costuma pedir ajuda a terceiros para navegar em sites ou aplicativos.</dd>
-  </div>
-  <div>
-    <dt>Limitações de acessibilidade</dt>
-    <dd>Não utiliza recursos específicos de acessibilidade, como leitores de tela ou ajustes de zoom.</dd>
-  </div>
-</dl>
+Esse resultado destacou a importância da **encontrabilidade dos serviços**, da organização da informação e da clareza dos caminhos de navegação.
+
+### A importância da observação direta
+
+O teste também demonstrou que o sucesso na execução de uma tarefa não significa, necessariamente, ausência de dificuldades durante a interação.
+
+Hesitações, releituras, tentativas de navegação e solicitações de ajuda oferecem informações importantes para compreender a experiência.
+
+Essas observações complementam os resultados das ferramentas automáticas, que não conseguem avaliar integralmente a facilidade de encontrar informações ou compreender os caminhos disponíveis em uma interface.
+
+## Explore a avaliação
+
+Consulte as etapas do estudo, os resultados detalhados e as recomendações elaboradas pelo grupo.
+
+<div class="guia-cards guia-cards--3">
+
+  <a class="guia-card" href="metodologia.md">
+    <span class="guia-kicker">Planejamento e execução</span>
+    <strong>Metodologia</strong>
+    <span>
+      Abordagem utilizada, perfil da participante,
+      procedimentos e cenários de teste.
+    </span>
+  </a>
+
+  <a class="guia-card" href="resultados.md">
+    <span class="guia-kicker">Indicadores</span>
+    <strong>Resultados e Score SUS</strong>
+    <span>
+      Desempenho nas tarefas, tempos observados,
+      erros e interpretação do questionário SUS.
+    </span>
+  </a>
+
+  <a class="guia-card" href="analise.md">
+    <span class="guia-kicker">Experiência observada</span>
+    <strong>Análise e descobertas</strong>
+    <span>
+      Barreiras de usabilidade, comportamentos
+      observados e principais dificuldades.
+    </span>
+  </a>
+
+  <a class="guia-card" href="recomendacoes.md">
+    <span class="guia-kicker">Propostas de melhoria</span>
+    <strong>Recomendações</strong>
+    <span>
+      Melhorias sugeridas para reduzir dificuldades
+      de navegação e tornar a experiência mais clara.
+    </span>
+  </a>
+
+</div>
+
+## Registros da avaliação
+
+A avaliação foi documentada por meio de observações, registros da execução das tarefas e respostas ao questionário SUS.
+
+As páginas desta seção apresentam os resultados e sínteses da sessão, preservando a privacidade da participante.
+
+!!! note "Privacidade e consentimento"
+    A autorização concedida pela participante permite a exibição de trechos da gravação em sala de aula, sem identificação, mas não autoriza sua publicação em um site público. Por esse motivo, as gravações não estão disponibilizadas nesta documentação. Uma eventual publicação dependerá de autorização complementar específica.

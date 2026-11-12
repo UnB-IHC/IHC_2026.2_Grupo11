@@ -1,5 +1,20 @@
 # Análise e achados
 
+Esta seção reúne os achados qualitativos do grupo. As classificações e marcações temporais de observações históricas devem ser interpretadas à luz do [relatório final Tg-03](resultados.md), que é a referência para os desfechos quantitativos.
+
+## Momentos relevantes da entrevista (sínteses, não transcrição literal)
+
+O relatório final registra momentos da sessão que ajudam a compreender as dificuldades encontradas. Abaixo, os trechos são apresentados como **paráfrases analíticas**, sem reproduzir voz, imagem ou identificação da participante.
+
+| Momento aproximado do registro | Observação fundamentada no relatório |
+|---|---|
+| 00:00–02:13 | P1 relata familiaridade com o uso diário de internet e serviços públicos. |
+| 07:35–11:17 | A procura pelas orientações de renovação da CNH evidencia dificuldade de localização; a marca de 160 s é o limite analítico. |
+| Entrevista final | P1 identifica a renovação da CNH como principal dificuldade e sugere meios de busca mais evidentes. |
+
+!!! warning "Gravação e consentimento"
+    A exibição de trechos está autorizada apenas em sala de aula e sem identificação, nas condições do termo assinado. **A gravação completa e seus trechos não estão publicados nem vinculados a este site público.**
+
 ## Cruzamento de dados: métricas quantitativas vs qualitativas { #cruzamento }
 
 ### Barreiras encontradas { #barreiras }

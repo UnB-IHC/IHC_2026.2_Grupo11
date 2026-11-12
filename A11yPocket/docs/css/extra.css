@@ -93,8 +93,8 @@
 .md-grid { max-width: 62rem; }
 /* o h1 padrão do Material é cinza claro: escurecido para destacar o título da página */
 .md-typeset h1 { color: var(--ap-ink); font-weight: 800; letter-spacing: -0.02em; }
-.md-typeset h2 { margin-top: 2.4rem; color: var(--ap-ink); font-weight: 700; }
-.md-typeset h3 { color: var(--ap-ink); font-weight: 700; }
+.md-typeset h2 { margin-top: 1.7rem; margin-bottom: .7rem; color: var(--ap-ink); font-weight: 700; }
+.md-typeset h3 { margin-top: 1.2rem; margin-bottom: .5rem; color: var(--ap-ink); font-weight: 700; }
 
 /* link no texto nunca depende só da cor (WCAG 1.4.1) */
 .md-typeset p a, .md-typeset li a {
@@ -373,5 +373,570 @@ div.guia-card:hover { transform: none; box-shadow: none; }
   .hero-illustration {
     order: -1; /* Coloca o ícone acima do título no celular */
     width: min(70%, 14rem);
+  }
+}
+
+.foto-brilho {
+  filter: brightness(150%); 
+}
+
+/* ==========================================
+   A11yPocket — Cards das técnicas de UX/DCU
+   ========================================== */
+
+.md-typeset .ux-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+/* Card inteiro clicável */
+
+.md-typeset a.ux-tech-card {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+
+  min-width: 0;
+  height: 100%;
+  padding: 1.25rem;
+
+  background: var(--ap-card);
+  color: var(--ap-ink);
+
+  border: 1px solid var(--ap-border);
+  border-radius: .75rem;
+
+  text-decoration: none;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+/* Hover */
+
+.md-typeset a.ux-tech-card:hover {
+  border-color: var(--ap-brand);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+  transform: translateY(-2px);
+}
+
+/* Foco acessível */
+
+.md-typeset a.ux-tech-card:focus-visible {
+  outline: 3px solid var(--ap-focus);
+  outline-offset: 4px;
+}
+
+/* Categoria */
+
+.md-typeset .ux-tech-card__category {
+  display: block;
+
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+
+  color: var(--ap-muted);
+}
+
+/* Título */
+
+.md-typeset .ux-tech-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  color: var(--ap-ink);
+}
+
+/* Descrição */
+
+.md-typeset .ux-tech-card p {
+  margin: 0;
+  font-size: .84rem;
+  line-height: 1.65;
+  color: var(--ap-muted);
+}
+
+/* Indicação de uso */
+
+.md-typeset .ux-tech-card__use {
+  display: block;
+  margin-top: .2rem;
+
+  font-size: .8rem;
+  line-height: 1.55;
+  color: var(--ap-ink);
+}
+
+.md-typeset .ux-tech-card__use strong {
+  color: var(--ap-ink);
+}
+
+/* Link visual no rodapé */
+
+.md-typeset .ux-tech-card__link {
+  display: block;
+  margin-top: auto;
+  padding-top: .7rem;
+
+  border-top: 1px solid var(--ap-border);
+
+  font-size: .82rem;
+  font-weight: 750;
+  color: var(--ap-brand);
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  .md-typeset .ux-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset a.ux-tech-card {
+    padding: 1rem;
+  }
+}
+
+/* Movimento reduzido */
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset a.ux-tech-card {
+    transition: none;
+  }
+
+  .md-typeset a.ux-tech-card:hover {
+    transform: none;
+  }
+}
+
+/* ==========================================
+   A11yPocket — Padronização global de tabelas
+   ========================================== */
+
+/* Contêiner das tabelas Markdown do MkDocs */
+
+.md-typeset .md-typeset__table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Tabelas comuns do conteúdo */
+
+.md-typeset .md-typeset__table > table,
+.md-typeset table.ux-comparison-table {
+  display: table;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-radius: .6rem;
+}
+
+/* Cabeçalhos */
+
+.md-typeset .md-typeset__table > table:not(.ap-problems-table) thead th,
+.md-typeset .ux-comparison-table thead th {
+  padding: .85rem 1rem;
+
+  background: var(--ap-surface);
+  color: var(--ap-ink);
+
+  font-weight: 750;
+  text-align: left;
+  vertical-align: middle;
+
+  border-bottom: 1px solid var(--ap-border);
+}
+
+/* Células */
+
+.md-typeset .md-typeset__table > table:not(.ap-problems-table) tbody td,
+.md-typeset .ux-comparison-table tbody td {
+  padding: .85rem 1rem;
+
+  color: var(--ap-ink);
+  vertical-align: middle;
+  overflow-wrap: break-word;
+
+  border-bottom: 1px solid var(--ap-border);
+}
+
+/* Última linha sem borda inferior */
+
+.md-typeset .md-typeset__table > table:not(.ap-problems-table) tbody tr:last-child td,
+.md-typeset .ux-comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Destaque discreto das linhas */
+
+.md-typeset .md-typeset__table > table:not(.ap-problems-table) tbody tr:hover td,
+.md-typeset .ux-comparison-table tbody tr:hover td {
+  background: var(--ap-surface);
+}
+
+/* Tabela de UX/DCU — proporção específica */
+
+.md-typeset .ux-comparison-table {
+  table-layout: fixed;
+}
+
+.md-typeset .ux-comparison-table th:first-child,
+.md-typeset .ux-comparison-table td:first-child {
+  width: 65%;
+}
+
+.md-typeset .ux-comparison-table th:last-child,
+.md-typeset .ux-comparison-table td:last-child {
+  width: 35%;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .md-typeset .md-typeset__table > table:not(.ap-problems-table) th,
+  .md-typeset .md-typeset__table > table:not(.ap-problems-table) td,
+  .md-typeset .ux-comparison-table th,
+  .md-typeset .ux-comparison-table td {
+    padding: .65rem .7rem;
+    font-size: .82rem;
+  }
+}
+
+/* ==========================================
+   A11yPocket — Espaçamentos da documentação
+   ========================================== */
+
+/* Mais espaço entre o conteúdo e o rodapé */
+
+.md-main__inner .md-content__inner {
+  padding-bottom: 3.5rem;
+}
+
+/* Menos espaçamento entre parágrafos */
+
+.md-typeset p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+/* Listas mais compactas */
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-top: .5rem;
+  margin-bottom: .7rem;
+}
+
+/* Menor distância entre itens das listas */
+
+.md-typeset li {
+  margin-bottom: .2rem;
+}
+
+/* Mantém uma separação adequada entre títulos e textos */
+
+.md-typeset h2 {
+  margin-bottom: .7rem;
+}
+
+.md-typeset h3 {
+  margin-bottom: .5rem;
+}
+
+/* ==========================================
+   Avaliação automática — Alinhamento
+   ========================================== */
+
+/* Contêiner das tabelas WAVE e axe */
+
+.md-typeset .rel-auto-tables,
+.md-typeset .rel-auto-tables .md-typeset__table {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Distribuição uniforme das seis colunas */
+
+.md-typeset .rel-auto-tables table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Todas as células centralizadas */
+
+.md-typeset .rel-auto-tables table th,
+.md-typeset .rel-auto-tables table td {
+  width: auto;
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+/* Larguras proporcionais */
+
+.md-typeset .rel-auto-tables table th:nth-child(1),
+.md-typeset .rel-auto-tables table td:nth-child(1) {
+  width: 12%;
+}
+
+.md-typeset .rel-auto-tables table th:nth-child(2),
+.md-typeset .rel-auto-tables table td:nth-child(2) {
+  width: 20%;
+}
+
+.md-typeset .rel-auto-tables table th:nth-child(3),
+.md-typeset .rel-auto-tables table td:nth-child(3) {
+  width: 20%;
+}
+
+.md-typeset .rel-auto-tables table th:nth-child(4),
+.md-typeset .rel-auto-tables table td:nth-child(4) {
+  width: 20%;
+}
+
+.md-typeset .rel-auto-tables table th:nth-child(5),
+.md-typeset .rel-auto-tables table td:nth-child(5) {
+  width: 16%;
+}
+
+.md-typeset .rel-auto-tables table th:nth-child(6),
+.md-typeset .rel-auto-tables table td:nth-child(6) {
+  width: 12%;
+}
+
+/* ==========================================
+   Avaliação automática — axe DevTools
+   Sem rolagem horizontal
+   ========================================== */
+
+/* Tabela com 7 colunas */
+
+.md-typeset .rel-auto-tables:has(
+  table thead th:nth-child(7)
+) {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.md-typeset .rel-auto-tables table:has(
+  thead th:nth-child(7)
+) {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+/* Distribuição das sete colunas */
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(1),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(1) {
+  width: 12%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(2),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(2) {
+  width: 16%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(3),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(3) {
+  width: 13%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(4),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(4) {
+  width: 13%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(5),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(5) {
+  width: 13%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(6),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(6) {
+  width: 17%;
+}
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th:nth-child(7),
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td:nth-child(7) {
+  width: 16%;
+}
+
+/* Permite que o texto se adapte à célula */
+
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  th,
+.md-typeset .rel-auto-tables table:has(thead th:nth-child(7))
+  td {
+  white-space: normal;
+  overflow-wrap: break-word;
+  padding: .65rem .3rem;
+  text-align: center !important;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+/* Impede largura mínima forçada pelo MkDocs */
+
+.md-typeset .rel-auto-tables:has(
+  table thead th:nth-child(7)
+) .md-typeset__table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==========================================
+   A11yPocket — Indicadores da avaliação
+   com usuário real
+   ========================================== */
+
+.md-typeset .ap-user-kpis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 1.8rem;
+}
+
+.md-typeset .ap-user-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+
+  min-width: 0;
+  padding: 1.2rem 1.3rem;
+
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-top: 4px solid var(--ap-kpi-color);
+  border-radius: .65rem;
+}
+
+/* Indicadores por categoria */
+
+.md-typeset .ap-user-kpi--success {
+  --ap-kpi-color: #23966b;
+}
+
+.md-typeset .ap-user-kpi--help {
+  --ap-kpi-color: #d29b32;
+}
+
+.md-typeset .ap-user-kpi--fail {
+  --ap-kpi-color: #c84d5a;
+}
+
+.md-typeset .ap-user-kpi--sus {
+  --ap-kpi-color: var(--ap-brand);
+}
+
+/* Valor principal */
+
+.md-typeset .ap-user-kpi__value {
+  color: var(--ap-ink);
+  font-size: 2rem;
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+/* Identificação do indicador */
+
+.md-typeset .ap-user-kpi__label {
+  color: var(--ap-ink);
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Informação complementar */
+
+.md-typeset .ap-user-kpi__note {
+  color: var(--ap-muted);
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .md-typeset .ap-user-kpis {
+    grid-template-columns: 1fr;
+    gap: .75rem;
+  }
+
+  .md-typeset .ap-user-kpi {
+    padding: 1rem;
+  }
+}
+/* ==========================================
+   Avaliação com usuário — Síntese das tarefas
+   ========================================== */
+
+/* Três indicadores lado a lado */
+
+.md-typeset .ap-user-kpis--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Informações sobre os erros observados */
+
+.md-typeset .ap-user-observation {
+  margin: 1rem 0 1.6rem;
+  padding: 1rem 1.2rem;
+
+  background: var(--ap-surface);
+  border: 1px solid var(--ap-border);
+  border-left: 4px solid var(--ap-brand);
+  border-radius: .65rem;
+}
+
+.md-typeset .ap-user-observation strong {
+  display: block;
+  margin-bottom: .4rem;
+
+  color: var(--ap-ink);
+  font-weight: 750;
+}
+
+.md-typeset .ap-user-observation p {
+  margin: 0;
+  color: var(--ap-muted);
+  line-height: 1.6;
+}
+
+/* Responsividade */
+
+@media (max-width: 760px) {
+  .md-typeset .ap-user-kpis--three {
+    grid-template-columns: 1fr;
   }
 }

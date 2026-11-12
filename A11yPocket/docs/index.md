@@ -75,7 +75,7 @@ hide:
     <span class="team-user">@DaviSakai</span>
   </a>
   <a href="https://github.com/igorlym" class="team-card" role="listitem" target="_blank" rel="noopener">
-    <img src="https://github.com/igorlym.png?size=160" alt="Foto de perfil de Igor Lima" width="80" height="80" loading="lazy">
+    <img src="https://github.com/igorlym.png?size=160" alt="Foto de perfil de Igor Lima" class = "foto-brilho" width="80" height="80" loading="lazy">
     <h3>Igor Lima</h3>
     <span class="team-role">Integrante</span>
     <span class="team-user">@igorlym</span>
@@ -99,7 +99,7 @@ hide:
     <span class="team-user">@kauantarchetti</span>
   </a>
     <a href="https://github.com/Luc4sF3rreira" class="team-card is-lead" role="listitem" target="_blank" rel="noopener">
-    <img src="https://github.com/Luc4sF3rreira.png?size=160" alt="Foto de perfil de Lucas Ferreira Santana" width="80" height="80" loading="lazy">
+    <img src="https://github.com/Luc4sF3rreira.png?size=160" alt="Foto de perfil de Lucas Ferreira Santana" class = "foto-brilho" width="80" height="80" loading="lazy">
     <h3>Lucas Ferreira Santana</h3>
     <span class="team-role">Líder</span>
     <span class="team-user">@Luc4sF3rreira</span>

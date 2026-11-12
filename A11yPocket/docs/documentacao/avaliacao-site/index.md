@@ -1,8 +1,34 @@
-# Avaliação do site
 
-Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detran-DF](<https://portal.detran.df.gov.br/>) e do Detran Digital. A avaliação aplica o [Guia de Acessibilidade](../../checklist/index.md) do grupo, as WCAG 2.2, a ABNT NBR 17225, as heurísticas de Nielsen, ferramentas automáticas, avaliação manual com leitor de tela e um teste de usabilidade com usuário real.
+# Avaliação do site — Detran-DF
 
+A avaliação de acessibilidade e usabilidade do **Portal do Detran-DF** foi realizada pelo Grupo 11 da disciplina de Interação Humano-Computador (IHC) da Universidade de Brasília, no semestre 2026.2.
 
+O estudo teve como objetivo identificar barreiras de acessibilidade, dificuldades de interação e problemas de usabilidade que possam comprometer o acesso aos serviços digitais oferecidos à população.
+
+## Sobre a avaliação
+
+O Detran-DF disponibiliza serviços relacionados à habilitação, veículos, infrações e atendimento ao cidadão. Por se tratar de uma plataforma de serviços públicos, é importante que suas interfaces sejam compreensíveis, acessíveis e utilizáveis por pessoas com diferentes necessidades e condições de acesso.
+
+A avaliação contemplou **22 páginas e fluxos**, incluindo serviços do portal institucional e do Detran Digital.
+
+O trabalho buscou não apenas identificar inadequações, mas também compreender seus impactos na experiência dos usuários e propor melhorias fundamentadas em diretrizes de acessibilidade e princípios de IHC.
+
+## Como o site foi avaliado?
+
+A investigação combinou diferentes abordagens complementares:
+
+- **Avaliação automática:** utilização de ferramentas para identificar possíveis violações de acessibilidade, problemas de estrutura e contraste.
+- **Avaliação manual:** inspeção das interfaces, navegação por teclado e verificações com tecnologias assistivas.
+- **Avaliação heurística:** análise fundamentada nas heurísticas de usabilidade de Jakob Nielsen.
+- **Teste com usuário real:** observação da realização de tarefas para compreender dificuldades encontradas durante a interação.
+
+A avaliação foi fundamentada no Guia de Boas Práticas desenvolvido pelo grupo, nas **WCAG 2.2**, na **ABNT NBR 17225:2025** e em conceitos de usabilidade e experiência do usuário.
+
+Essas abordagens foram utilizadas de forma complementar, uma vez que verificações automáticas não são suficientes para identificar todas as barreiras presentes em uma interface.
+
+## Panorama dos resultados
+
+A avaliação consolidou **14 problemas de acessibilidade e usabilidade**, classificados conforme sua severidade e impacto na realização das tarefas.
 
 <ul class="rel-stats" aria-label="Resumo dos resultados">
 
@@ -10,7 +36,7 @@ Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detr
     <div class="rel-stat rel-stat-expand">
 
       <div class="rel-stat-header">
-        <strong>11</strong>
+        <strong>14</strong>
         <span>problemas encontrados</span>
       </div>
 
@@ -21,8 +47,8 @@ Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detr
         </li>
 
         <li class="rel-stat lvl-3">
-          <strong>1</strong>
-          <span>grave</span>
+          <strong>4</strong>
+          <span>graves</span>
         </li>
 
         <li class="rel-stat lvl-2">
@@ -41,70 +67,76 @@ Relatório de **avaliação de acessibilidade e usabilidade** do portal do [Detr
 
 </ul>
 
-## Resumo executivo
+## Principais descobertas
 
-- **O que foi avaliado:** 22 páginas e fluxos (E1 a E22): Página Inicial, Consulta de Nada Consta do Veículo, Consulta de Débito do Veículo, Emissão de CRLV-e, Emissão de ATPV-e, Emissão de Placa de Identificação do Veículo, Transferência de Veículo, Consulta CNH, Marcação de Provas CNH (teórico e prático), Acompanhamento de Processo de Habilitação, Permissão Internacional para Dirigir, CNH Definitiva, Agendamento Presencial, Balcão Virtual, Consulta de Infrações por Condutor, Histórico de Infrações por Veículo, Processos de Penalidade de Suspensão de CNH, Consultar Clínica, Consultar Instrutores de Trânsito, Consultar Auto Escola, Página de Login e Página Inicial 2 (Detran Digital). A lista completa está em [Escopo](escopo.md).
-- **Como:** Guia de Acessibilidade melhorado (Tg-01), WCAG 2.2, NBR 17225, heurísticas de Nielsen, ferramentas automáticas, avaliação manual e teste com usuário real. Veja a [Metodologia](metodologia.md).
-- **Resultado geral:** 11 problemas encontrados: 4 críticos, 1 grave, 5 moderados e 1 leve.
-- **Três problemas mais importantes:** [P02](problemas.md#p02) (imagens sem texto alternativo), [P08](problemas.md#p08) (renovação de CNH não encontrada no Detran Digital) e [P05](problemas.md#p05) (possível loop de autenticação com o gov.br).
-- **Principal recomendação:** corrigir prioritariamente a falha de integração no login com o gov.br no Detran Digital e adequar textos alternativos de imagens, rótulos de campos e nomes acessíveis de botões na Página Inicial, para garantir a navegabilidade por leitores de tela, além de resolver os problemas que envolvem inconsistências de informações.
+Os resultados evidenciaram barreiras que podem dificultar a utilização dos serviços digitais por diferentes perfis de usuários.
 
-## Navegue pelo relatório
+Entre os achados de maior relevância estão:
 
-<div class="guia-cards">
-  <a class="guia-card" href="escopo/">
-    <span class="guia-kicker">Seção 3</span>
-    <strong>Escopo</strong>
-    <span>Por que o Detran-DF, as 22 páginas e fluxos avaliados e o ambiente de teste.</span>
+- **Problemas de acessibilidade:** imagens sem alternativas textuais, campos sem rótulos associados e controles sem nomes acessíveis.
+- **Dificuldades de navegação:** obstáculos para localizar determinados serviços, como a renovação da CNH.
+- **Problemas de interação:** possíveis dificuldades no fluxo de autenticação com o gov.br e inconsistências entre as interfaces do portal e do Detran Digital.
+- **Necessidade de melhorias estruturais:** adequações relacionadas à organização semântica, apresentação do conteúdo e utilização de tecnologias assistivas.
+
+Esses resultados reforçam a importância de considerar a acessibilidade desde o desenvolvimento das interfaces e de combinar avaliações técnicas com observações da experiência real dos usuários.
+
+Os problemas identificados, suas evidências e recomendações podem ser consultados na seção de detalhamento da avaliação.
+
+## Explore a avaliação
+
+As páginas a seguir apresentam os procedimentos adotados, os resultados obtidos e as recomendações elaboradas pelo grupo.
+
+<div class="guia-cards guia-cards--3">
+
+  <a class="guia-card" href="escopo.md">
+    <span class="guia-kicker">Contexto</span>
+    <strong>Escopo da avaliação</strong>
+    <span>Páginas e fluxos analisados, justificativas de seleção e ambiente utilizado.</span>
   </a>
-  <a class="guia-card" href="metodologia/">
-    <span class="guia-kicker">Seção 4</span>
+
+  <a class="guia-card" href="metodologia.md">
+    <span class="guia-kicker">Procedimentos</span>
     <strong>Metodologia</strong>
-    <span>Referenciais, ferramentas e escala de severidade.</span>
+    <span>Referenciais adotados, procedimentos de análise e critérios de classificação dos problemas.</span>
   </a>
-  <a class="guia-card" href="avaliacao-automatica/">
-    <span class="guia-kicker">Seção 5</span>
+
+  <a class="guia-card" href="avaliacao-automatica.md">
+    <span class="guia-kicker">Ferramentas</span>
     <strong>Avaliação automática</strong>
-    <span>Resultados do WAVE e do axe DevTools em cada página.</span>
+    <span>Resultados das verificações automatizadas e análise dos principais padrões identificados.</span>
   </a>
-  <a class="guia-card" href="avaliacao-manual/">
-    <span class="guia-kicker">Seção 6</span>
+
+  <a class="guia-card" href="avaliacao-manual.md">
+    <span class="guia-kicker">Inspeção</span>
     <strong>Avaliação manual</strong>
-    <span>Teclado, leitor de tela, zoom, contraste, áreas de clique e formulários.</span>
+    <span>Verificações realizadas por inspeção, navegação por teclado e tecnologias assistivas.</span>
   </a>
-  <a class="guia-card" href="heuristicas/">
-    <span class="guia-kicker">Seção 7</span>
+
+  <a class="guia-card" href="heuristicas.md">
+    <span class="guia-kicker">Usabilidade</span>
     <strong>Heurísticas de Nielsen</strong>
-    <span>As 10 heurísticas aplicadas ao site, com exemplos observados.</span>
+    <span>Aplicação de princípios heurísticos na identificação de problemas de interação.</span>
   </a>
-  <a class="guia-card" href="problemas/">
-    <span class="guia-kicker">Seção 8</span>
-    <strong>Tabela de problemas</strong>
-    <span>Os 11 problemas com referência, severidade, evidência e recomendação.</span>
+
+  <a class="guia-card" href="problemas.md">
+    <span class="guia-kicker">Resultados</span>
+    <strong>Problemas encontrados</strong>
+    <span>Consulta interativa dos problemas identificados, com severidade, referências e evidências.</span>
   </a>
-  <a class="guia-card" href="teste-usuario/">
-    <span class="guia-kicker">Seção 9</span>
-    <strong>Teste com usuário real</strong>
-    <span>Síntese do teste de usabilidade (Tg-03) com quatro tarefas.</span>
+
+  <a class="guia-card" href="recomendacoes.md">
+    <span class="guia-kicker">Melhorias</span>
+    <strong>Recomendações</strong>
+    <span>Propostas de correção e priorização das melhorias de acessibilidade e usabilidade.</span>
   </a>
-  <a class="guia-card" href="recomendacoes/">
-    <span class="guia-kicker">Seção 10</span>
-    <strong>Recomendações e conclusão</strong>
-    <span>Priorização das correções, conclusão e limitações.</span>
+
+  <a class="guia-card" href="../avaliacao-usuario/index.md">
+    <span class="guia-kicker">Estudo empírico</span>
+    <strong>Teste com usuário</strong>
+    <span>Observações da interação real, resultados das tarefas e análise da experiência do usuário.</span>
   </a>
-  <a class="guia-card" href="evidencias-ferramentas/">
-    <span class="guia-kicker">Apêndice B</span>
-    <strong>Prints das ferramentas</strong>
-    <span>45 capturas do WAVE e do axe DevTools.</span>
-  </a>
-  <a class="guia-card" href="evidencias-manuais/">
-    <span class="guia-kicker">Apêndice C</span>
-    <strong>Evidências dos problemas</strong>
-    <span>23 capturas da avaliação manual e dos problemas.</span>
-  </a>
-  <a class="guia-card is-wide" href="referencias/">
-    <span class="guia-kicker">Seção 11</span>
-    <strong>Referências</strong>
-    <span>Normas, guias e ferramentas citados no relatório.</span>
-  </a>
+
 </div>
+
+!!! info "Sobre a documentação"
+    Esta seção apresenta uma versão organizada dos resultados da avaliação realizada pelo Grupo 11. O relatório acadêmico completo contém os procedimentos, registros e análises que fundamentam o estudo.

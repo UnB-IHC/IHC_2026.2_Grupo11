@@ -75,3 +75,16 @@
   max-width: none;
 }
 
+
+/* Atualização 2026.2 — layout simplificado, 14 achados, uma ficha aberta. */
+.md-typeset .md-typeset__table:has(> table.ap-problems-table) { width: 100%; display: block; }
+.md-typeset .md-typeset__table > table.ap-problems-table { width: 100%; max-width: none; min-width: 0; table-layout: auto; }
+.md-typeset .ap-problems-table th:nth-child(2) { width: auto; }
+.md-typeset .ap-problems-table th:first-child { width: 5rem; }
+.md-typeset .ap-problems-table th:last-child { width: 9rem; }
+.md-typeset .ap-problems-table .ap-detail-row > td { padding: 1.2rem 1.5rem; border-left: 4px solid var(--ap-level, var(--ap-brand)); }
+.md-typeset .ap-problems-table .ap-detail-row .prob-card { border: 0; box-shadow: none; background: transparent; padding: .3rem 0; }
+.md-typeset .ap-problems-table .ap-detail-row .prob-card > .sev { display: none; }
+.md-typeset .ap-problems-table .ap-detail-row h3 { display: none; }
+.md-typeset .ap-problems-table .ap-detail-row .prob-fig img { max-width: 100%; }
+@media (max-width: 600px) { .md-typeset .ap-problems-table th, .md-typeset .ap-problems-table td { padding: .65rem .45rem; } .md-typeset .ap-problems-table .ap-detail-row > td { padding: .8rem; } }

@@ -1,18 +1,58 @@
-# Ferramentas de teste
 
-Ferramentas automáticas **ajudam a encontrar erros**, mas não substituem a avaliação humana: nenhuma delas diz, por exemplo, se a descrição de uma imagem faz sentido. Por isso, esta página reúne as ferramentas de **análise automática** e os **leitores de tela**, com um comparativo e um passo a passo de uso. Use-as junto com o [checklist](../../checklist/index.md).
+## Explore as ferramentas
 
-## Comparativo rápido
+As ferramentas de avaliação possuem objetivos e métodos
+diferentes. Conheça seus recursos e saiba quando utilizá-las.
 
-| Ferramenta | Tipo | Plataforma | Use quando você quer… |
-|---|---|---|---|
-| **WAVE** | Análise visual (extensão e site) | Navegador | Ver erros sobre o próprio layout: contraste, títulos e `alt`. |
-| **Lighthouse** | Auditoria automática | Chrome DevTools | Acompanhar uma **nota de 0 a 100** entre versões e sprints. |
-| **Axe DevTools** | Análise automática + testes guiados | Navegador / DevTools | Varrer o código com poucos falsos positivos e guiar testes manuais. |
-| **ASES Web** | Avaliador oficial do Governo Federal | Web | Medir a conformidade com o **eMAG** em sites públicos. |
-| **NVDA** | Leitor de tela | Windows | Testar o fluxo “ouvido” de cima para baixo. |
-| **VoiceOver** | Leitor de tela | macOS, iOS, iPadOS | Testar gestos, alvos de toque e agrupamentos no celular da Apple. |
-| **TalkBack** | Leitor de tela | Android | Conferir a ordem de foco em apps e sites no Android. |
+### Ferramentas de análise automática
+
+<div class="guia-cards guia-cards--3">
+  <a class="guia-card" href="wave.md">
+    <span class="guia-kicker">Análise visual</span>
+    <strong>WAVE</strong>
+    <span>Identificação visual de problemas de acessibilidade, contraste e estrutura.</span>
+  </a>
+
+  <a class="guia-card" href="axe.md">
+    <span class="guia-kicker">Auditoria automática</span>
+    <strong>axe DevTools</strong>
+    <span>Inspeção de violações de acessibilidade e orientação para correção.</span>
+  </a>
+
+  <a class="guia-card" href="lighthouse.md">
+    <span class="guia-kicker">Auditoria de qualidade</span>
+    <strong>Lighthouse</strong>
+    <span>Auditorias automatizadas de acessibilidade e outros aspectos de qualidade web.</span>
+  </a>
+
+  <a class="guia-card" href="ases.md">
+    <span class="guia-kicker">eMAG</span>
+    <strong>ASES Web</strong>
+    <span>Avaliação de páginas web com foco nas recomendações brasileiras de acessibilidade.</span>
+  </a>
+</div>
+
+### Leitores de tela
+
+<div class="guia-cards guia-cards--3">
+  <a class="guia-card" href="nvda.md">
+    <span class="guia-kicker">Windows</span>
+    <strong>NVDA</strong>
+    <span>Teste da navegação e interpretação de interfaces com leitor de tela.</span>
+  </a>
+
+  <a class="guia-card" href="voiceover.md">
+    <span class="guia-kicker">Apple</span>
+    <strong>VoiceOver</strong>
+    <span>Avaliação da experiência com leitor de tela em dispositivos Apple.</span>
+  </a>
+
+  <a class="guia-card is-wide" href="talkback.md">
+    <span class="guia-kicker">Android</span>
+    <strong>TalkBack</strong>
+    <span>Teste de navegação, gestos e interação acessível em dispositivos Android.</span>
+  </a>
+</div>
 
 !!! tip "Sugestão de fluxo de teste"
     1. Rode uma ferramenta **automática** (Lighthouse, Axe ou WAVE) para achar os erros evidentes.

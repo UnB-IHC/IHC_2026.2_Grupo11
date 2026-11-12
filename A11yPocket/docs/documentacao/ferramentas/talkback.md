@@ -13,3 +13,33 @@
 
 !!! note "Fontes"
     As referências de cada ferramenta (APPLE, DEQUE SYSTEMS, GOOGLE, NV ACCESS, WebAIM, entre outras) estão em [Referências](../../referencias.md).
+
+## Contexto e finalidade
+
+Leitor de tela do Android. É uma etapa do processo de avaliação, não um veredito isolado. O ideal é formular antes **qual página, tarefa e critério** serão examinados.
+
+## Quando utilizar
+
+Validação de navegação por toque exploratório, gestos e rótulos em dispositivos móveis. Combine verificações automáticas e manuais para evitar conclusões parciais.
+
+## Como interpretar resultados
+
+Explore elementos por gesto, navegue por controles e cabeçalhos e teste atualizações dinâmicas.
+
+## Exemplo prático de verificação
+
+Um botão exibido apenas como ícone precisa anunciar uma ação compreensível. Documente o comportamento observado, a página, as condições do teste e o critério do guia relacionado.
+
+## Boas práticas e erros comuns
+
+- **Faça:** teste componentes em seus diferentes estados; registre ambiente, data e versão; reproduza o problema manualmente; compare o achado com WCAG e checklist.
+- **Evite:** tratar todo alerta como falha comprovada; afirmar que uma pontuação isolada mede a experiência real; publicar capturas que revelem dados pessoais.
+- **Limitação:** Um teste só em desktop não garante a mesma experiência no celular.
+
+## Integração com a avaliação do grupo
+
+Consulte os [resultados da avaliação do Detran-DF](../avaliacao-site/index.md) para observar como ferramentas, testes manuais e resultados de usuários podem se complementar.
+
+## Fontes e continuidade
+
+Consulte a documentação oficial da ferramenta e as [referências do projeto](../../referencias.md). Reconfirme a interface e os comandos se a versão da ferramenta mudar.

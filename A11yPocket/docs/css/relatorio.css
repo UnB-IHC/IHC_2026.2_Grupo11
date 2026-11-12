@@ -226,3 +226,279 @@
     transition: none;
   }
 }
+
+/* ==========================================
+   A11yPocket — Análise com usuário
+   ========================================== */
+
+/* Barreiras encontradas */
+
+.md-typeset dl.rel-spec {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  margin: 1.2rem 0 1.8rem;
+}
+
+/* Título de cada barreira */
+
+.md-typeset .rel-spec dt {
+  margin: .85rem 0 0;
+  padding: 1rem 1.2rem .35rem;
+
+  color: var(--ap-ink);
+  background: var(--ap-card);
+
+  border: 1px solid var(--ap-border);
+  border-bottom: 0;
+  border-left: 4px solid var(--ap-brand);
+  border-radius: .65rem .65rem 0 0;
+
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+/* Descrição da barreira */
+
+.md-typeset .rel-spec dd {
+  margin: 0;
+  padding: .25rem 1.2rem 1rem;
+
+  color: var(--ap-muted);
+  background: var(--ap-card);
+
+  border: 1px solid var(--ap-border);
+  border-top: 0;
+  border-left: 4px solid var(--ap-brand);
+  border-radius: 0 0 .65rem .65rem;
+
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+.md-typeset .rel-spec dd p {
+  margin: 0;
+}
+
+/* ==========================================
+   Tabela consolidada da análise
+   ========================================== */
+
+.md-typeset .rel-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.2rem 0 1.8rem;
+  overflow-x: auto;
+}
+
+.md-typeset .rel-table-wrap .rel-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: var(--ap-card);
+  border: 1px solid var(--ap-border);
+  border-radius: .65rem;
+}
+
+/* Legenda */
+
+.md-typeset .rel-table caption {
+  caption-side: top;
+
+  padding: .65rem .25rem;
+  color: var(--ap-muted);
+
+  font-size: .85rem;
+  text-align: left;
+}
+
+/* Cabeçalho */
+
+.md-typeset .rel-table thead th {
+  padding: .85rem .75rem;
+
+  background: var(--ap-surface);
+  color: var(--ap-ink);
+
+  font-weight: 750;
+  text-align: left;
+  vertical-align: middle;
+
+  border-bottom: 1px solid var(--ap-border);
+}
+
+/* Células */
+
+.md-typeset .rel-table tbody td,
+.md-typeset .rel-table tbody th {
+  padding: .8rem .75rem;
+
+  color: var(--ap-ink);
+
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.55;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+
+  border-bottom: 1px solid var(--ap-border);
+}
+
+/* Última linha */
+
+.md-typeset .rel-table tbody tr:last-child td,
+.md-typeset .rel-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+/* Realce ao passar o mouse */
+
+.md-typeset .rel-table tbody tr:hover td,
+.md-typeset .rel-table tbody tr:hover th {
+  background: var(--ap-surface);
+}
+
+/* ==========================================
+   Selos de severidade
+   ========================================== */
+
+.md-typeset .rel-badge {
+  display: inline-block;
+
+  padding: .2rem .55rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+
+  font-size: .72rem;
+  font-weight: 750;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.md-typeset .rel-badge--sev-4 {
+  color: var(--rel-crit-fg);
+  background: var(--rel-crit-bg);
+}
+
+.md-typeset .rel-badge--sev-3 {
+  color: var(--rel-grave-fg);
+  background: var(--rel-grave-bg);
+}
+
+.md-typeset .rel-badge--sev-2 {
+  color: var(--rel-mod-fg);
+  background: var(--rel-mod-bg);
+}
+
+.md-typeset .rel-badge--sev-1 {
+  color: var(--rel-leve-fg);
+  background: var(--rel-leve-bg);
+}
+
+/* ==========================================
+   Responsividade
+   ========================================== */
+
+@media (max-width: 700px) {
+  .md-typeset .rel-spec dt {
+    padding: .85rem 1rem .3rem;
+  }
+
+  .md-typeset .rel-spec dd {
+    padding: .25rem 1rem .85rem;
+  }
+
+  .md-typeset .rel-table thead th,
+  .md-typeset .rel-table tbody td,
+  .md-typeset .rel-table tbody th {
+    padding: .6rem .5rem;
+    font-size: .8rem;
+  }
+}
+
+/* ==========================================
+   Avaliação com usuário — Recomendações
+   ========================================== */
+
+.md-typeset .prio {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .85rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.md-typeset .prio-lane {
+  padding: 1rem 1.2rem;
+  border-radius: .65rem;
+}
+
+/* Cor da prioridade alta */
+
+.md-typeset .prio-lane.lvl-3 {
+  border-left-color: var(--rel-grave-bar);
+}
+
+/* Cabeçalho do card */
+
+.md-typeset .prio-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: .6rem;
+}
+
+.md-typeset .prio-head strong {
+  color: var(--ap-ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* Texto da recomendação */
+
+.md-typeset .prio-lane > p {
+  margin: 0;
+  color: var(--ap-ink);
+  line-height: 1.6;
+}
+
+/* Selos de prioridade */
+
+.md-typeset .prio-level {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: .15rem .65rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+
+  font-size: .75rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+/* Prioridade crítica */
+
+.md-typeset .prio-level--critical {
+  color: var(--rel-crit-fg);
+  background: var(--rel-crit-bg);
+}
+
+/* Prioridade alta */
+
+.md-typeset .prio-level--high {
+  color: var(--rel-grave-fg);
+  background: var(--rel-grave-bg);
+}
+
+/* Prioridade média */
+
+.md-typeset .prio-level--medium {
+  color: var(--rel-mod-fg);
+  background: var(--rel-mod-bg);
+}

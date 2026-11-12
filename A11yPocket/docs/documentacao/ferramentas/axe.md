@@ -11,3 +11,33 @@ O Axe é considerado o padrão ouro da indústria para desenvolvedores e QAs (*Q
     3. Clique em **Scan all of my page** (varrer a página inteira).
     4. Revise os problemas por gravidade; para cada um, veja o elemento afetado e a orientação de correção.
     5. Na versão Pro, use os **testes guiados** para as verificações que dependem de julgamento humano.
+
+## Contexto e finalidade
+
+Analisador de regras automatizadas integrado às ferramentas do navegador. É uma etapa do processo de avaliação, não um veredito isolado. O ideal é formular antes **qual página, tarefa e critério** serão examinados.
+
+## Quando utilizar
+
+Desenvolvimento, QA e regressão de acessibilidade em componentes e páginas. Combine verificações automáticas e manuais para evitar conclusões parciais.
+
+## Como interpretar resultados
+
+Leia a regra, o impacto, o elemento afetado e o critério apontado; compare com a situação no DOM e documente a correção.
+
+## Exemplo prático de verificação
+
+Uma regra de nome acessível ausente em botão deve ser corrigida na semântica do componente e confirmada por inspeção. Documente o comportamento observado, a página, as condições do teste e o critério do guia relacionado.
+
+## Boas práticas e erros comuns
+
+- **Faça:** teste componentes em seus diferentes estados; registre ambiente, data e versão; reproduza o problema manualmente; compare o achado com WCAG e checklist.
+- **Evite:** tratar todo alerta como falha comprovada; afirmar que uma pontuação isolada mede a experiência real; publicar capturas que revelem dados pessoais.
+- **Limitação:** Automação não avalia por completo a qualidade da linguagem, a adequação do fluxo e a experiência com leitor de tela.
+
+## Integração com a avaliação do grupo
+
+Consulte os [resultados da avaliação do Detran-DF](../avaliacao-site/index.md) para observar como ferramentas, testes manuais e resultados de usuários podem se complementar.
+
+## Fontes e continuidade
+
+Consulte a documentação oficial da ferramenta e as [referências do projeto](../../referencias.md). Reconfirme a interface e os comandos se a versão da ferramenta mudar.
