@@ -45,7 +45,7 @@ A avaliação manual foi feita em desktop (2560x1440), com Firefox e Chrome e o 
 | Elemento | Cores (texto / fundo) | Razão medida | Mínimo | Referência | Resultado |
 |----------|-----------------------|:------------:|:------:|------------|:---------:|
 | Texto do corpo | #8398B3 / #FFFFFF | 2,95:1 | 4,5:1 | WCAG 1.4.3, Guia DES-02 | <span class="res res-fail">Falha</span> |
-| Texto de cabeçalho | #F44336 / #FFFFFF | 3,61:1 | 3:1 | WCAG 1.4.11, Guia DES-02 | <span class="res res-pass">Passa</span> |
+| Texto de cabeçalho | #F44336 / #FFFFFF | 3,61:1 | 3:1 | WCAG 1.4.11, Guia DES-02 | <span class="res res-part">Passa</span> |
 | Informação só por cor? | Não (acompanhada de texto e ícones) | — | — | WCAG 1.4.1, Guia DES-03 | <span class="res res-pass">Passa</span> |
 
 ## Áreas de clique

@@ -66,7 +66,7 @@ As técnicas a seguir são complementares. Cada uma permite analisar a experiên
 
 <div class="guia-cards guia-cards--3">
 
-  <a class="guia-card" href="personas.md">
+  <a class="guia-card" href="personas/">
     <span class="guia-kicker">Compreensão dos usuários</span>
     <strong>Personas</strong>
     <span>
@@ -80,7 +80,7 @@ As técnicas a seguir são complementares. Cada uma permite analisar a experiên
     </span>
   </a>
 
-  <a class="guia-card" href="jornadas.md">
+  <a class="guia-card" href="jornadas/">
     <span class="guia-kicker">Mapeamento da experiência</span>
     <strong>Jornadas do Usuário</strong>
     <span>
@@ -94,7 +94,7 @@ As técnicas a seguir são complementares. Cada uma permite analisar a experiên
     </span>
   </a>
 
-  <a class="guia-card" href="blueprint.md">
+  <a class="guia-card" href="blueprint/">
     <span class="guia-kicker">Análise de serviços</span>
     <strong>Service Blueprint</strong>
     <span>
@@ -108,7 +108,7 @@ As técnicas a seguir são complementares. Cada uma permite analisar a experiên
     </span>
   </a>
 
-  <a class="guia-card" href="canvas.md">
+  <a class="guia-card" href="canvas/">
     <span class="guia-kicker">Planejamento e estratégia</span>
     <strong>UX Canvas</strong>
     <span>
@@ -122,7 +122,7 @@ As técnicas a seguir são complementares. Cada uma permite analisar a experiên
     </span>
   </a>
 
-  <a class="guia-card is-wide" href="design-empatico.md">
+  <a class="guia-card is-wide" href="design-empatico/">
     <span class="guia-kicker">Investigação e empatia</span>
     <strong>Design Empático</strong>
     <span>

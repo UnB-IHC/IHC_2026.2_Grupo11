@@ -6,7 +6,7 @@
 
 :root {
   --ap-content-width: 50rem;   /* largura do texto: 40rem ≈ 96 caracteres/linha; 36rem ≈ 85; 32rem ≈ 75 (guia recomenda ~80) */
-  --ap-nav-width: 13.5rem;      /* menu da esquerda */
+  --ap-nav-width: 17rem;      /* menu da esquerda */
   --ap-toc-width: 0em;      /* índice da direita */
 }
 
@@ -78,8 +78,11 @@
 
   /* itens */
   .md-sidebar--primary .md-nav__link {
-    margin: 0.1rem 0; padding: 0.5rem 0.8rem;
-    border-radius: 0.6rem; font-weight: 500; line-height: 1.35;
+    margin: 0.1rem 0;
+    padding: 0.5rem 0.65rem;
+    border-radius: 0.6rem;
+    font-weight: 500;
+    line-height: 1.35;
     color: var(--ap-ink);
     transition: background-color 0.15s ease, color 0.15s ease;
   }

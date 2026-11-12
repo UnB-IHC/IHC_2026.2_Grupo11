@@ -1,4 +1,4 @@
-# Heurísticas de Usabilidade
+# Heurísticas de Nielsen
 
 Avaliação baseada nas 10 heurísticas de Nielsen. Marque cada item apenas quando a interface o atender, com evidência observável.
 

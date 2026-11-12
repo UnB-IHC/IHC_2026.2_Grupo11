@@ -36,7 +36,7 @@ A premissa é que a acessibilidade deve ser pensada **desde o início**, e não 
 
 <div class="guia-cards">
     <a class="guia-card is-wide" href="heuristicas/">
-    <strong>Heurísticas de Usabilidade</strong>
+    <strong>Heurísticas de Nielsen</strong>
     <span class="guia-meta">30 itens</span>
     <span>As 10 heurísticas de Nielsen: status do sistema, linguagem, controle do usuário, consistência, prevenção e recuperação de erros, ajuda e documentação.</span>
   </a>
@@ -78,8 +78,8 @@ Acompanhe o avanço em todas as categorias do guia. Os dados vêm das marcaçõe
     <progress data-cat-bar="conteudo" data-total="11" data-label="Conteúdo" value="0" max="11"></progress>
   </a>
   <a class="guia-row" href="heuristicas/">
-    <div><strong>Heurísticas de Usabilidade</strong><span data-cat-count="heuristicas" data-total="30">30 itens</span></div>
-    <progress data-cat-bar="heuristicas" data-total="30" data-label="Heurísticas de Usabilidade" value="0" max="30"></progress>
+    <div><strong>Heurísticas de Nielsen</strong><span data-cat-count="heuristicas" data-total="30">30 itens</span></div>
+    <progress data-cat-bar="heuristicas" data-total="30" data-label="Heurísticas de Nielsen" value="0" max="30"></progress>
   </a>
 </div>
 

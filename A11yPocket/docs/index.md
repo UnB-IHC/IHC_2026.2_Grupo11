@@ -189,7 +189,7 @@ hide:
   </a>
   <a class="guia-card is-half" href="checklist/heuristicas/">
     <span class="guia-kicker">Complemento</span>
-    <strong>Heurísticas de Usabilidade</strong>
+    <strong>Heurísticas de Nielsen</strong>
     <span class="guia-meta" data-cat-count="heuristicas" data-total="30">30 itens</span>
     <span>As 10 heurísticas de Nielsen aplicadas à interface.</span>
   </a>

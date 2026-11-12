@@ -1,66 +1,166 @@
+
 # Documentação
 
-Esta aba reúne o **conteúdo de IHC** que embasa o projeto e os **relatórios de avaliação**: a síntese do Guia de Boas Práticas UK-Brasil, a norma ABNT NBR 17225:2025, as WCAG 2.2, as técnicas de UX/DCU e, nas próximas entregas, a avaliação de um site e o teste com usuário real.
+A documentação do **A11yPocket** reúne os conhecimentos de Interação Humano-Computador (IHC) que fundamentam o projeto, incluindo acessibilidade digital, usabilidade, experiência do usuário e métodos de avaliação.
 
-O checklist interativo e as ferramentas de teste estão na aba [Checklist](../checklist/index.md) e [ferramentas](../documentacao/ferramentas/index.md).
+O conteúdo foi desenvolvido pelo Grupo 11 da Universidade de Brasília, com base em normas técnicas, diretrizes internacionais e referências acadêmicas. Além dos fundamentos teóricos, apresenta as avaliações realizadas no Portal do Detran-DF.
 
-## Fundamentos de acessibilidade
+## Normas e diretrizes
+
+Conheça as principais normas e diretrizes que orientam o desenvolvimento de produtos e serviços digitais acessíveis.
 
 <div class="guia-cards guia-cards--3">
+
   <a class="guia-card" href="guia-uk-brasil/">
     <span class="guia-kicker">Guia</span>
     <strong>Guia UK-Brasil</strong>
-    <span>Síntese por eixo temático (Gestão, Desenvolvimento, Design e Conteúdo) e considerações.</span>
+    <span>
+      Síntese por eixo temático (Gestão, Desenvolvimento,
+      Design e Conteúdo) e considerações.
+    </span>
   </a>
+
   <a class="guia-card" href="nbr-17225/">
     <span class="guia-kicker">Norma</span>
     <strong>ABNT NBR 17225:2025</strong>
-    <span>Níveis de conformidade e principais diretrizes técnicas.</span>
+    <span>
+      Níveis de conformidade e principais diretrizes técnicas.
+    </span>
   </a>
+
   <a class="guia-card" href="alinhamento/">
     <span class="guia-kicker">Norma × Guia</span>
     <strong>Alinhamento NBR × Guia</strong>
-    <span>Como a norma e o guia se complementam, pilar por pilar.</span>
+    <span>
+      Como a norma e o guia se complementam,
+      pilar por pilar.
+    </span>
   </a>
+
   <a class="guia-card" href="wcag/">
     <span class="guia-kicker">W3C</span>
     <strong>WCAG 2.2</strong>
-    <span>Princípios POUR, níveis A, AA e AAA e considerações sobre NBR e WCAG.</span>
+    <span>
+      Princípios POUR, níveis A, AA e AAA
+      e considerações sobre NBR e WCAG.
+    </span>
   </a>
+
+</div>
+
+## Ferramentas de Avaliação
+
+Conheça ferramentas utilizadas para identificar barreiras de acessibilidade, avaliar interfaces e investigar a experiência de usuários que utilizam tecnologias assistivas.
+
+<div class="guia-cards guia-cards--3">
+
+  <details class="guia-card ap-doc-accordion">
+
+    <summary class="ap-doc-accordion__trigger">
+      <span class="guia-kicker">Avaliação e testes</span>
+      <strong>Ferramentas de Acessibilidade</strong>
+      <span>
+        WAVE, axe DevTools, Lighthouse, ASES Web,
+        NVDA, VoiceOver e TalkBack.
+      </span>
+    </summary>
+
+    <div class="ap-doc-accordion__content">
+
+      <p class="ap-doc-accordion__label">
+        Ferramentas de análise
+      </p>
+
+      <ul class="ap-doc-accordion__links">
+        <li><a href="ferramentas/wave/">WAVE</a></li>
+        <li><a href="ferramentas/axe/">axe DevTools</a></li>
+        <li><a href="ferramentas/lighthouse/">Lighthouse</a></li>
+        <li><a href="ferramentas/ases/">ASES Web</a></li>
+      </ul>
+
+      <p class="ap-doc-accordion__label">
+        Leitores de tela
+      </p>
+
+      <ul class="ap-doc-accordion__links">
+        <li><a href="ferramentas/nvda/">NVDA</a></li>
+        <li><a href="ferramentas/voiceover/">VoiceOver</a></li>
+        <li><a href="ferramentas/talkback/">TalkBack</a></li>
+      </ul>
+
+      <a class="ap-doc-accordion__overview" href="ferramentas/">
+        Acessar visão geral →
+      </a>
+
+    </div>
+
+  </details>
+
 </div>
 
 ## Métodos de IHC
 
-<div class="guia-cards guia-cards--full">
-  <a class="guia-card" href="ux-dcu/">
-    <span class="guia-kicker">UX/DCU</span>
-    <strong>Técnicas de UX/DCU</strong>
-    <span>Personas, jornadas, service blueprint, canvas e design empático.</span>
-  </a>
+As técnicas de IHC auxiliam na compreensão das necessidades dos usuários, no estudo de suas experiências e na tomada de decisões fundamentadas durante o desenvolvimento de sistemas.
+
+<div class="guia-cards guia-cards--3">
+
+  <details class="guia-card ap-doc-accordion">
+
+    <summary class="ap-doc-accordion__trigger">
+      <span class="guia-kicker">Experiência do usuário</span>
+      <strong>Métodos e Técnicas de IHC</strong>
+      <span>
+        Personas, Jornadas do Usuário, Service Blueprint,
+        UX Canvas e Design Empático.
+      </span>
+    </summary>
+
+    <div class="ap-doc-accordion__content">
+
+      <p class="ap-doc-accordion__label">
+        Explore as técnicas
+      </p>
+
+      <ul class="ap-doc-accordion__links">
+        <li><a href="ux-dcu/personas/">Personas</a></li>
+        <li><a href="ux-dcu/jornadas/">Jornadas do Usuário</a></li>
+        <li><a href="ux-dcu/blueprint/">Service Blueprint</a></li>
+        <li><a href="ux-dcu/canvas/">UX Canvas</a></li>
+        <li><a href="ux-dcu/design-empatico/">Design Empático</a></li>
+      </ul>
+
+      <a class="ap-doc-accordion__overview" href="ux-dcu/">
+        Acessar visão geral →
+      </a>
+
+    </div>
+
+  </details>
+
 </div>
 
 ## Avaliações
 
+As avaliações realizadas pelo Grupo 11 demonstram a aplicação prática das diretrizes de acessibilidade e dos métodos de IHC no Portal do Detran-DF.
+
 <div class="guia-cards guia-cards--3">
-  <a class="guia-card" href="../documentacao/avaliacao-site/">
-    <strong>Avaliação do site</strong>
-    <span>Relatório fundamentado de um site do governo federal ou de uma empresa.</span>
+
+  <a class="guia-card" href="avaliacao-site/">
+    <span class="guia-kicker">Acessibilidade e usabilidade</span>
+    <strong>Avaliação do Site</strong>
+    <span>
+      Análise do Detran-DF com ferramentas automáticas,
+      inspeção manual e heurísticas de Nielsen.
+    </span>
   </a>
-  <a class="guia-card" href="../documentacao/avaliacao-usuario/">
-    <strong>Avaliação com usuário</strong>
-    <span>Teste de usabilidade com usuário real e entrevista.</span>
+
+  <a class="guia-card" href="avaliacao-usuario/">
+    <span class="guia-kicker">Estudo empírico</span>
+    <strong>Avaliação com Usuário</strong>
+    <span>
+      Teste de usabilidade com uma usuária real,
+      métricas observadas e análise da experiência.
+    </span>
   </a>
+
 </div>
-
-## Entregas do projeto
-
-| Entrega | Onde está no site |
-|---|---|
-| Guia de Acessibilidade (versão melhorada) | Esta aba e a aba [Checklist](../checklist/index.md) e [ferramentas](../documentacao/ferramentas/index.md) |
-| Avaliação de um site do governo federal ou de uma empresa | [Avaliação do site](avaliacao-site/index.md) |
-| Teste de usabilidade com usuário real | [Avaliação com usuário](avaliacao-usuario/index.md) |
-| Seminário | Agenda definida em sala pela docente |
-
-
-!!! info "Base"
-    O conteúdo se apoia na norma **ABNT NBR 17225:2025**, nas **WCAG 2.2** e no material do Gov.br sobre [Acessibilidade Digital](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital). As fontes completas estão em [Referências](../referencias.md).

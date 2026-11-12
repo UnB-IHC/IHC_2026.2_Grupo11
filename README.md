@@ -11,7 +11,7 @@ O **A11yPocket** é um guia prático de acessibilidade digital que reúne checkl
 
 O projeto está estruturado em duas frentes principais:
 
-1. **Checklist Interativo**: Uma ferramenta prática contendo 75 itens de acessibilidade, divididos em 5 eixos temáticos (Gestão de Projetos, Desenvolvimento e Testes, Design, Conteúdo e Heurísticas de Usabilidade). O progresso da avaliação é salvo diretamente no navegador do usuário.
+1. **Checklist Interativo**: Uma ferramenta prática contendo 75 itens de acessibilidade, divididos em 5 eixos temáticos (Gestão de Projetos, Desenvolvimento e Testes, Design, Conteúdo e Heurísticas de Nielsen). O progresso da avaliação é salvo diretamente no navegador do usuário.
 2. **Documentação de IHC e Avaliações**: 
    - Base teórica apoiada na norma brasileira **ABNT NBR 17225:2025**, nas diretrizes **WCAG 2.2 (W3C)** e no **Guia UK-Brasil**.
    - Métodos de IHC aplicados: Personas, Jornadas do Usuário, Service Blueprint, Lean UX Canvas e Design Empático.

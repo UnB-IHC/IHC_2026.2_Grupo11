@@ -88,49 +88,49 @@ As páginas a seguir apresentam os procedimentos adotados, os resultados obtidos
 
 <div class="guia-cards guia-cards--3">
 
-  <a class="guia-card" href="escopo.md">
+  <a class="guia-card" href="escopo/">
     <span class="guia-kicker">Contexto</span>
     <strong>Escopo da avaliação</strong>
     <span>Páginas e fluxos analisados, justificativas de seleção e ambiente utilizado.</span>
   </a>
 
-  <a class="guia-card" href="metodologia.md">
+  <a class="guia-card" href="metodologia/">
     <span class="guia-kicker">Procedimentos</span>
     <strong>Metodologia</strong>
     <span>Referenciais adotados, procedimentos de análise e critérios de classificação dos problemas.</span>
   </a>
 
-  <a class="guia-card" href="avaliacao-automatica.md">
+  <a class="guia-card" href="avaliacao-automatica/">
     <span class="guia-kicker">Ferramentas</span>
     <strong>Avaliação automática</strong>
     <span>Resultados das verificações automatizadas e análise dos principais padrões identificados.</span>
   </a>
 
-  <a class="guia-card" href="avaliacao-manual.md">
+  <a class="guia-card" href="avaliacao-manual/">
     <span class="guia-kicker">Inspeção</span>
     <strong>Avaliação manual</strong>
     <span>Verificações realizadas por inspeção, navegação por teclado e tecnologias assistivas.</span>
   </a>
 
-  <a class="guia-card" href="heuristicas.md">
+  <a class="guia-card" href="heuristicas/">
     <span class="guia-kicker">Usabilidade</span>
     <strong>Heurísticas de Nielsen</strong>
     <span>Aplicação de princípios heurísticos na identificação de problemas de interação.</span>
   </a>
 
-  <a class="guia-card" href="problemas.md">
+  <a class="guia-card" href="problemas/">
     <span class="guia-kicker">Resultados</span>
     <strong>Problemas encontrados</strong>
     <span>Consulta interativa dos problemas identificados, com severidade, referências e evidências.</span>
   </a>
 
-  <a class="guia-card" href="recomendacoes.md">
+  <a class="guia-card" href="recomendacoes/">
     <span class="guia-kicker">Melhorias</span>
     <strong>Recomendações</strong>
     <span>Propostas de correção e priorização das melhorias de acessibilidade e usabilidade.</span>
   </a>
 
-  <a class="guia-card" href="../avaliacao-usuario/index.md">
+  <a class="guia-card" href="../avaliacao-usuario/index/">
     <span class="guia-kicker">Estudo empírico</span>
     <strong>Teste com usuário</strong>
     <span>Observações da interação real, resultados das tarefas e análise da experiência do usuário.</span>
@@ -138,5 +138,8 @@ As páginas a seguir apresentam os procedimentos adotados, os resultados obtidos
 
 </div>
 
-!!! info "Sobre a documentação"
-    Esta seção apresenta uma versão organizada dos resultados da avaliação realizada pelo Grupo 11. O relatório acadêmico completo contém os procedimentos, registros e análises que fundamentam o estudo.
+
+!!! info "Relatório completo da avaliação"
+    Esta seção apresenta uma versão organizada dos resultados da avaliação de acessibilidade e usabilidade do Detran-DF.
+
+    O relatório acadêmico original contém os procedimentos, registros, evidências, análises e recomendações que fundamentam o estudo.

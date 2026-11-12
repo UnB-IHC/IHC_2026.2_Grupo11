@@ -84,7 +84,7 @@ Consulte as etapas do estudo, os resultados detalhados e as recomendações elab
 
 <div class="guia-cards guia-cards--3">
 
-  <a class="guia-card" href="metodologia.md">
+  <a class="guia-card" href="metodologia/">
     <span class="guia-kicker">Planejamento e execução</span>
     <strong>Metodologia</strong>
     <span>
@@ -93,7 +93,7 @@ Consulte as etapas do estudo, os resultados detalhados e as recomendações elab
     </span>
   </a>
 
-  <a class="guia-card" href="resultados.md">
+  <a class="guia-card" href="resultados/">
     <span class="guia-kicker">Indicadores</span>
     <strong>Resultados e Score SUS</strong>
     <span>
@@ -102,7 +102,7 @@ Consulte as etapas do estudo, os resultados detalhados e as recomendações elab
     </span>
   </a>
 
-  <a class="guia-card" href="analise.md">
+  <a class="guia-card" href="analise/">
     <span class="guia-kicker">Experiência observada</span>
     <strong>Análise e descobertas</strong>
     <span>
@@ -111,7 +111,7 @@ Consulte as etapas do estudo, os resultados detalhados e as recomendações elab
     </span>
   </a>
 
-  <a class="guia-card" href="recomendacoes.md">
+  <a class="guia-card" href="recomendacoes/">
     <span class="guia-kicker">Propostas de melhoria</span>
     <strong>Recomendações</strong>
     <span>
@@ -122,11 +122,27 @@ Consulte as etapas do estudo, os resultados detalhados e as recomendações elab
 
 </div>
 
+
 ## Registros da avaliação
 
-A avaliação foi documentada por meio de observações, registros da execução das tarefas e respostas ao questionário SUS.
+A avaliação foi documentada por meio de observações,
+registros das tarefas e respostas ao questionário SUS.
 
-As páginas desta seção apresentam os resultados e sínteses da sessão, preservando a privacidade da participante.
+As informações apresentadas nesta seção permitem consultar
+os resultados do estudo, preservando a privacidade da participante.
 
-!!! note "Privacidade e consentimento"
-    A autorização concedida pela participante permite a exibição de trechos da gravação em sala de aula, sem identificação, mas não autoriza sua publicação em um site público. Por esse motivo, as gravações não estão disponibilizadas nesta documentação. Uma eventual publicação dependerá de autorização complementar específica.
+### Gravação da sessão
+
+A sessão foi registrada em vídeo para apoiar a análise
+das interações, dificuldades e comportamentos observados.
+
+
+<a class="home-button ap-video-button" href="https://drive.google.com/file/d/1i4S-waIbM7KiPmnJkCd8TS19DXetYT5Z/view?usp=drive_link" target="_blank" rel="noopener noreferrer">▶ Assistir à gravação completa</a>
+
+
+!!! info "Relatório completo da avaliação"
+    Esta seção apresenta uma versão organizada dos resultados da avaliação de acessibilidade e usabilidade do Detran-DF.
+
+    O relatório acadêmico original contém os procedimentos, registros, evidências, análises e recomendações que fundamentam o estudo.
+
+    **[Consultar relatório completo em PDF](</A11yPocket/docs/assets/documentos/Relatorio_Detran_DF_Tg03_final.pdf>)**

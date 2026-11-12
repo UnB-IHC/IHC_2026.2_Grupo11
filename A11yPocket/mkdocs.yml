@@ -69,10 +69,10 @@ nav:
   - Documentação:
       - Visão geral: documentacao/index.md
       - Normas e diretrizes:
-          - WCAG 2.2: documentacao/wcag.md
-          - ABNT NBR 17225: documentacao/nbr-17225.md
           - Guia UK-Brasil: documentacao/guia-uk-brasil.md
+          - ABNT NBR 17225: documentacao/nbr-17225.md
           - Alinhamento: documentacao/alinhamento.md
+          - WCAG 2.2: documentacao/wcag.md
       - Ferramentas de avaliação:
           - Visão geral: documentacao/ferramentas/index.md
           - WAVE: documentacao/ferramentas/wave.md
