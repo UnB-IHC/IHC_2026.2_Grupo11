@@ -61,6 +61,40 @@ Os resultados abaixo utilizam a **versão final do relatório Tg-03**, com os qu
 
 O questionário pós-teste resultou em **52,5 pontos em 100**. Esse valor descreve a percepção da participante nesta sessão; não demonstra sozinho a acessibilidade do portal nem permite generalizar os resultados para todos os usuários.
 
+
+### Respostas ao questionário SUS
+
+A tabela apresenta as respostas da participante P1 às dez afirmações do questionário SUS, acompanhadas do cálculo da contribuição de cada item para a pontuação final.
+
+| Pergunta | Tipo | Resposta | Fórmula | Pontuação |
+|---|---|:---:|:---:|:---:|
+| Q1. Gostaria de usar o sistema com frequência. | Ímpar | 3 | 3 − 1 | 2 |
+| Q2. Achei o sistema desnecessariamente complexo. | Par | 2 | 5 − 2 | 3 |
+| Q3. Achei o sistema fácil de usar. | Ímpar | 2 | 2 − 1 | 1 |
+| Q4. Precisaria de ajuda técnica. | Par | 1 | 5 − 1 | 4 |
+| Q5. Funções bem integradas. | Ímpar | 4 | 4 − 1 | 3 |
+| Q6. O sistema apresenta muita inconsistência. | Par | 4 | 5 − 4 | 1 |
+| Q7. Pessoas aprenderão a usar rapidamente. | Ímpar | 2 | 2 − 1 | 1 |
+| Q8. Achei o sistema atrapalhado de usar. | Par | 4 | 5 − 4 | 1 |
+| Q9. Me senti confiante ao usar o sistema. | Ímpar | 3 | 3 − 1 | 2 |
+| Q10. Precisei aprender muitas coisas antes. | Par | 2 | 5 − 2 | 3 |
+| **Soma dos pontos** | | | | **21** |
+
+### Cálculo da pontuação SUS
+
+O cálculo utiliza as contribuições de cada uma das dez questões:
+
+- **Questões ímpares:** subtrai-se 1 da resposta.
+- **Questões pares:** subtrai-se a resposta de 5.
+- **Pontuação final:** multiplica-se a soma das contribuições por 2,5.
+
+\[
+SUS = 21 \times 2,5 = 52,5
+\]
+
+O resultado é uma pontuação de **52,5 em uma escala de 0 a 100**, representando a percepção de usabilidade da participante durante a avaliação.
+
+
 ## Como interpretar
 
 A principal barreira observada foi a localização das orientações de renovação da CNH. Em complemento, a sessão identificou dúvidas na navegação entre áreas do portal. Veja a [análise qualitativa](analise.md) e as [recomendações](recomendacoes.md).
